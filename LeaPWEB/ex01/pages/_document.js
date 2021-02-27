@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="https://github.com/zaujulio.png" type="image/png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
         </Head>
         <body>
