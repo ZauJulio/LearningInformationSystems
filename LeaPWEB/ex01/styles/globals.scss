@@ -8,11 +8,10 @@
 
 :root {
   --background: #1e2122;
-  --white: #181a1b;
   --header: #388ae9;
   --footer: #1c4370;
   --text: #fff;
-  --text-highlight: #b3b9ff;
+  --input: #182227;
   --title: #6e7d99;
 }
 
@@ -46,4 +45,8 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
 }

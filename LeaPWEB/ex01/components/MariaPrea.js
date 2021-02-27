@@ -1,3 +1,5 @@
-export function MariaPrea(adjetivo) {
-  return <p>Maria Preá é {adjetivo}</p>;
+import React from "react";
+
+export function MariaPrea(props) {
+  return <p>Maria Preá é {props.adjetivo}</p>;
 }

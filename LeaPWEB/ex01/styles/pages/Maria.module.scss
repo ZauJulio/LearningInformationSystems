@@ -27,10 +27,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-  
+
         padding: 0.5rem;
         cursor: pointer;
-  
+
         svg {
           display: block;
           height: 3rem;
@@ -50,11 +50,58 @@
     position: relative;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    top: 35vh;
+    top: 30vh;
+
+    h1 {
+      padding-bottom: 3rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-start;
+      justify-content: center;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+
+        padding-bottom: 1.5rem;
+        
+        > label {
+          padding-right: 1rem;
+        }
+
+        > input {
+          background: var(--input);
+
+          border: 0;
+          box-shadow: 0 0 5px rgb(83, 83, 83);
+          border-radius: 10px;
+
+          color: white;
+          font-size: 1.2rem;
+          
+          height: 2rem;
+          padding: 0.5rem;
+
+          &::placeholder {
+            color: white;
+          }
+
+          &:focus {
+            outline: none !important;
+            border: 1px solid rgb(48, 103, 175);
+          }
+        }
+      }
+    }
   }
 }
