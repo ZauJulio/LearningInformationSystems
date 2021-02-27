@@ -27,10 +27,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-  
+
         padding: 0.5rem;
         cursor: pointer;
-  
+
         img {
           display: block;
           height: 3rem;
@@ -43,30 +43,6 @@
           font-size: 1rem;
         }
       }
-  
-      div:last-of-type {
-        padding: 0.5rem;
-        a {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-  
-          padding-right: 1rem;
-          svg {
-            display: block;
-            height: 3rem;
-            width: 3rem;
-  
-            filter: invert(100%);
-          }
-          p {
-            padding-top: 0.5rem;
-            font-size: 1rem;
-          }
-        }
-      }
-
     }
   }
 

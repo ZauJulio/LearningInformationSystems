@@ -43,30 +43,6 @@
           font-size: 1rem;
         }
       }
-  
-      div:last-of-type {
-        padding: 0.5rem;
-        a {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-  
-          padding-right: 1rem;
-          svg {
-            display: block;
-            height: 3rem;
-            width: 3rem;
-  
-            filter: invert(100%);
-          }
-          p {
-            padding-top: 0.5rem;
-            font-size: 1rem;
-          }
-        }
-      }
-
     }
   }
 
@@ -80,34 +56,5 @@
     align-items: center;
 
     top: 35vh;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 3rem;
-
-    padding: 1rem;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background: var(--footer);
-
-    a {
-      img {
-        display: block;
-        border-radius: 50%;
-        height: 2rem;
-        width: 2rem;
-      }
-    }
-
-    p {
-      padding-right: 1.5rem;
-
-      font-size: 1rem;
-    }
   }
 }
