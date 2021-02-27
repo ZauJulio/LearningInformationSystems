@@ -4,6 +4,7 @@ import { AiFillHome } from "react-icons/ai";
 import Link from "next/link";
 import { Footer } from '../components/Footer';
 import { RepositoryLink } from '../components/RepositoryLink';
+import { MariaPrea } from '../components/MariaPrea';
 
 export default function Home() {
   return (
