@@ -18,13 +18,12 @@ export function Header() {
       <h1>LeaPWEB - Study repository for WEB programming discipline</h1>
 
       <div className={styles.shortcutsContainer}>
-        {router.pathname !== "/" && (
-          <PageHeaderShortcut href="/" name="Home">
-            <AiFillHome />
-          </PageHeaderShortcut>
-        )}
-
         <div className={styles.slidableShortcuts}>
+          {router.pathname !== "/" && (
+            <PageHeaderShortcut href="/" name="Home">
+              <AiFillHome />
+            </PageHeaderShortcut>
+          )}
           {router.pathname !== "/exercises/maria" && (
             <PageHeaderShortcut href="/exercises/maria" name="Exercise 1">
               <GiSeatedMouse />
