@@ -26,7 +26,7 @@ export default function Home() {
             ></TopicDescription>
           </Topic>
 
-          <Topic link="/exercises/movies" logo={<BiCameraMovie />}>
+          <Topic link="/exercises/Movies" logo={<BiCameraMovie />}>
             <TopicDescription
               name="Movie Search"
               description="Exercise using Getserversideprops and external API consumption
