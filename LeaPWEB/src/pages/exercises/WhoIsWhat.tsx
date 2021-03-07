@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "../../styles/pages/Maria.module.scss";
+import styles from "../../styles/pages/WhoIsWhat.module.scss";
 import Head from "next/head";
 
-import { MariaPrea } from "../../components/MariaPrea";
+import { WhoIsWhat } from "../../components/WhoIsWhat";
 
 export default function Home() {
   const [adjective, setAdjective] = useState(" ");
@@ -18,11 +18,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Exercise 01: Maria Preá 🐾</h1>
+        <h1>Exercise 01: Who is what?</h1>
 
         <div>
           <div>
-            <label htmlFor="changeAdj">What Mary Preá is?</label>
+            <label htmlFor="changeAdj">Who is what?</label>
             <input
               type="text"
               id="changeAdj"
@@ -30,7 +30,7 @@ export default function Home() {
               onChange={handleChange}
             />
           </div>
-          <MariaPrea adjetivo={adjective} />
+          <WhoIsWhat adjective={adjective} />
         </div>
       </main>
     </div>

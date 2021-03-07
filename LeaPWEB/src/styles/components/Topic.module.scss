@@ -1,0 +1,55 @@
+.topicContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .topicLogo {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    cursor: pointer;
+
+    svg {
+      color: black;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .topicContent {
+    width: 30rem;
+    min-height: 19rem;
+
+    background: #292D2E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    padding: 2rem;
+  }
+}
+
+.topicDescriptionContainer {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .topicDescriptionImages {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 2em;
+  }
+}

@@ -1,14 +1,24 @@
 .container {
   main {
-    position: relative;
+    .topicsContainer {
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
 
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    top: 35vh;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      
+      overflow-x: auto;
+      
+      @media (max-width: 1080px) {
+        flex-direction: row;
+      }
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+    }
   }
 
   footer {
