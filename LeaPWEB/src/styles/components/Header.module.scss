@@ -6,19 +6,32 @@
   justify-content: space-between;
   align-items: center;
 
+  width: 100vw;
+
   h1 {
+    display: flex;
+
     font-family: "Righteous", cursive;
     font-size: 2rem;
     font-weight: 300;
-    padding: 1rem;
+
+    margin-left: 15px;
+
+    svg {
+      margin-right: 10px;
+    }
   }
 
   .shortcutsContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    
     margin-right: 1rem;
+    
+    max-width: 400px;
+    
+    padding: 1rem;
   }
 
   .slidableShortcuts {
@@ -29,7 +42,6 @@
     overflow-x: auto;
     white-space: nowrap;
 
-    padding: 1rem;
     gap: 2rem;
 
     margin-right: 5rem;

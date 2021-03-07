@@ -2,9 +2,6 @@ import { useState } from "react";
 import styles from "../../styles/pages/Maria.module.scss";
 import Head from "next/head";
 
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
-
 import { MariaPrea } from "../../components/MariaPrea";
 
 export default function Home() {
@@ -19,7 +16,6 @@ export default function Home() {
       <Head>
         <title>LeaPWEB - Maria Preá</title>
       </Head>
-      <Header />
 
       <main>
         <h1>Exercise 01: Maria Preá 🐾</h1>
@@ -37,8 +33,6 @@ export default function Home() {
           <MariaPrea adjetivo={adjective} />
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
