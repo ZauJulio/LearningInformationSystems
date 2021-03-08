@@ -18,7 +18,7 @@ export default function Home() {
 
       <main>
         <div className={styles.topicsContainer}>
-          <Topic link="/" logo={<RiHome5Line />}>
+          <Topic href="https://github.com/ZauJulio" logo={<RiHome5Line />}>
             <TopicDescription
               name="About"
               description="Repository of the web programming discipline of the Information Systems program - UFRN."
