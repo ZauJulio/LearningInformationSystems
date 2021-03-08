@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 
 import { BiCameraMovie } from "react-icons/bi";
-import { RiRoadMapLine } from "react-icons/ri";
+import { RiHome5Line, RiRoadMapLine } from "react-icons/ri";
 import { AiOutlineQuestion } from "react-icons/ai";
 
 import { Topic, TopicDescription } from "../components/Topic";
@@ -18,6 +18,13 @@ export default function Home() {
 
       <main>
         <div className={styles.topicsContainer}>
+          <Topic link="/" logo={<RiHome5Line />}>
+            <TopicDescription
+              name="About"
+              description="Repository of the web programming discipline of the Information Systems program - UFRN."
+            ></TopicDescription>
+          </Topic>
+
           <Topic link="/exercises/WhoIsWhat" logo={<AiOutlineQuestion />}>
             <TopicDescription
               name="Who is what?"

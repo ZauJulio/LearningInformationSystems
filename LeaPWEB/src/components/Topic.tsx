@@ -25,28 +25,37 @@ export function Topic(props: TopicProps) {
     target = "_blank";
   }
 
-  if (!(toLink || toHref)) {
-    throw "Parameter 'Link' or 'href' required for topic component.";
-  }
-
   return (
-    <>
-      {toLink ? (
-        <div className={styles.topicContainer}>
-          <Link href={props.link}>
+    <div>
+      {(() => {
+        if (toLink) {
+          return (
+            <div className={styles.topicContainer}>
+              <Link href={props.link}>
+                <div className={styles.topicLogo}>{props.logo}</div>
+              </Link>
+              <div className={styles.topicContent}>{props.children}</div>
+            </div>
+          );
+        } else if (toHref) {
+          return (
+            <div className={styles.topicContainer}>
+              <a href={props.href} target={target}>
+                <div className={styles.topicLogo}>{props.logo}</div>
+              </a>
+              <div className={styles.topicContent}>{props.children}</div>
+            </div>
+          );
+        }
+
+        return (
+          <div className={styles.topicContainer}>
             <div className={styles.topicLogo}>{props.logo}</div>
-          </Link>
-          <div className={styles.topicContent}>{props.children}</div>
-        </div>
-      ) : (
-        <div className={styles.topicContainer}>
-          <a href={props.href} target={target}>
-            <div className={styles.topicLogo}>{props.logo}</div>
-          </a>
-          <div className={styles.topicContent}>{props.children}</div>
-        </div>
-      )}
-    </>
+            <div className={styles.topicContent}>{props.children}</div>
+          </div>
+        );
+      })()}
+    </div>
   );
 }
 
@@ -55,7 +64,11 @@ export function TopicDescription(props: TopicDescriptionProps) {
     <div className={styles.topicDescriptionContainer}>
       <h2>{props.name}</h2>
       <div className={styles.topicDescriptionImages}>{props.children}</div>
-      {typeof props.description === 'string' ? <p>{props.description}</p> : props.description }
+      {typeof props.description === "string" ? (
+        <p>{props.description}</p>
+      ) : (
+        props.description
+      )}
     </div>
   );
 }
