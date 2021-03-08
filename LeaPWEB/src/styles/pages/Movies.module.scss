@@ -1,3 +1,18 @@
 .moviesContainer {
-  
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+    overflow-x: auto;
+
+    gap: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }

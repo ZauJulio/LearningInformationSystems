@@ -9,7 +9,7 @@ interface Rating {
   Value: string;
 }
 
-interface MovieData {
+export interface MovieData {
   Title: string;
   Year: number;
   Rated: string;
@@ -56,7 +56,7 @@ export function Movies({ data }: MoviesProps) {
       <main>
         <div className={styles.seekerContainer}></div>
         {data.Search.map((m) => (
-          <Movie name={m.Title}></Movie>
+          <Movie movieData={m}></Movie>
         ))}
       </main>
     </div>
@@ -64,11 +64,10 @@ export function Movies({ data }: MoviesProps) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(
-    `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=bagdad`
-  );
+  const url = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&plot=full&s=mortal%20kombat`;
+  const res = await fetch(url);
   const data = await res.json();
-
+  
   if (!data) {
     return {
       notFound: true,
