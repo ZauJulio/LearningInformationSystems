@@ -1,16 +1,22 @@
 .container {
   main {
+    display: flex;
+      
+    justify-content: center;
+    align-items: center;
+
     .topicsContainer {
       display: flex;
       
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 2rem;
 
       padding-top: 6rem;
       padding-bottom: 6rem;
       
-      overflow-x: auto;
+      overflow-x: scroll;
+      width: 80vw;
       
       @media (max-width: 1080px) {
         flex-direction: row;

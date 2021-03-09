@@ -1,4 +1,7 @@
 .moviesContainer {
+  display: flex;
+  justify-content: center;
+  
   main {
     display: flex;
 
@@ -9,14 +12,14 @@
       flex-direction: column;
     }
     
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    overflow-x: scroll;
+    width: 80vw;
     
-
-    overflow-x: auto;
-
     gap: 2rem;
-    padding-top: 10rem;
+    padding-top: 14rem;
     padding-bottom: 6rem;
 
     margin-right: 1rem;

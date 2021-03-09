@@ -28,7 +28,7 @@
   }
 
   .topicContent {
-    width: 30rem;
+    max-width: 30rem;
 
     @media (max-width:720px){
       height: fit-content;
