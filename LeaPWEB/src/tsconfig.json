@@ -24,7 +24,9 @@
     "**/*.tsx",
     "pages/_document.tsx",
     "pages/index.tsx",
-    "pages/_app.tsx"
+    "pages/_app.tsx",
+    "src/components",
+    "src/custom.d.ts"
   ],
   "exclude": [
     "node_modules"

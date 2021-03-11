@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 
 import { BiCameraMovie } from "react-icons/bi";
+import { FiMonitor } from "react-icons/fi";
 import { RiHome5Line, RiRoadMapLine } from "react-icons/ri";
 import { AiOutlineQuestion } from "react-icons/ai";
 
@@ -38,6 +39,13 @@ export default function Home() {
               name="Movie Search"
               description="Exercise using Getserversideprops and external API consumption
               for film search."
+            ></TopicDescription>
+          </Topic>
+
+          <Topic link="/plus/ClientSideRendering" logo={<FiMonitor />}>
+            <TopicDescription
+              name="Client Side Rendering"
+              description="Simple component to exemplify the rendering of the client side."
             ></TopicDescription>
           </Topic>
 
