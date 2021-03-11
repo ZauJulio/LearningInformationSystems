@@ -45,7 +45,7 @@ export default function Home() {
           <Topic link="/plus/ClientSideRendering" logo={<FiMonitor />}>
             <TopicDescription
               name="Client Side Rendering"
-              description="Simple component to exemplify the rendering of the client side."
+              description="Simple component to exemplify the rendering of the client side. The map rendering is made using NEXT / Dynamic on the side of the client, reducing the server load for applications of this type."
             ></TopicDescription>
           </Topic>
 

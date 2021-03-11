@@ -10,7 +10,7 @@ export default function ClientSideRendering() {
   return (
     <div className={styles.clientSideContainer}>
       <Head>
-        <title>LeaPWEB - Maria Preá</title>
+        <title>LeaPWEB - Client Side Rendering</title>
       </Head>
       <main>
         <Map />

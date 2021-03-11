@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>LeaPWEB - Maria Preá</title>
+        <title>LeaPWEB - Who is what?</title>
       </Head>
 
       <main>
