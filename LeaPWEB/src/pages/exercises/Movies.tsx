@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import useSWR from "swr";
 
 import { Movie } from "../../components/Movie";
+import FormMovie from "../../components/FormMovie";
 import styles from "../../styles/pages/Movies.module.scss";
+import Pagination from "../../components/Pagination";
 
 interface Rating {
   Source: string;
@@ -37,46 +40,53 @@ export interface MovieData {
   Response: boolean;
 }
 
-interface omdbapiProps {
-  Search: MovieData[];
-  totalResults: string;
-  Response: string;
-}
+export function Movies() {
+  const [titleWanted, setTitleWanted] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalResults, setTotalResults] = useState(0);
 
-interface MoviesProps {
-  data: omdbapiProps;
-}
+  const { data } = useSWR([titleWanted, currentPage], async (u) => {
+    if (titleWanted === "") return { Search: "" };
+    const url = `http://www.omdbapi.com/?apiKey=${process.env.API_KEY}&s=${titleWanted}&page=${currentPage}`;
+    const res = await fetch(url);
+    const json = await res.json();
+    return json;
+  });
 
-export function Movies({ data }: MoviesProps) {
+  function handler(e) {
+    if (e.key === "Enter") setTitleWanted(e.target.value);
+  }
+
+  const MovieNotFound = () => {
+    return <div style={{ justifyContent: "center" }}>Movie Not Found</div>;
+  };
+
+  console.log(data);
+
   return (
-    <div className={styles.moviesContainer}>
+    <div className={styles.moviesPage}>
       <Head>
         <title>LeaPWEB - Movies</title>
       </Head>
       <main>
-        <div className={styles.seekerContainer}></div>
-        {data.Search.map((m) => (
-          <Movie movieData={m}></Movie>
-        ))}
+        <FormMovie name="Title" handler={handler} />
+        <div className={styles.moviesContainer}>
+          {data && data.Search
+            ? data.Search.map((movie: MovieData, index: number) => (
+                <Movie key={index} movieData={movie} />
+              ))
+            : titleWanted !== "" && <MovieNotFound />}
+        </div>
+        {data && data.Search && titleWanted !== "" && (
+          <Pagination
+            total={data.totalResults / 10}
+            current={currentPage}
+            handler={setCurrentPage}
+          />
+        )}
       </main>
     </div>
   );
-}
-
-export async function getServerSideProps(context) {
-  const url = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&plot=full&s=mortal%20kombat`;
-  const res = await fetch(url);
-  const data = await res.json();
-  
-  if (!data) {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    props: { data },
-  };
 }
 
 export default Movies;

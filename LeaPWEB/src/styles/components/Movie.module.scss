@@ -39,20 +39,12 @@
       color: #FFFFFF;
     }
     
-    p {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+    h3 {
+      padding: 0 2rem 0 2rem;
 
-      padding-bottom: 2rem;
-      h3 {
-        padding: 0 2rem 0 2rem;
-  
-        font-family: Roboto;
-        font-style: normal;
-        font-size: medium;
-      }
-
+      font-family: Roboto;
+      font-style: normal;
+      font-size: medium;
     }
   }
 

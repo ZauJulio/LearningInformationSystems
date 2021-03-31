@@ -1,28 +1,33 @@
-.moviesContainer {
+.moviesPage {
   display: flex;
   justify-content: center;
-  
+
   main {
     display: flex;
-
-    @media (max-width: 1080px) {
-      flex-direction: row;
-    }
-    @media (max-width: 720px) {
-      flex-direction: column;
-    }
-    
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    overflow-x: scroll;
-    width: 80vw;
-    
-    gap: 2rem;
-    padding-top: 14rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    gap: 5rem;
 
-    margin-right: 1rem;
-    margin-left: 1rem;
+    .moviesContainer {
+      display: flex;
+      @media (max-width: 1080px) {
+        flex-direction: row;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+      }
+
+      justify-content: space-between;
+      align-items: center;
+
+      overflow-x: scroll;
+      width: 90vw;
+
+      gap: 2rem;
+    }
   }
 }

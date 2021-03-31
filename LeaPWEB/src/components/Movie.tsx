@@ -12,11 +12,9 @@ export function Movie(props: MovieProps) {
     <div className={styles.movieContainer}>
       <div className={styles.infosContainer}>
         <h2>{props.movieData.Title}</h2>
-        <p>
-          <h3>
-            Year: <text>{props.movieData.Year}</text>
-          </h3>
-        </p>
+        <h3>
+          Year: <p>{props.movieData.Year}</p>
+        </h3>
       </div>
       <img src={props.movieData.Poster}></img>
     </div>
