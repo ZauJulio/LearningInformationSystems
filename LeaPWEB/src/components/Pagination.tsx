@@ -22,7 +22,7 @@ const PageNumber = ({ index, handler }) => {
 
 export default function Pagination(props: PaginationProps) {
   var pages = [];
-  console.log(props.total);
+
   for (var i = 1; i <= props.total; i++) {
     if (i === props.current) {
       pages.push(<p key={i}>{i}</p>);
