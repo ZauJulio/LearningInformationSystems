@@ -47,7 +47,7 @@ export function Movies() {
 
   const { data } = useSWR([titleWanted, currentPage], async (u) => {
     if (titleWanted === "") return { Search: "" };
-    const url = `http://www.omdbapi.com/?apiKey=${process.env.API_KEY}&s=${titleWanted}&page=${currentPage}`;
+    const url = `https://www.omdbapi.com/?apiKey=${process.env.API_KEY}&s=${titleWanted}&page=${currentPage}`;
     const res = await fetch(url);
     const json = await res.json();
     return json;
@@ -60,8 +60,6 @@ export function Movies() {
   const MovieNotFound = () => {
     return <div style={{ justifyContent: "center" }}>Movie Not Found</div>;
   };
-
-  console.log(data);
 
   return (
     <div className={styles.moviesPage}>
