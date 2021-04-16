@@ -1,0 +1,9 @@
+[submodule "VowelRecognition"]
+	path = VowelRecognition
+	url = https://github.com/ZauJulio/VowelRecognition.git
+[submodule "LogicGatesPerceptron"]
+	path = LogicGatesPerceptron
+	url = https://github.com/ZauJulio/LogicGatesPerceptron.git
+[submodule "TicTacToe"]
+	path = TicTacToe
+	url = https://github.com/ZauJulio/TicTacToe.git
