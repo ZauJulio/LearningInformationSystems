@@ -5,7 +5,7 @@ Extension of the AI repository with the implementation of the vowel recognition 
 ## How to start
 
 ```console
-  foo@bar ~$ python -m TicTacToe
+  foo@bar ~$ python vowels.py
 ```
 
 ## Made by
