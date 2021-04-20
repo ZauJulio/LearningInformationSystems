@@ -7,3 +7,6 @@
 [submodule "TicTacToe"]
 	path = TicTacToe
 	url = https://github.com/ZauJulio/TicTacToe.git
+[submodule "MLP_Sinc"]
+	path = MLP_Sinc
+	url = https://github.com/ZauJulio/MLP_Sinc.git
