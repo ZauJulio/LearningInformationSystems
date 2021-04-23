@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 sklearn = "*"
 numpy = "*"
+mlxtend = "*"
 
 [dev-packages]
 
