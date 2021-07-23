@@ -1,0 +1,17 @@
+[[source]]
+url = "https://github.com/ZauJulio/LeaATP_III_IA"
+verify_ssl = true
+name = "LeaATP_III_IA"
+author = "ZauJulio"
+
+[packages]
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+ipykernel = "*"
+scikit-learn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
