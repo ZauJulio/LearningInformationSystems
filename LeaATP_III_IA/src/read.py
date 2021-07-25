@@ -97,13 +97,6 @@ sourcesGen02 = {
     )
 }
 
-print(dfWheather01.isna().sum())
-print(dfWheather02.isna().sum())
-print(dfGen01.isna().sum())
-print(dfGen02.isna().sum())
-
-
-
 sourcesDailyYield = {
     "gen01":    utils.group_by_source_date(
         df=dfGen01,
@@ -116,30 +109,30 @@ sourcesDailyYield = {
 }
 
 groupsWeather01 = {
-    "AMBIENT_TEMPERATURE":utils.group_by_date(
+    "AMBIENT_TEMPERATURE": utils.group_by_date(
         df=dfWheather01,
         select_column="AMBIENT_TEMPERATURE"
     ),
-    "MODULE_TEMPERATURE":utils.group_by_date(
+    "MODULE_TEMPERATURE": utils.group_by_date(
         df=dfWheather01,
         select_column="MODULE_TEMPERATURE"
     ),
-    "IRRADIATION":utils.group_by_date(
+    "IRRADIATION": utils.group_by_date(
         df=dfWheather01,
         select_column="IRRADIATION"
     )
 }
 
 groupsWeather02 = {
-    "AMBIENT_TEMPERATURE":utils.group_by_date(
+    "AMBIENT_TEMPERATURE": utils.group_by_date(
         df=dfWheather02,
         select_column="AMBIENT_TEMPERATURE"
     ),
-    "MODULE_TEMPERATURE":utils.group_by_date(
+    "MODULE_TEMPERATURE": utils.group_by_date(
         df=dfWheather02,
         select_column="MODULE_TEMPERATURE"
     ),
-    "IRRADIATION":utils.group_by_date(
+    "IRRADIATION": utils.group_by_date(
         df=dfWheather02,
         select_column="IRRADIATION"
     )
@@ -152,3 +145,52 @@ groupsWeather02 = {
 #     2: utils.group_by_weekday(dfGen01)
 # }
 
+
+def interpolate_by_group_source(dfDict: dict):
+    """"""
+    groupDf = {}
+
+    for _type, _dict in dfDict.items():
+        
+        groupDf[_type] = {}
+
+        for _source, _group in _dict.items():
+            df = _group.copy(deep=True)
+            df.index = pd.to_datetime(df.index,  format='%H:%M:%S')
+            
+            df.interpolate(
+                method="time", inplace=True)
+            
+            df.interpolate(
+                method="linear", axis=1, inplace=True)
+                
+            groupDf[_type][_source] = df
+
+    return groupDf
+
+
+sourcesGen01Cleaned = interpolate_by_group_source(sourcesGen01)
+sourcesGen02Cleaned = interpolate_by_group_source(sourcesGen02)
+
+
+def interpolate_by_group(dfDict: dict):
+    """"""
+    groupDf = {}
+
+    for _type, _df in dfDict.items():
+        
+        df = _df.copy(deep=True)
+        df.index = pd.to_datetime(df.index,  format='%H:%M:%S')
+        
+        df.interpolate(
+            method="time", inplace=True)
+        
+        df.interpolate(
+            method="linear", axis=1, inplace=True)
+            
+        groupDf[_type] = df
+
+    return groupDf
+
+groupsWeather01Cleaned = interpolate_by_group(groupsWeather01)
+groupsWeather02Cleaned = interpolate_by_group(groupsWeather02)
