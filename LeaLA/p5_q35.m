@@ -10,14 +10,16 @@ A = [
 ];
 
 
-rref(A)
+format rat
+
+rA = rref(A)
 
 C = A(:,[1,2,4,6]) % Col A - C
 N = null(A) % Null A - N 
-R = rref(transpose(A)) % Row A - R
+R = rA([1,2,3],:) % Row A - R
 
 % B)
 
-M = transpose(N)
+M = null(transpose(A))
 S = [transpose(R), N]
 T = [C M]
