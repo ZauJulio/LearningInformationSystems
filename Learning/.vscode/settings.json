@@ -1,0 +1,14 @@
+{
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#e7e7e799",
+    "titleBar.activeBackground": "#527480",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#52748099",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "tab.activeBorder": "#67909e"
+  },
+  "peacock.color": "#527480",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "C_Cpp.errorSquiggles": "enabled"
+}
