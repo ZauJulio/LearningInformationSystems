@@ -347,4 +347,4 @@ Call functions and get results.
 ~ graphya query <file-path.gripy> <function> <args>
 ```
 
-e.g. `graphya query is:family:tree?`
+e.g. `graphya query main.gripy is:family:tree?`
