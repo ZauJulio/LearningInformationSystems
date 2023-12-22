@@ -21,6 +21,7 @@
 # Defining a predicate is done by using the:
 # noun followed by the verb and direction of the verb. like:
 # noun <verb> noun
+# 
 # The direction of the verb is defined by the following symbols:
 # <verb> : Verb is directed towards the noun
 # <verb- : Verb is directed a left from the noun
@@ -29,22 +30,3 @@
 romeo <love> juliet;
 paris -love> juliet;
 romeo -hate> paris;
-
-# Def: Adjective
-################
-# Adjectives are defined with name and a list of possible verbs
-# that can be used to modify them.
-# Adjectives can be used as subjects or objects in a sentence.
-# 
-
-:A: beautiful [love];
-:A: ugly;
-:A: hated [hate];
-
-# Def: Adverb
-################
-# Adverbs are defined with name and a list of possible verbs
-
-:D: very <- beautiful, ugly, hated;
-:D: not <- ugly, hated;
-:D: little <- beautiful, ugly;

@@ -54,7 +54,7 @@ query(most_distant_ancestor(X)) :- oldest_ancestor(X, _);
 // busca recursiva para encontrar um caminho evitando ciclos, calculando o peso total do caminho.
 findAPath(X, Y, W, [X,Y], _) :- edge(X, Y, W);
 findAPath(X, Y, W, [X|P], V) :-
-  \+ member(X, V),
+  member(X, V),
   edge(X, Z, W1),
   findAPath(Z, Y, W2, P, [X|V]),
   W is W1 + W2;
@@ -64,7 +64,7 @@ findAPath(X, Y, W, [X|P], V) :-
 node(city);
 node(distance);
 
-// Definição de arestas (relacionamentos)
+// Definição de arestas
 edge(connects, city_a, city_b, 10);
 edge(connects, city_b, city_c, 15);
 edge(connects, city_a, city_d, 5);
@@ -75,7 +75,7 @@ edge(connects, city_f, city_g, 20);
 // Exemplo de consulta para encontrar um caminho entre city_a e city_g com o menor peso
 query(gps(city_a, city_g, Weight, Path, [])) :- findAPath(city_a, city_g, Weight, _, []);
 
-?- findapath(city_a, city_g, Weight, Path, []);
+?- findAPath(city_a, city_g, Weight, Path, []);
 
 ////////////////////  Script  ////////////////////
 \`\md
