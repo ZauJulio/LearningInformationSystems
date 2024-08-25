@@ -76,59 +76,76 @@ class MLP:
 
     def forward(self, X: np.ndarray) -> np.ndarray:
         """
-        Perform forward propagation.
+        Perform forward propagation to compute the output of the network.
 
         Args:
-            X (np.ndarray): Input data.
+            X (np.ndarray): Input data of shape (n_samples, n_features).
 
         Returns:
-            np.ndarray: Output of the MLP.
+            np.ndarray: Output of the MLP after forward propagation.
         """
+        # Initialize activations list with the input data.
         self.a = [X]
+        # Initialize acc of linear combinations (z) for each layer.
         self.z = []
 
+        # Iterate over each layer's weights and biases.
         for W, b in zip(self.weights, self.biases):
+            # Compute the linear combination (z = a_prev * W + b).
             z = np.dot(self.a[-1], W) + b
             a = self.activation(z)
 
             self.z.append(z)
             self.a.append(a)
 
+        # Return the final activation, which is the output of the MLP.
         return self.a[-1]
 
     def backward(self, X: np.ndarray, y: np.ndarray) -> None:
         """
-        Perform backpropagation and update weights.
+        Perform backpropagation to compute the gradient and update weights.
 
         Args:
-            X (np.ndarray): Input data.
-            y (np.ndarray): Target data.
+            X (np.ndarray): Input data of shape (n_samples, n_features).
+            y (np.ndarray): True labels of shape (n_samples, n_output).
 
         Returns:
             None
         """
+        # Number of samples in the batch.
         m = y.shape[0]
+        # Compute the gradient of the loss with respect to the output (dL/da).
         d_a = np.subtract(self.a[-1], y)
+        # Compute the gradient of the loss with respect to the linear combination (z)
+        # at the output layer (dL/dz).
         d_z = d_a * self.activation_derivative(self.a[-1])
 
         d_weights = []
         d_biases = []
 
+        # Iterate backward through the layers to compute gradients.
         for i in reversed(range(len(self.weights))):
+            # Compute the gradient of the loss with respect to the weights (dL/dW).
             d_w = np.dot(self.a[i].T, d_z) / m
+            # Compute the gradient of the loss with respect to the biases (dL/db).
             d_b = np.sum(d_z, axis=0, keepdims=True) / m
 
             d_weights.append(d_w)
             d_biases.append(d_b)
 
+            # Compute the gradient of the loss with respect to the activations of the
+            # previous layer, if not at the input layer.
             if i > 0:
                 d_a = np.dot(d_z, self.weights[i].T)
+                # Compute the gradient of the loss with respect to the linear combination
+                # (z) of the previous layer.
                 d_z = d_a * self.activation_derivative(self.a[i])
 
+        # Reverse the gradients lists to align with the forward pass.
         d_weights.reverse()
         d_biases.reverse()
 
-        # Update weights and biases
+        # Update the weights and biases using the computed gradients.
         for i in range(len(self.weights)):
             self.weights[i] -= self.learning_rate * d_weights[i]
             self.biases[i] -= self.learning_rate * d_biases[i]
