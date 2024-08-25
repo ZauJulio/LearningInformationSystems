@@ -58,9 +58,9 @@ def filtro_lms(x: np.ndarray, d: np.ndarray, mu: float, num_coef: int) -> np.nda
         np.ndarray: Sinal estimado pelo filtro LMS.
     """
     n_samples = len(x)
-    h = np.zeros(num_coef)
-    y_lms = np.zeros(n_samples)
-    e_lms = np.zeros(n_samples)
+    h = np.zeros(num_coef)  # Inicializando os pesos do filtro
+    y_lms = np.zeros(n_samples)  # Sinal estimado pelo LMS
+    e_lms = np.zeros(n_samples)  # Erro entre d(n) e y_lms(n)
 
     # Inicializando o buffer de entrada
     buffer = np.zeros(num_coef)
