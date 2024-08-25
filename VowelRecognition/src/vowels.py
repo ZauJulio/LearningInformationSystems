@@ -14,8 +14,7 @@ y = np.array([keys[label] for label in range(0, 5) for i in range(1000)])
 X = np.array([vowels[i] for i in y])
 
 # Separation of training set and test |30% for testing
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.3, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
 ##################################################
 
 ##################################################
@@ -36,27 +35,17 @@ print("Validation set: ", y_test)
 print("Estimated set: ", y_pred)
 
 # Average accuracy
-print('Accuracy: %.2f %%' % (accuracy_score(y_test, y_pred)*100))
+print("Accuracy: %.2f %%" % (accuracy_score(y_test, y_pred) * 100))
 
 print("\nSimple Test =>")
 
-print("Labels : ", 'a, i, e, u, o')
-print("Predict: ",
-      clf.predict(
-          [vowels['a'],
-           vowels['i'],
-           vowels['e'],
-           vowels['u'],
-           vowels['o']]
-      ))
+print("Labels : ", "a, i, e, u, o")
+print(
+    "Predict: ",
+    clf.predict([vowels["a"], vowels["i"], vowels["e"], vowels["u"], vowels["o"]]),
+)
 
-err1 = [[
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1
-]]
+err1 = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
 
 print("Error attempt - all 1: ", err1)
 print("Classification      :", clf.predict(err1))
