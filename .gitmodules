@@ -2,3 +2,7 @@
 	path = Taskiano
 	url = git@github.com:ZauJulio/Taskiano.git
 	branch = main
+[submodule "CutTheChase"]
+	path = CutTheChase
+	url = git@github.com:ZauJulio/CutTheChase.git
+	branch = master
