@@ -64,10 +64,10 @@ git clone --recurse-submodules git@github.com:ZauJulio/LearningInformationSystem
 ### Projects
 | Folder | Content |
 |---|---|
-| [`Sig-Library`](./Sig-Library) | Library-management system prototype (programming course, BSI) |
+| [`Sig-Library`](./Sig-Library) | Library-management system prototype (Programming course, DCT1106) |
 | [`graphya`](./graphya) | Programming language for knowledge extraction |
 | [`Taskiano`](./Taskiano) ↗️ | To-do application — **git submodule** → [`ZauJulio/Taskiano`](https://github.com/ZauJulio/Taskiano) |
-| [`CutTheChase`](./CutTheChase) ↗️ | Event-map application — **git submodule** → [`ZauJulio/CutTheChase`](https://github.com/ZauJulio/CutTheChase) |
+| [`CutTheChase`](./CutTheChase) ↗️ | Event-map app — Web Programming course (DCT1109) — **git submodule** → [`ZauJulio/CutTheChase`](https://github.com/ZauJulio/CutTheChase) |
 
 🔒 = sourced from a private repository · ↗️ = git submodule
 
