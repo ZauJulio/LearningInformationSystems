@@ -37,6 +37,8 @@ preservados.
 | `VowelRecognition` | ZauJulio/VowelRecognition | público | 8 | — |
 | `LogicGatesPerceptron` | ZauJulio/LogicGatesPerceptron | público | 8 | — |
 | `LeaATP_III_IA` | ZauJulio/LeaATP_III_IA | público | 6 | ✅ `reconcile` (RegressorTestBase.ipynb + read.py) |
+| `Sig-Library` | ZauJulio/Sig-Library (fork) | público | 49 | — (sem cópia local) |
+| `Taskiano` | ZauJulio/Taskiano (fork) | público | 819 | ✅ `reconcile` (cópia local de 03_Projetos/Taskiano) |
 
 > Nota: `LeaIA` referenciava `LogicGatesPerceptron`, `MLP_Sinc`, `TicTacToe` e
 > `VowelRecognition` como submódulos (gitlinks vazios preservados em `.gitmodules`). O conteúdo

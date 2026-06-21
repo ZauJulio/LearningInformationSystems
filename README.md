@@ -45,6 +45,12 @@ originais). Cada pasta de topo corresponde a um repositório/projeto de origem e
 | `VowelRecognition` | Reconhecimento de vogais (Sklearn) |
 | `LogicGatesPerceptron` | Perceptron para portas lógicas |
 
+### Projetos
+| Pasta | Conteúdo |
+|---|---|
+| `Sig-Library` | Protótipo de sistema de controle de biblioteca (disciplina de programação, BSI) |
+| `Taskiano` | Aplicativo de tarefas / to-do |
+
 ## Rastreabilidade
 
 - Histórico por pasta: `git log -- <Pasta>/`
