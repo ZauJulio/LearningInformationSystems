@@ -1,0 +1,158 @@
+@import '../../styles/vars.scss';
+
+.topbarContainer {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+
+  @include flex-box($justify: space-between, $align: center);
+
+  height: 5rem;
+  width: 100vw;
+  background: $dark;
+
+  padding: 0 3rem;
+  border-bottom: 1px solid $gray;
+
+  &:before {
+    content: '';
+  }
+
+  .searchBar {
+    width: 40%;
+    height: 3rem;
+
+    padding-right: 1.5rem;
+    border-radius: 50px;
+    background: rgba(121, 121, 121, 0.15);
+
+    @include font-raleway($size: 1.3rem);
+    text-align: end;
+    justify-self: center;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: rgba(121, 121, 121, 0.25);
+      &::placeholder {
+        color: #a3a3a3;
+      }
+    }
+
+    &::placeholder {
+      @include font-raleway($size: 1.3rem);
+
+      color: $gray;
+      text-align: end;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .userAvatar {
+    position: relative;
+
+    @include flex-box($justify: center, $align: center);
+    justify-self: flex-end;
+
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+
+    img,
+    svg {
+      @include max-size-percent();
+      box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.4);
+      filter: 2px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #8090af;
+        filter: 0px 4px 4px rgba(0, 0, 0, 0.8);
+        box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    svg {
+      color: $gray;
+    }
+
+    &:hover {
+      .userOptionsOverlay {
+        height: fit-content;
+        opacity: 1;
+      }
+    }
+
+    .userOptionsOverlay {
+      position: absolute;
+      @include flex-box(
+        $justify: space-around,
+        $align: center,
+        $direction: column
+      );
+
+      top: 3.5rem;
+      right: -0.5rem;
+      width: 10rem;
+      z-index: 10;
+      gap: 1rem;
+
+      background: $darker;
+      box-shadow: 0px 0px 4px 4px #1a1d24;
+      border-radius: 10px;
+
+      height: 0;
+      opacity: 0;
+      transition: height 0.3s ease;
+
+      .userInfo {
+        @include flex-box($justify: center, $align: center, $direction: column);
+        text-align: end;
+        width: 80%;
+        height: 100%;
+        color: $white;
+
+        padding: 1rem 0 2rem;
+
+        .userName,
+        .userEmail {
+          @include font-raleway($size: 0.9rem);
+          text-align: end;
+          width: 100%;
+          color: $white;
+        }
+      }
+
+      .options {
+        width: 100%;
+
+        button {
+          @include flex-box($justify: center, $align: center);
+          color: $white;
+          background: $dark;
+          padding: 0.5rem 1rem;
+          transition: all 0.3s ease;
+
+          width: 100%;
+          height: 2.5rem;
+          border-top: 3px solid $darker;
+
+          &:hover {
+            filter: brightness(1.2);
+          }
+
+          &:last-of-type {
+            border-radius: 0px 0px 10px 10px;
+          }
+        }
+
+        .deleteAccount {
+          &:hover {
+            background: $red;
+          }
+        }
+      }
+    }
+  }
+}
