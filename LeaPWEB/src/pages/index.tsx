@@ -50,7 +50,7 @@ export default function Home() {
           </Topic>
 
           <Topic
-            href="http://cutthechase.com.br/"
+            href="https://cut-the-chase-zaujulio.vercel.app/"
             logo={<RiRoadMapLine />}
           >
             <TopicDescription
