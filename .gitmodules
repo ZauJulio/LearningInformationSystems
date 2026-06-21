@@ -1,0 +1,4 @@
+[submodule "Taskiano"]
+	path = Taskiano
+	url = git@github.com:ZauJulio/Taskiano.git
+	branch = main

@@ -37,10 +37,20 @@ preservados.
 | `VowelRecognition` | ZauJulio/VowelRecognition | público | 8 | — |
 | `LogicGatesPerceptron` | ZauJulio/LogicGatesPerceptron | público | 8 | — |
 | `LeaATP_III_IA` | ZauJulio/LeaATP_III_IA | público | 6 | ✅ `reconcile` (RegressorTestBase.ipynb + read.py) |
+| `Sig-Library` | ZauJulio/Sig-Library (fork) | público | 49 | — (projeto em grupo; sem cópia local) |
 
 > Nota: `LeaIA` referenciava `LogicGatesPerceptron`, `MLP_Sinc`, `TicTacToe` e
 > `VowelRecognition` como submódulos (gitlinks vazios preservados em `.gitmodules`). O conteúdo
 > real desses projetos está nas pastas de topo homônimas deste repositório.
+
+## Submódulos (git submodule)
+
+Projetos ainda em evolução são referenciados como submódulo (não vendorizados), mantendo o
+histórico no repositório de origem.
+
+| Pasta | Submódulo → | Branch |
+|---|---|---|
+| `Taskiano` | `git@github.com:ZauJulio/Taskiano.git` | `main` |
 
 ## Pastas locais sem repositório prévio no GitHub
 
