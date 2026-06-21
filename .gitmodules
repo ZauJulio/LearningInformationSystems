@@ -3,6 +3,6 @@
 	url = git@github.com:ZauJulio/Taskiano.git
 	branch = main
 [submodule "CutTheChase"]
-	path = CutTheChase
+	path = LeaPWEB/CutTheChase
 	url = git@github.com:ZauJulio/CutTheChase.git
 	branch = master

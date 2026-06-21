@@ -16,7 +16,16 @@
 
 ## 📖 Context
 
-Exercises and experiments from the AI course: state-space **search**, **reinforcement learning**, and logic programming in **Prolog**, plus a `learning` module. Originally referenced TicTacToe, MLP_Sinc, VowelRecognition and LogicGatesPerceptron as submodules — now sibling folders in this archive.
+Exercises and experiments from the AI course: state-space **search**, **reinforcement learning**, and logic programming in **Prolog**, plus a `learning` module.
+
+### Sub-projects (AI extensions)
+
+Originally separate "extensions of the AI repository", now nested here under their discipline:
+
+- [`TicTacToe`](./TicTacToe) — tic-tac-toe agent
+- [`MLP_Sinc`](./MLP_Sinc) — sinc-function approximation (MLPRegressor)
+- [`VowelRecognition`](./VowelRecognition) — vowel recognition (scikit-learn)
+- [`LogicGatesPerceptron`](./LogicGatesPerceptron) — perceptron for logic gates
 
 
 ---
