@@ -50,16 +50,19 @@ git clone --recurse-submodules git@github.com:ZauJulio/LearningInformationSystem
 | [`LeaLA`](./LeaLA) 🔒 | Linear Algebra |
 | [`LeaSec`](./LeaSec) 🔒 | Security |
 | [`LeaSecClass`](./LeaSecClass) | Security coursework — cryptology, networking, secure code, steganography *(local-only)* |
-| [`LeaCaesarCipher`](./LeaCaesarCipher) | Caesar cipher (Rust) *(local-only)* |
+| [`LeaCaesarCipher`](./LeaCaesarCipher) | Caesar cipher (C) *(local-only)* |
 | [`Learning`](./Learning) | Learning-projects aggregator |
 
 ### AI / Machine Learning
+
+These "extensions of the AI repository" live nested under their discipline folder [`LeaIA`](./LeaIA):
+
 | Folder | Content |
 |---|---|
-| [`TicTacToe`](./TicTacToe) | Tic-tac-toe (AI) |
-| [`MLP_Sinc`](./MLP_Sinc) | Sinc-function approximation (MLPRegressor) |
-| [`VowelRecognition`](./VowelRecognition) | Vowel recognition (scikit-learn) |
-| [`LogicGatesPerceptron`](./LogicGatesPerceptron) | Perceptron for logic gates |
+| [`LeaIA/TicTacToe`](./LeaIA/TicTacToe) | Tic-tac-toe (AI) |
+| [`LeaIA/MLP_Sinc`](./LeaIA/MLP_Sinc) | Sinc-function approximation (MLPRegressor) |
+| [`LeaIA/VowelRecognition`](./LeaIA/VowelRecognition) | Vowel recognition (scikit-learn) |
+| [`LeaIA/LogicGatesPerceptron`](./LeaIA/LogicGatesPerceptron) | Perceptron for logic gates |
 
 ### Projects
 | Folder | Content |
@@ -67,7 +70,8 @@ git clone --recurse-submodules git@github.com:ZauJulio/LearningInformationSystem
 | [`Sig-Library`](./Sig-Library) | Library-management system prototype (Programming course, DCT1106) |
 | [`graphya`](./graphya) | Programming language for knowledge extraction |
 | [`Taskiano`](./Taskiano) ↗️ | To-do application — **git submodule** → [`ZauJulio/Taskiano`](https://github.com/ZauJulio/Taskiano) |
-| [`CutTheChase`](./CutTheChase) ↗️ | Event-map app — Web Programming course (DCT1109) — **git submodule** → [`ZauJulio/CutTheChase`](https://github.com/ZauJulio/CutTheChase) |
+
+> Discipline sub-projects are nested under their course folder — e.g. [`LeaPWEB/CutTheChase`](./LeaPWEB/CutTheChase) (Web Programming) and the AI extensions under [`LeaIA`](./LeaIA).
 
 🔒 = sourced from a private repository · ↗️ = git submodule
 
