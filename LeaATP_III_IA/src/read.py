@@ -4,15 +4,15 @@ import utils
 
 dfGen01, dfGen02, dfWheather01, dfWheather02 = [
     pd.read_csv(
-        "/home/zau/Desktop/UFRN_S/TAP3_2021.1/data/source/Plant_1_Generation_Data.csv",
+        "/home/zau/Desktop/Projects/UFRN/LeaATP_III_IA/data/source/Plant_1_Generation_Data.csv",
         index_col="SOURCE_KEY"),
     pd.read_csv(
-        "/home/zau/Desktop/UFRN_S/TAP3_2021.1/data/source/Plant_2_Generation_Data.csv",
+        "/home/zau/Desktop/Projects/UFRN/LeaATP_III_IA/data/source/Plant_2_Generation_Data.csv",
         index_col="SOURCE_KEY"),
     pd.read_csv(
-        "/home/zau/Desktop/UFRN_S/TAP3_2021.1/data/source/Plant_1_Weather_Sensor_Data.csv"),
+        "/home/zau/Desktop/Projects/UFRN/LeaATP_III_IA/data/source/Plant_1_Weather_Sensor_Data.csv"),
     pd.read_csv(
-        "/home/zau/Desktop/UFRN_S/TAP3_2021.1/data/source/Plant_2_Weather_Sensor_Data.csv")
+        "/home/zau/Desktop/Projects/UFRN/LeaATP_III_IA/data/source/Plant_2_Weather_Sensor_Data.csv")
 ]
 
 # Removing the Plant_ID column (contains the same value throughout the dataset)
