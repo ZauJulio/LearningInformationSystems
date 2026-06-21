@@ -1,34 +1,24 @@
-# LeaAdvancedTopicsProgramming3IA
+# LeaATP_III_IA
 
-Repository of the Advanced Topics in Programming III (IA) discipline of the Information Systems program - UFRN.
+> Machine-learning coursework for Advanced Topics in Programming III.
 
-## About
+## 📋 Overview
 
-- Python v. 3.9.6
+| | |
+|---|---|
+| **Type** | Course project |
+| **Discipline** | Advanced Topics in Programming III — AI track (DCT4403) — Profs. Huliane Medeiros da Silva & Karliane M. O. Vale |
+| **Academic period** | 2021.1 (APRN) |
+| **Created** | 2021-07-22 |
+| **Status** | ✅ Completed |
+| **Language(s)** | Python, Jupyter Notebook |
+| **Tools / frameworks** | scikit-learn, pandas, Pipfile / requirements.txt |
 
-### How to run this application with virtualenv
+## 📖 Context
 
-#### 1: Install **virtualenv** from pip
+Applied ML notebooks (classification and regression) over real datasets — including solar **plant generation** time series. Includes data sources, slides and task PDFs.
 
-```sh
-user@linux$ pip install virtualenv
-```
+> 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
 
-#### 2: Create python virtual enviroment environment
-
-```sh
-user@linux$ virtualenv py_env --python=python3
-```
-
-#### 3: Enter the virtual environment
-
-```sh
-user@linux$ source py_env/bin/activate
-
-```
-
-#### 4: Install requirements from file
-
-```sh
-user@linux$ pip install -r requirements.txt
-```
+---
+*Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

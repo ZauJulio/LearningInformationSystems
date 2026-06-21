@@ -1,19 +1,24 @@
 # MLP_Sinc
 
-Extension of the AI repository with the implementation of the sinc function approximation using Sklearn MLPRegressor
+> Sinc-function approximation with a neural network.
 
-## How to start
+## 📋 Overview
 
-```sh
-  foo@bar ~/MLP_Sinc/src$ python main.py
-  or
-  foo@bar ~/MLP_Sinc/src$ python poly_reg_comp.py
-```
+| | |
+|---|---|
+| **Type** | Course project (AI/ML extension) |
+| **Discipline** | Artificial Intelligence (DCT1401) / Machine Learning (DCT2602) |
+| **Academic period** | 2021.1 · revisited 2024.1 |
+| **Created** | 2021-04-20 |
+| **Status** | ✅ Completed |
+| **Language(s)** | Python |
+| **Tools / frameworks** | scikit-learn (MLPRegressor), Pipfile / requirements.txt |
 
-## Made by
+## 📖 Context
 
-<p align="center">
-  <br />
-  ZauJulio ❤️
-  <br />
-</p>
+Approximation of the **sinc** function using a Multi-Layer Perceptron regressor, exploring network sizing and training behaviour.
+
+> 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+
+---
+*Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*
