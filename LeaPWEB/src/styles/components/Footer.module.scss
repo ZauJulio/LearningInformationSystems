@@ -1,0 +1,30 @@
+.footerContainer {
+  z-index: 1000;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3rem;
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(97.28deg, var(--header) 59.08%, #1C4370 81.54%, var(--footer) 87.46%);
+
+  a {
+    img {
+      display: block;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  p {
+    padding-right: 1.5rem;
+
+    font-size: 1rem;
+  }
+}
