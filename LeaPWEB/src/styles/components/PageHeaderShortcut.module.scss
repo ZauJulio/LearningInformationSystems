@@ -1,0 +1,21 @@
+.headerShortcutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    cursor: pointer;
+  }
+
+  svg {
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  
+  p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
