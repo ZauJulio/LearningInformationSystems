@@ -1,15 +1,4 @@
-# LeaIA
+# class-ai
+Artificial Intelligence Class Repository
 
-Repository of the artificial intelligence discipline of the Information Systems program - UFRN.
-
-## About
-
-Each separate example in mudol / repositorium hosted here in Github and online examples in Replit.
-
-## Made by
-
-<p align="center">
-  <br />
-  ZauJulio ❤️
-  <br />
-</p>
+For class experiments visit the [Wiki](https://github.com/jpzm/class-ai/wiki).
