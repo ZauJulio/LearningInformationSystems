@@ -1,17 +1,24 @@
 # LogicGatesPerceptron
 
-Extension of the AI repository with the implementation of the simple representation of the weights of a ANN that has learned logic gates
+> A perceptron that learns logic gates.
 
-## How to start
+## 📋 Overview
 
-```console
-  foo@bar ~/LogicGatesPerceptron/src$ python logic_gates.py
-```
+| | |
+|---|---|
+| **Type** | Course project (AI/ML extension) |
+| **Discipline** | Artificial Intelligence (DCT1401) / Machine Learning (DCT2602) |
+| **Academic period** | 2021.1 · revisited 2024.1 |
+| **Created** | 2021-04-16 |
+| **Status** | ✅ Completed |
+| **Language(s)** | Python |
+| **Tools / frameworks** | scikit-learn, NumPy, Pipfile / requirements.txt |
 
-## Made by
+## 📖 Context
 
-<p align="center">
-  <br />
-  ZauJulio ❤️
-  <br />
-</p>
+Simple visual representation of the **weights** learned by an artificial neural network trained on logic gates (AND/OR/…).
+
+> 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+
+---
+*Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

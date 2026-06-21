@@ -1,19 +1,24 @@
 # TicTacToe
 
-## About
+> Tic-tac-toe agent — extension of the AI coursework.
 
-Simple implementation of TicTacToe game in Python using console, with a simple deep search algorithm and victory strategy. Made for the Discipline, from the Bachelor's College in Information Systems - UFRN.
+## 📋 Overview
 
-## How to start
+| | |
+|---|---|
+| **Type** | Course project (AI extension) |
+| **Discipline** | Artificial Intelligence (DCT1401) |
+| **Academic period** | 2020.2 / built 2021.1 |
+| **Created** | 2021-04-16 |
+| **Status** | ✅ Completed |
+| **Language(s)** | Python |
+| **Tools / frameworks** | — |
 
-```console
-  foo@bar ~$ python -m TicTacToe
-```
+## 📖 Context
 
-## Made by
+Implementation of the tic-tac-toe game and its decision logic, developed as an extension of the Artificial Intelligence repository.
 
-<p align="center">
-  <br />
-  ZauJulio ❤️
-  <br />
-</p>
+> 📎 Original notes preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+
+---
+*Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*
