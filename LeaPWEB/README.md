@@ -18,6 +18,9 @@
 
 Web programming exercises built with **React/Next.js** and SCSS — pagination, a movies page and other components. Top-graded coursework (10.0).
 
+### Related project
+
+- [`CutTheChase`](./CutTheChase) ↗️ — events-map web app (TypeScript / Next.js) built for this same Web Programming course (DCT1109). Included as a **git submodule** → [`ZauJulio/CutTheChase`](https://github.com/ZauJulio/CutTheChase).
 
 ---
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*
