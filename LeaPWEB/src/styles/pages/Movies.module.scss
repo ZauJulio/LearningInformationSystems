@@ -1,0 +1,33 @@
+.moviesPage {
+  display: flex;
+  justify-content: center;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    gap: 5rem;
+
+    .moviesContainer {
+      display: flex;
+      @media (max-width: 1080px) {
+        flex-direction: row;
+      }
+      @media (max-width: 720px) {
+        flex-direction: column;
+      }
+
+      justify-content: space-between;
+      align-items: center;
+
+      overflow-x: scroll;
+      width: 90vw;
+
+      gap: 2rem;
+    }
+  }
+}
