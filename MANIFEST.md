@@ -10,13 +10,16 @@ repository was preserved. Source repositories were **not deleted** — they rema
   `git filter-repo --to-subdirectory-filter` and merged with `git merge --allow-unrelated-histories`.
   `git log -- <folder>/` and `git blame` work natively.
 - **Submodules** — still-evolving projects are referenced as git submodules (not vendored).
-- **Course materials** — slides/notes/assignments extracted from local course archives
-  (`UFRN_S/01_Disciplinas`) into each discipline's `course-materials/`. **Exams are excluded.**
-- **Local-only** — folders that never had a prior repository were imported as-is.
+- **Local-only material** — course slides/notes/assignments and exams are kept **locally**
+  (in `UFRN_S/01_Disciplinas`) and are **not committed** here (`course-materials/`, `exams/`,
+  videos and virtualenvs are git-ignored). Only code, project files and docs are tracked.
+- **Local-only folders** — content that never had a prior repository was imported as-is.
 
 ## Disciplines (folder → source)
 
-| Folder (discipline) | Code | Source repo | History | Course materials |
+> Legend — **Local materials**: ✅ means slides/exams exist **locally** (git-ignored, not committed).
+
+| Folder (discipline) | Code | Source repo | History | Local materials |
 |---|---|---|---|---|
 | `DCT0008-data-structures` | DCT0008 | ZauJulio/LeaDataStructures | vendored | ✅ (+ YouTube lecture links) |
 | `DCT1010-programming-languages-and-compilers` | DCT1010 | ZauJulio/LeaCompilers (local) + `graphya` | vendored | — |
@@ -25,6 +28,7 @@ repository was preserved. Source repositories were **not deleted** — they rema
 | `DCT1109-web-programming` | DCT1109 | ZauJulio/LeaPWEB (+ `CutTheChase` submodule) | vendored | — |
 | `DCT1304-linear-algebra` | DCT1304 | ZauJulio/LeaLA 🔒 | vendored | ✅ |
 | `DCT1401-artificial-intelligence` | DCT1401 | ZauJulio/LeaIA (+ AI extensions) | vendored | ✅ |
+| `SIPGM046-special-topics-in-artificial-intelligence` | SIPGM046 | — (elective @ UFRA, mobility) | — | ✅ |
 | `DCT2101-operating-systems` | DCT2101 | ZauJulio/LeaOperationalSystems | vendored | ✅ |
 | `DCT2202-database-design-and-administration` | DCT2202 | local-only | imported | ✅ |
 | `DCT2403-decision-support-systems` | DCT2403 | ZauJulio/LeaSAD | vendored | — |

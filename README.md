@@ -49,6 +49,7 @@ git clone --recurse-submodules git@github.com:ZauJulio/LearningInformationSystem
 | Folder | Discipline |
 |---|---|
 | [`DCT1401-artificial-intelligence`](./DCT1401-artificial-intelligence) | Artificial Intelligence (+ AI extensions) |
+| [`SIPGM046-special-topics-in-artificial-intelligence`](./SIPGM046-special-topics-in-artificial-intelligence) | Special Topics in AI — Deep Learning *(elective, UFRA mobility)* |
 | [`DCT2602-machine-learning`](./DCT2602-machine-learning) | Machine Learning |
 | [`DCT2403-decision-support-systems`](./DCT2403-decision-support-systems) | Decision Support Systems |
 | [`DCT2201-databases`](./DCT2201-databases) | Databases |
@@ -82,5 +83,6 @@ git submodule update --init --recursive  # populate submodules
 
 Folder origins, submodules and integration details: [`MANIFEST.md`](./MANIFEST.md).
 
-> 📌 Exams and heavy media (videos, virtualenvs) are excluded via `.gitignore`; video
-> lectures are linked to their source instead of stored.
+> 📌 Course slides/materials, exams and heavy media (videos, virtualenvs) are kept **locally**
+> and excluded via `.gitignore` — only code, project files and docs are committed. Video
+> lectures are linked to their source (see the relevant `VIDEO_LECTURES.md`).

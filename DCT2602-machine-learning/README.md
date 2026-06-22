@@ -1,22 +1,21 @@
-# Learning
+# Machine Learning
 
-> Aggregator of academic & professional learning projects.
+> Discipline — Information Systems (BSI), UFRN.
 
 ## 📋 Overview
 
 | | |
 |---|---|
-| **Type** | Aggregator |
-| **Discipline** | incl. Machine Learning (DCT2602, 2024.1) and Programming Languages & Compilers (DCT1010) |
-| **Academic period** | 2023.2 → 2024.1 |
-| **Created** | 2023-12-19 |
-| **Status** | 🗂️ Aggregator (ongoing) |
-| **Language(s)** | Python |
-| **Tools / frameworks** | scikit-learn, Pipfile |
+| **Type** | Course |
+| **Discipline** | Machine Learning (DCT2602) — Prof. João Paulo de Souza Medeiros |
+| **Academic period** | 2024.1 (grade 8.0) |
 
 ## 📖 Context
 
-Umbrella repository originally created to gather several learning projects. Contains Machine Learning (DCT2602) work and Compilers material.
+Neural networks and learning algorithms (MLP, RBF, Hopfield, LMS), plus hyperparameter-combination experiments.
+
+> 📌 Course slides/materials and exams for this discipline are kept **locally** and are
+> **not committed** to this repository.
 
 ---
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

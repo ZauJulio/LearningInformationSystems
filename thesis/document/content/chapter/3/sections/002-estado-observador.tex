@@ -1,0 +1,236 @@
+\section{Observador e Estado}
+\label{sec:3:estado-observador}
+
+A base do \textit{boilerplate} da aplicação é construída com a associação de dois padrões de projeto fundamentais: \textit{Observer} (Observador) e \textit{State} (Estado). Essa seção é ilustrada na Figura~\ref{fig:3:cd-arch} caixa azul, posicionada a direita, com título \textbf{\textit{State}}.
+
+O padrão \textit{Observer} é utilizado para notificar funções de \textit{callback} (funções que executam rotinas específicas utilizadas como parâmetro) quando um determinado contexto é alterado. Já o padrão \textit{State} é empregado para o armazenamento de informações, além de possibilitar a criação de \textit{getters} e \textit{setters} para manipulação eficiente do estado.
+
+Ao associar esses dois padrões a um \textit{Widget}, é possível salvar e manipular o estado de um componente de maneira eficiente, utilizando \textit{handler's} (funções responsáveis por tratar objetos específicos) para gerenciar o estado, e notificações de mudanças por meio de \textit{callback's} fornecidos ao \textit{Observer}. O diagrama de classe ilustrado na Figura~\ref{fig:3:cd-state-observer} demonstra a relação entre as implementações dos padrões de projeto \textit{Observer} e \textit{State}.
+
+\begin{figure}[h!]
+    \centerline{\includesvg[width=1\columnwidth]{image/source/cd-state-observer.svg}}
+    \caption{Diagrama de classe dos padrões Estado e Observador.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:cd-state-observer}
+\end{figure}
+
+A implementação desses padrões de projeto estende-se ao domínio do problema do sistema. Nesse contexto, o estado de um objeto pode assumir dois valores distintos simultaneamente: estado rastreado e estado não rastreado.
+
+O estado rastreado é utilizado para armazenar o contexto concreto do objeto; no entanto, assim que ocorre uma alteração, ele se torna um estado não rastreado, pois as mudanças ainda não foram propagadas para as funções observadoras. Para fins de simplicidade, além das abstrações, os estados são dois dicionários, um para o estado rastreado e outro para o estado não rastreado.
+
+O principal objetivo dessa abordagem é evitar a propagação desnecessária de mudanças no estado. Isso é particularmente útil em situações onde o estado do objeto pode ser alterado várias vezes em um curto intervalo de tempo, como durante a interação do usuário com a interface gráfica ao ajustar os parâmetros de um modelo.
+
+Por exemplo, na implementação desenvolvida, um simples botão de salvar pode ser usado para realizar um \textit{commit} do estado, definindo-o como rastreado e propagando as alterações para o restante do sistema.
+
+Nas subseções seguintes, são apresentados os detalhes da implementação dos padrões de projeto \textit{Observer} e \textit{State}, bem como sua utilização para viabilizar a interação eficiente entre a interface gráfica e o módulo de controle.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Observador}
+
+Na implementação do padrão \textit{Observer}, a classe abstrata \texttt{Observer} é responsável por definir a interface de notificação de mudanças de estado. Essa classe é estendida pela classe \texttt{State}, que armazena o estado do objeto observado e notifica os \textit{handlers} de mudança de estado.
+
+O diagrama da classe \texttt{Observer} é apresentado na Figura~\ref{fig:3:cd-state-observer}. No diagrama, os atributos protegidos são identificados pelo símbolo \texttt{\#}, indicando que não podem ser acessados diretamente. As operações públicas, acessíveis por qualquer classe que herde ou instancie \textit{Observer}, são indicadas com \texttt{+}, enquanto as operações privadas, restritas à própria classe, começam com \texttt{-}. Abaixo, são descritos os atributos e operações da classe \texttt{Observer}.
+
+\subsubsection{Atributos}
+
+Todos os atributos da classe \texttt{Observer} são protegidos, garantindo que não sejam acessados diretamente por outras classes. Seus principais atributos incluem:
+
+\begin{itemize}
+    \item \texttt{\_status}: Indica o estado atual do objeto observado. Os estados possíveis são:
+    \begin{itemize}
+        \item \texttt{idle}: O objeto não está em uso por nenhuma operação.
+        \item \texttt{committing}: O objeto está sendo atualizado.
+        \item \texttt{error}: Ocorreu um erro durante a atualização.
+    \end{itemize}
+    \item \texttt{\_tracked}: Define se o estado do objeto está rastreado (\texttt{True}) ou não (\texttt{False}), ou seja, não houve alterações desde o último \texttt{commit()}.
+    \item \texttt{\_keys}: Armazena as chaves de notificação de mudanças, representando os nomes dos atributos do objeto observado.
+    \item \texttt{\_subscribers}: Um objeto que lista os \textit{handlers} que serão notificados sobre mudanças nos atributos observados, conforme as chaves definidas em \texttt{\_keys}.
+    \item \texttt{\_root\_subscribers}: Contém \textit{handlers} associados às mudanças de contexto do objeto observado, utilizando as seguintes chaves:
+    \begin{itemize}
+        \item \texttt{on\_untrack}: Notifica quando o estado deixa de ser rastreado.
+        \item \texttt{on\_commit}: Notifica quando o estado é rastreado por meio de um \textit{commit()}.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Operações}
+
+As operações da classe \texttt{Observer} estão organizadas em públicas, protegidas e privadas, conforme descrito abaixo:
+
+\paragraph{Operações públicas:}
+\begin{itemize}
+    \item \texttt{\_\_init\_\_}: Inicializa os atributos da classe. Recebe como parâmetro \texttt{annotations}, uma lista de chaves de notificação de mudanças (\texttt{subscriber keys}).
+    \item \texttt{status}: Retorna o estado atual do objeto observado. Acessado como propriedade (\texttt{property}) e somente leitura.
+    \item \texttt{tracked}: Retorna se o estado está sendo rastreado. Propriedade somente leitura, assim como \texttt{status}.
+    \item \texttt{untrack}: Define \texttt{\_tracked} como \texttt{False} e notifica \texttt{\_root\_subscribers} com a chave \texttt{on\_untrack}.
+    \item \texttt{track}: Define \texttt{\_tracked} como \texttt{True} e ajusta o estado para \texttt{idle}.
+    \item \texttt{on\_change}: Adiciona um \textit{handler} de notificação. Recebe como parâmetros:
+    \begin{itemize}
+        \item \texttt{key}: A chave do atributo observado ou de \texttt{\_root\_subscribers}.
+        \item \texttt{handler}: Função de \textit{callback} que recebe os valores antigo e novo do estado.
+    \end{itemize}
+    \item \texttt{commit}: Atualiza todo valor não rastreado, ou alterado, para o objeto rastreado. Notifica \texttt{\_root\_subscribers} com a chave \texttt{on\_commit} e, para cada atributo alterado, notifica os \texttt{\_subscribers} correspondentes.
+
+    \hfill \break
+
+    Por exemplo, um objeto observado qualquer \verb|{ a : 1 }|, possui duas instancias, uma rastreada e outra não rastreada. Uma vez que o atributo \texttt{a} seja alterado para \texttt{2}, os \textit{handlers} de \texttt{a} são notificados, ou seja, as funções de \textit{callback} associadas a chave \texttt{a} são executadas. As funções recebem os valores antigo e novo do estado, \verb|{ a : 1 }| e \verb|{ a : 2 }| respectivamente, permitindo a execução de lógicas específicas para cada atributo.
+
+    Para rastrear a mudança de estado, o método \texttt{commit} sincroniza o estado rastreado com o valor concreto do objeto, notificando os \texttt{\_subscribers} de \texttt{a} e os \texttt{\_root\_subscribers} de \texttt{on\_commit}. Ao realizar um \texttt{commit}, o estado rastreado é atualizado com o valor do estado não rastreado, logo, o atributo \texttt{a} do objeto rastreado passa a ser \texttt{2}.
+\end{itemize}
+
+\paragraph{Operações privadas:}
+\begin{itemize}
+    \item \texttt{\_\_on\_commit}: Define o estado como \texttt{committing} e notifica \texttt{\_root\_subscribers} com a chave \texttt{on\_commit} durante o gerenciamento de contexto com a cláusula \texttt{with}. Ao final da operação, define o estado como \texttt{idle} através de \texttt{track()}.
+\end{itemize}
+
+\paragraph{Operações protegidas:}
+\begin{itemize}
+    \item \texttt{\_notify}: Notifica \texttt{\_subscribers} e \texttt{\_root\_subscribers} sobre mudanças no estado.
+    \item \texttt{\_validate\_keys}: Valida as chaves de notificação recebidas.
+    \item \texttt{\_get\_tracked}, \texttt{\_get\_untracked}, \texttt{\_track\_changes}: Métodos abstratos que devem ser implementados para rastrear mudanças de estado.
+    \begin{itemize}
+        \item \texttt{\_get\_tracked}: Retorna o estado rastreado do objeto observado.
+        \item \texttt{\_get\_untracked}: Retorna o estado não rastreado do objeto observado.
+        \item \texttt{\_track\_changes}: Sincroniza o estado rastreado com o valor concreto do objeto. Recebe como parâmetro o valor do estado não rastreado e a chave do atributo alterado.
+    \end{itemize}
+\end{itemize}
+
+A nomenclatura adotada com \texttt{\_} e \texttt{\_\_} indica que os atributos ou métodos são protegidos, ou privados, respectivamente, seguindo as convenções do Python. Embora seja possível acessar diretamente tais elementos, a prática desaconselha esse uso, contribuindo para uma melhor manutenção do código.
+
+\subsubsection{Exemplo de Implementação}
+
+Como exemplo, uma classe pode herdar de \texttt{Observer} e implementar os métodos abstratos \texttt{\_get\_tracked}, \texttt{\_get\_untracked} e \texttt{\_track\_changes}. Essa classe gerencia dois atributos: \texttt{t\_state} (estado rastreado) e \texttt{ut\_state} (estado não rastreado), que possuem as mesmas chaves, como \texttt{a} e \texttt{b}.
+
+Uma vez que um atributo é alterado e o método \texttt{untrack} é chamado, o estado de \_tracked é alterado para falso e os \texttt{\_root\_subscribers} são notificados com a chave \texttt{on\_untrack}. Quando o método \texttt{commit} é chamado, o estado de \texttt{\_tracked} é alterado para verdadeiro e os \texttt{\_root\_subscribers} são notificados com a chave \texttt{on\_commit}. Além disso, os \texttt{\_subscribers} são notificados com a chave correspondente ao atributo que passou por alteração.
+
+A classe \texttt{State}, que herda de \texttt{Observer}, foi criada para evitar duplicação de código, implementando os métodos abstratos necessários para rastrear mudanças de estado de forma automática e eficiente.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Estado}
+
+A classe \texttt{State} é responsável por armazenar o estado de um objeto e, por meio da herança da classe \texttt{Observer}, notificar \textit{handlers} sobre mudanças no estado. Além de herdar os atributos e métodos da classe \texttt{Observer}, a classe \texttt{State} implementa os métodos abstratos \texttt{\_get\_tracked}, \texttt{\_get\_untracked} e \texttt{\_track\_changes}, permitindo a automação no rastreamento e propagação de mudanças no estado.
+
+O objetivo principal da classe \texttt{State} é simplificar a manipulação de objetos com estados rastreáveis, permitindo que os atributos do estado e os manipuladores associados sejam definidos diretamente na classe derivada. Além disso, ela oferece funcionalidades adicionais para gerenciar, serializar e restaurar estados, otimizando sua integração em sistemas dinâmicos.
+
+\subsubsection{Atributos}
+
+\begin{itemize}
+    \item \texttt{\_state}: Um dicionário que armazena o estado rastreado do objeto observado. É inicializado com os valores fornecidos no momento da criação da classe através das anotações de tipo e dos valores iniciais passados como parâmetro.
+    \item \texttt{\_backup}: Uma cópia temporária do estado rastreado, utilizada para preservar o estado antes de modificações, geralmente em operações envolvendo gerenciamento de contexto.
+\end{itemize}
+
+\subsubsection{Operações}
+
+As operações públicas da classe \texttt{State} incluem:
+
+\begin{itemize}
+    \item \texttt{\_\_init\_\_}: Inicializa o estado rastreado do objeto com os valores fornecidos por parâmetro em um dicionário \textit{State}.
+    \item \texttt{\_\_getitem\_\_}, \texttt{\_\_setattr\_\_}, \texttt{\_\_enter\_\_}, \texttt{\_\_exit\_\_}, \texttt{serialize}, \texttt{reset}, \texttt{load}: Métodos especiais do Python que permitem acessar, atualizar e gerenciar o contexto de execução, respectivamente.
+    \begin{itemize}
+        \item \texttt{\_\_getitem\_\_}: Permite acessar os atributos do estado como itens de um dicionário, utilizando a notação \texttt{state[key]}. Logo, o estado não rastreado é armazenado como atributo da classe que herdou de \texttt{State}, e os rastreados de \texttt{\_state}.
+        \item \texttt{\_\_setattr\_\_}: Atualiza o valor de um atributo no estado não rastreado e dispara os manipuladores de notificação de mudança através da \textit{key} \texttt{on\_untrack}.
+        \item \texttt{\_\_enter\_\_}: Inicia o gerenciamento de contexto, armazenando uma cópia do estado atual em \texttt{\_backup}.
+        \item \texttt{\_\_exit\_\_}: Finaliza o gerenciamento de contexto, restaurando o estado a partir de \texttt{\_backup} em caso de erro.
+    \end{itemize}
+    \item \texttt{serialize}: Retorna uma representação serializável do estado atual, ideal para armazenamento ou transmissão.
+    \item \texttt{reset}: Restaura o estado rastreado para os valores padrão conforme o tipo, como \texttt{0} para inteiros e \texttt{``''} para strings.
+    \item \texttt{load}: Atualiza o estado rastreado com os valores fornecidos no parâmetro dicionário \texttt{value}. Especialmente útil para restaurar estados salvos anteriormente.
+\end{itemize}
+
+As operações protegidas da classe \texttt{State} incluem:
+
+\begin{itemize}
+    \item \texttt{\_get\_untracked}: Retorna uma instância do estado não rastreado, útil para inspeção sem disparar notificações.
+    \item \texttt{\_get\_tracked}: Retorna o estado rastreado atual.
+    \item \texttt{\_track\_changes}: Realiza o rastreamento de mudanças em um atributo específico do estado, recebe como parâmetros a chave do atributo e o valor a ser atualizado.
+    \item \texttt{\_copy}: Retorna uma cópia de um estado fornecido como parâmetro ou de dicionário como parâmetro (\texttt{cls} or \texttt{obj}).
+\end{itemize}
+
+\subsubsection{Uso Prático}
+
+A classe \texttt{State} oferece uma abordagem eficiente para gerenciar estados, integrando rastreamento automático de mudanças com notificação de \textit{handlers}. Esse modelo é especialmente útil em sistemas que dependem de estados compartilhados ou precisam sincronizar alterações em diferentes componentes, como interfaces gráficas ou sistemas distribuídos.
+
+Uma das vantagens dessa classe é a possibilidade de agrupar estados em objetos compostos, facilitando a organização e manutenção de sistemas complexos. Por exemplo, em um sistema com módulos distintos — como importação de dados, pré-processamento e treinamento de modelos — os estados de cada módulo podem ser encapsulados em um dicionário \texttt{Context} ou \texttt{Store}. Isso permite que cada módulo gerencie seu próprio estado de forma independente, evitando interferências entre eles e simplificando a manipulação global, através da centralização dos estados.
+
+Embora seja tecnicamente viável compor estados aninhados (ou "estados de estados"), essa prática não é recomendada. Essa abordagem pode introduzir complexidade desnecessária e problemas de sincronização. Em vez disso, estados relacionados devem ser agrupados em um único objeto, promovendo uma interação mais simples e garantindo a consistência dos dados.
+
+Uma recomendação importante é centralizar no domínio de cada estado os \textit{handlers} que gerenciem mudanças específicas. Por exemplo, em um estado responsável por carregar um arquivo, o \textit{handler} associado pode receber o \textit{path} do arquivo e, após um \texttt{commit}, executar a lógica necessária para carregar o arquivo e atualizar um gráfico ou interface de usuário. Para manter a organização e clareza, é sugerido que cada \textit{handler} seja implementado como um método estático da classe derivada de \texttt{State}, seguindo uma convenção de nomenclatura padrão \verb|handle_{id_seq}_{name}|.
+
+Nesta convenção, \texttt{id\_seq} é um número sequencial único que identifica o \textit{handler}, e \texttt{name} é uma descrição clara da função do \textit{handler}. Por exemplo, um \textit{handler} responsável por carregar arquivos poderia ser nomeado como \texttt{handle\_001\_load\_file}. Essa nomenclatura também evita conflitos de nomes, entre estados e com a própria classe \texttt{State}.
+
+Essa abordagem promove consistência, organização e facilita a manutenção de sistemas complexos que utilizam a classe \textit{State}. A seguir é apresentado um exemplo simples e prático do fluxo de interação entre um \textit{Widget} e um estado gerenciado pela classe \texttt{State}.
+
+\footnote{Utiliza-se a convenção \texttt{id\_seq} para identificar a ordem que o \textit{handler} deve ser executado, e \texttt{name} para descrever a função do \textit{handler}. Embora a nomenclatura seja opcional, ela promove a organização e facilita a manutenção de sistemas complexos, além de evitar conflitos de nomes entre estados, \textit{handlers} e a própria classe \texttt{State}.}
+
+\subsubsection{Widgets e Elementos Visuais}
+
+A biblioteca \texttt{GTK} é utilizada para a construção de interfaces gráficas, permitindo a criação de \textit{widgets} (elementos visuais) personalizados e facilitando a interação com o usuário. A classe \texttt{Widget} encapsula os elementos visuais e manipula as interações, utilizando a classe \texttt{State} para monitorar e notificar as mudanças de estado.
+
+A comunicação entre o \texttt{Widget} e o estado ocorre via \textit{handlers} associados a eventos específicos, como cliques em botões ou alterações de valor. Esses \textit{handlers} são definidos em uma classe derivada de \texttt{State} e acionados pelo \texttt{Widget} em resposta a eventos do usuário. Os \textit{widgets} notificam mudanças ou ações por meio de \textit{signals} do \texttt{GTK}, os quais são conectados aos \textit{handlers} correspondentes. Abaixo, são apresentados alguns exemplos de \textit{widgets} e seus respectivos \textit{signals}:
+
+\begin{itemize}
+    \item \texttt{Button}: \texttt{clicked} - Notifica quando o botão é clicado.
+    \item \texttt{Entry}: \texttt{changed} - Notifica quando o texto é alterado.
+    \item \texttt{ComboBox}: \texttt{changed} - Notifica quando o item selecionado é alterado.
+    \item \texttt{CheckButton}: \texttt{toggled} - Notifica quando o botão é alternado.
+\end{itemize}
+
+Quando o usuário interage com um \texttt{Widget}, o \textit{signal} correspondente é acionado, invocando o \textit{handler} associado. Por exemplo:
+
+\begin{center}
+    \begin{lstlisting}[language=Python, caption=Exemplo da conexão do \textit{signal} \texttt{clicked} de um \textit{Widget} e um \textit{handler}., label=lst:3:widget-handler]
+    button.connect("clicked", self.on_button_clicked)
+    
+    def on_button_clicked(self, widget):
+        self.state.handle_001_plot_data()
+        self.state.commit()
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+No código~\ref{lst:3:widget-handler}, o \textit{handler} \texttt{handle\_001\_plot\_data} é executado quando o botão é clicado, realizando a lógica necessária para a plotagem dos dados. Após a execução do \textit{handler}, o estado é atualizado através do método \texttt{commit}, propagando as mudanças para os \textit{handlers} associados. Como o \textit{handler} está inserido no domínio do estado, ele pode acessar informações não rastreadas diretamente com o método \texttt{get\_untracked()} antes da execução do método \texttt{commit()}.
+
+\subsubsection{Exemplo de Interação Widget-Estado}
+
+O fluxograma da interação entre um \texttt{Widget} e um estado gerenciado pela classe \texttt{State} é ilustrado na Figura~\ref{fig:3:cd-state-flowchart}. Neste exemplo, adicionamos uma camada intermediária, o \texttt{Controller}, que gerencia a interação entre o \texttt{Widget} e o estado. O \texttt{Controller} é responsável por conectar os sinais do \texttt{Widget} aos \texttt{setters} do estado, garantindo a correta propagação das mudanças de estado. O \texttt{Controller} também pode conter lógica adicional, como validação de entrada ou formatação de dados, antes de atualizar o estado. A seguir, são descritos os passos do diagrama de sequência.
+
+\begin{figure}[h!]
+    \centerline{\includesvg[width=0.7\columnwidth]{image/source/cd-state-flowchart.svg}}
+    \caption{Diagrama de sequência de interação \textit{Widget}-Estado.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:cd-state-flowchart}
+\end{figure}
+
+\begin{itemize}
+    \item O \textit{signal} de um botão é conectado a um \textit{handler} no \texttt{Controller}.
+
+    \item O \texttt{Controller} assina o estado para receber notificações, \texttt{state.on\_change("on\_untrack", self.on\_untrack)} e \texttt{state.on\_change("on\_commit", self.on\_commit)}.
+
+    \begin{itemize}
+        \item \texttt{on\_untrack}: Adiciona um botão de aplicar alterações à interface do usuário.
+        \item \texttt{on\_commit}: Atualiza a interface do usuário com o novo estado e oculta o botão de aplicar.
+    \end{itemize}
+
+    \item O usuário interage com o \texttt{Widget}, acionando o \textit{signal} \textit{"clicked"}.
+
+    \item O \texttt{Controller} executa a lógica necessária, como validação de entrada ou formatação de dados; após isso, define o valor no estado por meio de um \textit{setter} simples, como \texttt{state.value = value}.
+
+    \item O \texttt{State} notifica os \textit{handlers} associados à chave correspondente, como \texttt{on\_value\_change} e \texttt{on\_untrack}.
+
+    \item O \textit{handler} de \textit{on\_untrack} associado ao \texttt{Controller} executa a lógica necessária, e adiciona a interface do usuário um botão para aplicar as alterações.
+
+    \item O novo botão tem o \textit{signal} conectado a um \textit{handler} no \texttt{Controller}, que executa a chamada para \texttt{state.commit()}.
+
+    \item O usuário interage com o novo \texttt{Widget} do botão, acionando o \textit{signal} \textit{"clicked"}.
+
+    \item O \texttt{Controller} executa a chamada para \texttt{state.commit()}.
+
+    \item O \texttt{State} notifica os \textit{handlers} associados à chave correspondente, como \texttt{on\_commit}.
+
+    \item O \texttt{Controller} executa a lógica necessária, como atualizar a interface do usuário com o novo estado e ocultar o botão de aplicar, já que o estado foi rastreado.
+\end{itemize}
+
+Nesta arquitetura o \texttt{Controller} atua como um intermediário entre o \texttt{Widget} e o estado, gerenciando a interação entre eles e garantindo a correta propagação das mudanças de estado. Essa abordagem promove a separação de responsabilidades e facilita a manutenção e evolução do sistema, tornando-o mais modular e flexível.
+
+A camada de \texttt{Widget} é responsável pela interação com o usuário, definindo os elementos visuais, enquanto o \texttt{Controller} gerencia a lógica de execução e a comunicação com o estado. Desta forma, a lógica de validação, formatação e atualização de dados é centralizada no \texttt{Controller}, simplificando a implementação e garantindo a consistência dos dados.
+
+Além da camada de \texttt{Controller}, podemos adicionar uma camada de \texttt{Module} para gerenciar alterações globais no estado, como aquelas notificadas pelas chaves \texttt{on\_untrack} e \texttt{on\_commit}. Na Seção~\ref{sec:3:controller-module} são apresentados os detalhes da implementação do módulo de controle e sua integração com a interface gráfica.

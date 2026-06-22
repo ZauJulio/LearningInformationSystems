@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INÍCIO CAPÍTULO                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introdução}
+\label{cap:1:introducao}
+
+Neste capítulo objetiva-se apresentar uma visão geral sobre o trabalho desenvolvido, contextualizando o problema, justificando a sua relevância e destacando as contribuições do estudo. Para isso, ele está estruturado da seguinte forma:
+
+Na \textbf{Seção~\ref{sec:1:motivacao}}, é apresentada a motivação que embasa este trabalho. São discutidos os desafios enfrentados na área de análise e processamento de dados, bem como as oportunidades identificadas para a criação de ferramentas que facilitem e otimizem esse processo.
+
+Na \textbf{Seção~\ref{sec:1:objetivos}}, são descritos o objetivo geral e os objetivos específicos do trabalho. Nessa seção é esclarecido o propósito principal da pesquisa e detalha os passos necessários para alcançar os resultados esperados.
+
+Por fim, na \textbf{Seção~\ref{sec:1:contribuicoes}} são listadas as contribuições principais do trabalho, destacando os avanços proporcionados pela solução desenvolvida, tanto no contexto técnico quanto prático. Nela também são descritas as melhorias em termos de acessibilidade, usabilidade e inovação no fluxo de trabalho em análise de dados.
+
+% ========================================================================= %
+\section{Motivação}
+\label{sec:1:motivacao}
+
+O avanço exponencial dos sistemas computacionais resulta em um volume crescente de dados sendo gerados diariamente. Esse cenário cria não apenas desafios, mas também oportunidades para o desenvolvimento de técnicas inovadoras de análise e processamento de dados, com o intuito de transformar grandes quantidades de informações brutas em significativas e úteis \citep{tarapanoff1995tecnicas}.
+
+Essas informações podem ser utilizadas em processos de tomada de decisão, nos quais a imensidão de dados muitas vezes ofusca a percepção dos usuários \citep{han_data_mining}. Tarefas como mineração de dados, classificação e reconhecimento de padrões são exemplos de abordagens capazes de extrair percepções valiosas de grandes volumes de dados.
+
+Essas técnicas encontram aplicação em diversas áreas. Na medicina, por exemplo, é possível identificar doenças com base em exames laboratoriais; na engenharia, detectar falhas em equipamentos; e na segurança, identificar atividades maliciosas em redes de computadores. No entanto, para que essas tarefas sejam realizadas de maneira eficiente, é fundamental que os dados sejam coletados, processados e analisados adequadamente.
+
+No contexto da análise e processamento de dados, as ferramentas disponíveis são majoritariamente de código fechado, dificultando a customização e a integração com outras soluções. Além disso, muitas dessas ferramentas são pagas, tornando seu uso inviável para pesquisadores e pequenas empresas, que frequentemente possuem recursos financeiros limitados.
+
+Para a utilização de ferramentas de código aberto, muitas vezes é necessário conhecimento técnico avançado, criação de \textit{scripts} e configurações manuais, o que pode ser um obstáculo para usuários menos experientes, além de demandar tempo e esforço.
+
+Diante desse contexto, surgiu a oportunidade de desenvolver uma ferramenta de código aberto que seja personalizável e permita a integração com implementações já existentes de algoritmos de processamento de dados. A ferramenta inclui uma interface gráfica para interação, ajuste de parâmetros e visualização dos resultados, e tem como finalidade proporcionar aos usuários a possibilidade de concentrar-se na resolução de seus problemas específicos, sem a necessidade de implementar rotinas básicas e repetitivas.
+
+% ========================================================================= %
+\section{Objetivos}
+\label{sec:1:objetivos}
+
+O objetivo geral deste trabalho é desenvolver uma ferramenta de código aberto para análise e processamento de dados, que seja customizável e extensível, permitindo sua adaptação de forma ágil às necessidades específicas de pesquisadores e desenvolvedores.
+
+\subsection{Objetivos Específicos}
+\label{subsec:1:objetivos-especificos}
+
+Para alcançar o objetivo geral, os seguintes objetivos específicos foram estabelecidos:
+
+\begin{itemize}
+    \item Desenvolver uma interface gráfica intuitiva para a visualização de dados, com um sistema de estados que facilite a interação do usuário;
+    \item Implementar funcionalidades para importação e exportação de dados em múltiplos formatos, garantindo flexibilidade na integração com outras ferramentas;
+    \item Garantir suporte para a integração de qualquer tipo de algoritmo de análise, pré-processamento e processamento de dados, com foco na compatibilidade com bibliotecas externas;
+    \item Projetar e implementar uma estrutura de gerenciamento de modelos para otimizar o treinamento, a validação e a avaliação de algoritmos de processamento de dados e aprendizado de máquina;
+    \item Desenvolver um sistema de compartilhamento de configurações, permitindo que interfaces personalizadas e modelos configurados sejam facilmente reutilizados e distribuídos;
+    \item Criar uma interface de documentação integrada, que seja customizável com tutoriais e exemplos práticos, para auxiliar os usuários na utilização da ferramenta por terceiros em grupos de pesquisa e desenvolvimento;
+\end{itemize}
+
+% ========================================================================= %
+\section{Contribuições}
+\label{sec:1:contribuicoes}
+
+Este trabalho apresenta contribuições para as áreas de visualização, análise e processamento de dados, atendendo tanto a aspectos técnicos quanto práticos. As principais contribuições são:
+
+\begin{itemize}
+    \item \textbf{Interface gráfica do Usuário (\textit{GUI})}: Projeto e implementação de um \textit{framework} ou \textit{boilerplate} baseado em GTK, que facilita a interação com usuários. A interface permite a visualização de dados, ajuste de parâmetros e execução de algoritmos, eliminando a necessidade de conhecimentos avançados em programação de novas UI.
+
+    \item \textbf{Otimização do fluxo de trabalho em análise de dados}: A ferramenta integra funcionalidades como importação e exportação de dados em múltiplos formatos, gerenciamento de modelos e compartilhamento de configurações, promovendo maior eficiência e flexibilidade para equipes de trabalho ou pesquisa. Além disso, disponibiliza uma interface de gerenciamento de modelos com suporte a armazenamento dos parâmetros e reutilização de modelos.
+
+    \item \textbf{Contribuição para a comunidade científica e de desenvolvedores}: Como um projeto de código aberto, a ferramenta fomenta a colaboração e a inovação, permitindo que pesquisadores e desenvolvedores adicionem novas funcionalidades e adaptem a aplicação a problemas específicos.
+
+    \item \textbf{Documentação integrada e colaborativa}: Implementação de uma interface de documentação customizável, que permite registrar e compartilhar experimentos realizados. Essa funcionalidade facilita a replicação de resultados e promove a disseminação de conhecimento entre grupos de pesquisa e desenvolvimento.
+
+    \item \textbf{Base para projetos futuros}: Com uma arquitetura modular, a ferramenta é projetada para suportar expansões e ser aplicada em diferentes domínios. Além de atender à análise de dados, sua estrutura inicial também pode ser adaptada para o desenvolvimento de interfaces gráficas em outros contextos.
+\end{itemize}
+
+% ========================================================================= %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FIM CAPÍTULO                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,145 @@
+\section{Arquitetura}
+\label{sec:3:estrutura-projeto}
+
+Nesta seção, é apresentada a instalação, configuração do projeto e execução, destacando as dependências e ferramentas utilizadas. Em seguida, é descrita a estrutura de arquivos e diretórios do projeto, com ênfase nos principais elementos. Por fim, é apresentada a arquitetura geral do projeto, destacando os principais componentes e suas interações.
+
+\subsection{Instalação e Configuração}
+\label{sec:3:install-configure}
+
+Para melhor compreensão da arquitetura do projeto, é importante conhecer as dependências e ferramentas utilizadas. Para auxiliar no entendimento deste capítulo, a instalação e configuração do projeto são descritas nesta Subseção~\ref{sec:3:install-configure}.
+
+\subsubsection{Importação}
+\label{subsec:3:importacao}
+
+Para obter acesso ao projeto é possível importar a partir do \textbf{GitHub} por meio do comando \verb|git clone git@github.com:ZauJulio/FeaturesAnalyzer.git| ou baixando o arquivo compactado diretamente do repositório. A \textit{branch} \texttt{test} contém a versão utilizada neste trabalho, que pode ser acessada com o comando \verb|git checkout test|.
+
+\newcommand\urlPyproject{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/pyproject.toml}
+\newcommand\urlRequirements{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/requirements.txt}
+
+Após a importação, é necessário instalar as dependências do projeto, que estão listadas no arquivo \href{\urlPyproject}{\underline{pyproject.toml}}\footnote{\url{\urlPyproject}} e \href{\urlRequirements}{\underline{requirements.txt}}\footnote{\url{\urlRequirements}}.
+
+\subsubsection{Instalação}
+\label{subsec:3:instalacao}
+
+Para instalar as dependências do projeto, é recomendado o uso do \href{https://python-poetry.org/docs/#installing-with-pipx}{\underline{poetry}} com \href{https://github.com/pyenv/pyenv?tab=readme-ov-file#installation}{\underline{pyenv}}, que facilita a gestão de dependências e ambientes virtuais. O \texttt{poetry} utiliza os arquivos \texttt{pyproject.toml} e \texttt{poetry.lock} para registrar as configurações e dependências do projeto, garantindo a reprodutibilidade do ambiente em diferentes sistemas e colaboradores.
+
+Com o \texttt{poetry} instalado, as dependências podem ser instaladas com o comando \verb|make prepare|. Caso o comando \texttt{make} não esteja disponível, é possível instalar de acordo com cada distribuição.
+
+\begin{itemize}
+    \item Debian/Raspbian/Ubuntu/Kali: \verb|apt-get install make|
+    \item Alpine: \verb| apk add make|
+    \item Arch: \verb| Linux pacman -S make|
+    \item CentOS: \verb| yum install make|
+    \item Fedora: \verb| dnf install make|
+    \item Windows: \verb| (WSL2)|
+    \item OS X: \verb|brew install make|
+\end{itemize}
+
+Caso o \texttt{poetry} não esteja disponível, as dependências podem ser instaladas manualmente com o \texttt{pip}. Para isso, basta executar o comando \verb|pip install -r requirements.txt| na raiz do projeto.
+
+\subsubsection{Configuração}
+\label{subsec:3:configuracao}
+
+\newcommand\urlEnv{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/.env.example}
+
+Além das dependências, o projeto conta com arquivos de configuração na raiz, como o \texttt{.env.example}, \texttt{mkdocs.yml} e \texttt{ruff.toml}, que facilitam o gerenciamento do ambiente. O arquivo \href{\urlEnv}{\underline{.env.example}}\footnote{\url{\urlEnv}} contém variáveis de ambiente que devem ser configuradas conforme as necessidades do projeto em um novo arquivo \texttt{.env}.
+
+\subsubsection{Execução}
+\label{subsec:3:execucao}
+
+\newcommand\urlMakefile{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/Makefile}
+
+Após a instalação e configuração do projeto, a execução pode ser feita de maneira simplificada com o comando \verb|make run|. Além da instalação e execução, o \texttt{Makefile} conta com outros comandos úteis, como \texttt{lint}, \texttt{serve} e \texttt{migrate-deps} para facilitar o desenvolvimento e manutenção do projeto. Para mais informações, consulte o arquivo \href{\urlMakefile}{\underline{Makefile}}\footnote{\url{\urlMakefile}}.
+
+Uma vez que o projeto foi importado, as dependências instaladas e as configurações realizadas, é possível acompanhar o desenvolvimento deste capítulo com a execução do projeto.
+
+\subsection{Estrutura de Arquivos e Diretórios}
+\label{subsec:3:estrutura-arquivos}
+
+A descrição da arquitetura inicia-se pela organização da estrutura de arquivos do projeto, destacando os diretórios e arquivos mais relevantes. Esta estrutura foi planejada para garantir a modularidade, clareza e facilidade de manutenção do código. Na Figura~\ref{fig:3:dir-files} é apresentada a estrutura de arquivos e diretórios do projeto, detalhada na Lista~\ref{list:3:estrutura-arquivos}, e na Figura~\ref{fig:3:cd-arch} sua arquitetura geral, que será discutida em detalhes nas próximas seções.
+
+\renewcommand*\DTstylecomment{\rmfamily\small\color{gray}\textsc}
+
+\begin{figure}[h!]
+    \dirtree{%
+    .1 src.
+        .2 assets \DTcomment{Arquivos de recursos do projeto}.
+            .3 styles \DTcomment{Estilos globais}.
+            .3 icons \DTcomment{Ícones}.
+        .2 docs \DTcomment{Documentação usada pelo MkDocs}.
+        .2 i18n \DTcomment{Arquivos de internacionalização}.
+        .2 src \DTcomment{Código-fonte do projeto}.
+            .3 context \DTcomment{Estado global}.
+                .4 states/* \DTcomment{Estados com manipuladores}.
+                .4 store.py \DTcomment{Gerenciador de contexto}.
+            .3 models/* \DTcomment{Modelos do projeto, baseados em FAModel}.
+            .3 interfaces \DTcomment{Interfaces do projeto}.
+                .4 application.py \DTcomment{Interface global da aplicação}.
+                .4 controller.py \DTcomment{Manipulador genérico e conexão de sinais}.
+                .4 module.py \DTcomment{Manipulador de sinais de estado raiz}.
+                .4 state.py \DTcomment{Estado genérico}.
+                .4 widget.py \DTcomment{Widget genérico, estende Gtk.Widget}.
+            .3 lib \DTcomment{Bibliotecas do projeto}.
+                .4 model\_manager \DTcomment{Gerenciador de modelos}.
+                .4 orm \DTcomment{ORM tipado com Pydantic e TinyDB}.
+                .4 state\_manager \DTcomment{Gerenciador de estados com Observer}.
+                .4 utils \DTcomment{Utilitários genéricos}.
+                    .5 bin\_.py \DTcomment{Acesso a modelos binários}.
+                    .5 hash.py \DTcomment{Utilitários de hash}.
+                    .5 lock.py \DTcomment{Utilitários para multiprocessamento}.
+                    .5 logger.py \DTcomment{Logger global}.
+                    .5 meta.py \DTcomment{Utilitários de \textit{metaclasses}, como \textit{Singleton}}.
+                    .5 time\_.py \DTcomment{Fusos horários, etc.}.
+                    .5 types\_.py \DTcomment{Tipos para o gerenciador de estados}.
+                    .5 ui.py \DTcomment{Utilitários de interface gráfica}.
+                .4 widget.py \DTcomment{Widget genérico, estende Gtk.Widget}.
+            .3 sdk \DTcomment{SDKs para outros serviços}.
+        .2 .env.example \DTcomment{Exemplo de variáveis de ambiente}.
+        .2 Makefile \DTcomment{Makefile com comandos comuns}.
+        .2 pyproject.toml \DTcomment{Configuração do projeto Python}.
+        .2 requirements.txt \DTcomment{Dependências Python (alternativa ao Poetry)}.
+    }
+    \caption{Estrutura de Arquivos e Diretórios do Projeto.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:dir-files}
+\end{figure}
+
+\newpage
+
+\subsubsection{Descrição Geral}
+
+A estrutura de arquivos segue boas práticas de organização, com destaque para:
+
+\begin{itemize}\label{list:3:estrutura-arquivos}
+    \item \textbf{assets}: Armazena arquivos de recursos visuais, como estilos e ícones.
+
+    \item \textbf{docs}: Contém a documentação do projeto, que pode ser gerada com ferramentas como o \texttt{MkDocs}.
+
+    \item \textbf{i18n}: Centraliza os arquivos de internacionalização, permitindo suporte a múltiplos idiomas.
+
+    \item \textbf{src}: Diretório principal do código-fonte, subdividido em módulos funcionais, como \texttt{context}, \texttt{models} e \texttt{lib}.
+
+    \begin{itemize}
+        \item \textbf{context}: Inclui o estado global da aplicação, com os estados e manipuladores associados.
+
+        \item \textbf{models}: Contém os modelos do projeto, baseados na classe \texttt{FAModel}.
+
+        \item \textbf{interfaces}: Define as interfaces do projeto, como \texttt{Application} e \texttt{Controller}.
+
+        \item \textbf{lib}: Agrupa as bibliotecas do projeto, organizadas em subdiretórios, como gerenciadores de modelos e utilitários gerais.
+    \end{itemize}
+
+    \item Arquivos de configuração (\texttt{.env.example}, \texttt{Dockerfile}, \texttt{Makefile}, etc.) estão localizados na raiz, facilitando a automação e o gerenciamento do ambiente.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centerline{\includesvg[width=1\columnwidth]{image/source/cd-arch.svg}}
+    \caption{Diagrama Geral de Arquitetura.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:cd-arch}
+\end{figure}
+
+Nesta Seção~\ref{sec:3:estado-observador} é detalhado a implementação do componente base, que fornece a infraestrutura para a interface gráfica e o gerenciamento de estados.
+
+\footnote{Durante o desenvolvimento do sistema, o projeto recebeu o nome provisório de \textit{Features Analyzer} (do inglês, Analisador de Características) (FA). Por essa razão, a sigla \textit{FA} pode ser encontrada em diversos módulos e classes, sendo utilizada para distinguir os componentes do \textit{boilerplate} daqueles específicos da aplicação que o utiliza. Essa abordagem contribui para uma separação clara entre a estrutura base e as personalizações realizadas para cada sistema desenvolvido.}
+

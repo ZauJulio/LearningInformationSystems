@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="352px"
+  height="387px" viewBox="-0.5 -0.5 352 387"
+  animation="{&quot;meta&quot;:{&quot;version&quot;:20230504,&quot;patch&quot;:1},&quot;page&quot;:{&quot;animationInfo&quot;:{}},&quot;infos&quot;:[{&quot;cell&quot;:{&quot;id&quot;:&quot;0&quot;,&quot;parentId&quot;:null,&quot;childrenIds&quot;:[&quot;1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;parentId&quot;:&quot;0&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;AhwBzBCZCsjTo38YJcPK-25&quot;,&quot;AhwBzBCZCsjTo38YJcPK-31&quot;,&quot;AhwBzBCZCsjTo38YJcPK-35&quot;,&quot;AhwBzBCZCsjTo38YJcPK-46&quot;,&quot;AhwBzBCZCsjTo38YJcPK-51&quot;,&quot;AhwBzBCZCsjTo38YJcPK-55&quot;,&quot;AhwBzBCZCsjTo38YJcPK-61&quot;,&quot;AhwBzBCZCsjTo38YJcPK-65&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-26&quot;,&quot;AhwBzBCZCsjTo38YJcPK-48&quot;,&quot;AhwBzBCZCsjTo38YJcPK-53&quot;,&quot;AhwBzBCZCsjTo38YJcPK-66&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;InteractionLifeLine&quot;,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;libraryId\&quot;:\&quot;sequence\&quot;,\&quot;libraryTitle\&quot;:\&quot;Sequence\&quot;,\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Lifeline\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-26&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-48&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-53&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-66&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-27&quot;,&quot;AhwBzBCZCsjTo38YJcPK-32&quot;,&quot;AhwBzBCZCsjTo38YJcPK-37&quot;,&quot;AhwBzBCZCsjTo38YJcPK-47&quot;,&quot;AhwBzBCZCsjTo38YJcPK-52&quot;,&quot;AhwBzBCZCsjTo38YJcPK-57&quot;,&quot;AhwBzBCZCsjTo38YJcPK-62&quot;,&quot;AhwBzBCZCsjTo38YJcPK-67&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;InteractionLifeLine&quot;,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;libraryId\&quot;:\&quot;sequence\&quot;,\&quot;libraryTitle\&quot;:\&quot;Sequence\&quot;,\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Lifeline\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-27&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-32&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-37&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-47&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-52&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-57&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-62&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-67&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-2&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-33&quot;,&quot;AhwBzBCZCsjTo38YJcPK-36&quot;,&quot;AhwBzBCZCsjTo38YJcPK-56&quot;,&quot;AhwBzBCZCsjTo38YJcPK-63&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;InteractionLifeLine&quot;,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;libraryId\&quot;:\&quot;sequence\&quot;,\&quot;libraryTitle\&quot;:\&quot;Sequence\&quot;,\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Lifeline\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-33&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-36&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-56&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-63&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-3&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Activation&quot;,&quot;origin&quot;:null,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-25&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-28&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-28&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-25&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-31&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-34&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-34&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-31&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-35&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-38&quot;,&quot;AhwBzBCZCsjTo38YJcPK-39&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;ReplyMessage\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-38&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-35&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-39&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-35&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-46&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-49&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-49&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-46&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-51&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-54&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-54&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-51&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-55&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-60&quot;,&quot;AhwBzBCZCsjTo38YJcPK-69&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;ReplyMessage\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-60&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-55&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-69&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-55&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-61&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-64&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-64&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-61&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-65&quot;,&quot;parentId&quot;:&quot;1&quot;,&quot;childrenIds&quot;:[&quot;AhwBzBCZCsjTo38YJcPK-68&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Message&quot;,&quot;origin&quot;:&quot;{\&quot;paletteLoadId\&quot;:\&quot;SequenceDiagram\&quot;,\&quot;paletteUiId\&quot;:\&quot;sequence\&quot;,\&quot;paletteItemUiId\&quot;:\&quot;Message\&quot;}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;AhwBzBCZCsjTo38YJcPK-68&quot;,&quot;parentId&quot;:&quot;AhwBzBCZCsjTo38YJcPK-65&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;origin&quot;:&quot;{\&quot;product\&quot;:\&quot;diagram\&quot;,\&quot;paletteTabs\&quot;:[\&quot;palette-tab-text\&quot;]}&quot;,&quot;fromLibraryId&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;textCell&quot;:false,&quot;calloutCell&quot;:false,&quot;imageShape&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null}],&quot;pageMeta&quot;:{&quot;audios&quot;:[],&quot;videos&quot;:[],&quot;assets&quot;:[],&quot;video_duration&quot;:1,&quot;page_width&quot;:1000,&quot;page_height&quot;:700,&quot;page_hash&quot;:&quot;608c2921-1eac-4e4b-b395-fa4e6a972b2b&quot;}}"
+  threeDAnimation="{&quot;pageSize&quot;:{&quot;x&quot;:0,&quot;y&quot;:0,&quot;width&quot;:1000,&quot;height&quot;:700},&quot;characters&quot;:[],&quot;assetIdInfoMap&quot;:{}}">
+  <defs>
+    <style type="text/css">
+      ul {
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      &#xa;
+
+      ol {
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      &#xa;
+
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      &#xa;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+      }
+
+      &#xa;
+
+      .h1,
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      &#xa;
+
+      h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      &#xa;
+
+      h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+      }
+
+      &#xa;
+
+      .h4,
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      &#xa;
+
+      .h5,
+      h5 {
+        font-size: 1.25rem;
+      }
+
+      &#xa;
+
+      .h6,
+      h6 {
+        font-size: 1rem;
+      }
+
+      &#xa;
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      &#xa;
+
+      a {
+        color: #007bff;
+      }
+
+      &#xa;
+    </style>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap");
+      &#xa;
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap");
+      &#xa;
+    </style>
+  </defs>
+  <g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-1" x="0" y="0" width="70" height="35" fill="#7882ff" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-1" x="0" y="0" width="70" height="386" fill-opacity="0" fill="#7882ff"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-1" x="0" y="0" width="70" height="35" fill="#7882ff" stroke="#000000"
+        pointer-events="all" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-1" d="M 35 35 L 35 386" fill="none" stroke="#000000" stroke-miterlimit="10"
+        stroke-dasharray="8 3" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-1" x="0" y="0" width="70" height="386" fill-opacity="0" fill="#7882ff"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-1" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-1">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-1" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 0px; margin-left: 1px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  Widget</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="zUYZaimHOrTiNwFc" d="M16.3125,12.6 h37.359375" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#zUYZaimHOrTiNwFc" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">Widget</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-26" x="31" y="231" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-26" x="25" y="227" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-26" x="31" y="231" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-26" x="25" y="227" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-48" x="31" y="187" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-48" x="25" y="183" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-48" x="31" y="187" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-48" x="25" y="183" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-53" x="31" y="363" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-53" x="25" y="359" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-53" x="31" y="363" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-53" x="25" y="359" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-66" x="31" y="55" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-66" x="25" y="51" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-66" x="31" y="55" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-66" x="25" y="51" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-2" x="143" y="0" width="70" height="35" fill="#64d2fa" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-2" x="143" y="0" width="70" height="386" fill-opacity="0" fill="#64d2fa"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-2" x="143" y="0" width="70" height="35" fill="#64d2fa" stroke="#000000"
+        pointer-events="all" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-2" d="M 178 35 L 178 386" fill="none" stroke="#000000" stroke-miterlimit="10"
+        stroke-dasharray="8 3" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-2" x="143" y="0" width="70" height="386" fill-opacity="0" fill="#64d2fa"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-2" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-2">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-2" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 0px; margin-left: 144px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  Controller</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="3UYZaimHOrTiNwFd" d="M151.984375,12.6 h52.03125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#3UYZaimHOrTiNwFd" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">Controller</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-27" x="174" y="231" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-27" x="168" y="227" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-27" x="174" y="231" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-27" x="168" y="227" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-32" x="174" y="275" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-32" x="168" y="271" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-32" x="174" y="275" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-32" x="168" y="271" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-37" x="174" y="319" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-37" x="168" y="315" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-37" x="174" y="319" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-37" x="168" y="315" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-47" x="174" y="187" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-47" x="168" y="183" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-47" x="174" y="187" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-47" x="168" y="183" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-52" x="174" y="363" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-52" x="168" y="359" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-52" x="174" y="363" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-52" x="168" y="359" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-57" x="174" y="143" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-57" x="168" y="139" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-57" x="174" y="143" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-57" x="168" y="139" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-62" x="174" y="99" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-62" x="168" y="95" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-62" x="174" y="99" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-62" x="168" y="95" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-67" x="174" y="55" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-67" x="168" y="51" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-67" x="174" y="55" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-67" x="168" y="51" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-3" x="281" y="0" width="70" height="35" fill="#fff1aa" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-3" x="281" y="0" width="70" height="386" fill-opacity="0" fill="#fff1aa"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-3" x="281" y="0" width="70" height="35" fill="#fff1aa" stroke="#000000"
+        pointer-events="all" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-3" d="M 316 35 L 316 386" fill="none" stroke="#000000" stroke-miterlimit="10"
+        stroke-dasharray="8 3" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-3" x="281" y="0" width="70" height="386" fill-opacity="0" fill="#fff1aa"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-3" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-3">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-3" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 0px; margin-left: 282px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  State</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="w0YZaimHOrTiNwFe" d="M301.984375,12.6 h28.03125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#w0YZaimHOrTiNwFe" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">State</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-33" x="312" y="275" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-33" x="306" y="271" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-33" x="312" y="275" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-33" x="306" y="271" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-36" x="312" y="319" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-36" x="306" y="315" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-36" x="312" y="319" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-36" x="306" y="315" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-56" x="312" y="143" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-56" x="306" y="139" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-56" x="312" y="143" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-56" x="306" y="139" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-63" x="312" y="99" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-63" x="306" y="95" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-63" x="312" y="99" width="8" height="12" fill="#7acff5" stroke="#000000"
+        pointer-events="all" />
+      <rect cell-id="AhwBzBCZCsjTo38YJcPK-63" x="306" y="95" width="20" height="20" fill-opacity="0" fill="#7acff5"
+        stroke="none" pointer-events="all" />
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-25" d="M 38 231.28 L 160.74 231.28" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-25" d="M 172.74 231.28 L 160.74 237.28 L 160.74 225.28 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-28" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-28">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-28" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 229px; margin-left: 101px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  apply</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="M0YZaimHOrTiNwFf" d="M88.359375,227.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#M0YZaimHOrTiNwFf" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">apply</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-31" d="M 181.45 274.72 L 298.68 274.72" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-31" d="M 310.68 274.72 L 298.68 280.72 L 298.68 268.72 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-34" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-34">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-34" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; margin-left: 241px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  commit</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="K0YZaimHOrTiNwFg" d="M223.78125,271.7125 h35.453125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#K0YZaimHOrTiNwFg" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">commit</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-35" d="M 311.79 318.86 L 183.68 318.86" fill="none" stroke="#000000"
+        stroke-miterlimit="10" stroke-dasharray="5" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-35" d="M 194.57 312.86 L 182.57 318.86 L 194.57 324.86" fill="none"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-38" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-38">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-38" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 317px; margin-left: 247px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  notify</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="20YZaimHOrTiNwFh" d="M234.359375,315.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#20YZaimHOrTiNwFh" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">notify</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-39" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-39">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-39" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 326px; margin-left: 248px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ff914d; white-space: nowrap; ">
+                  state: tracked</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="x0YZaimHOrTiNwFi" d="M215.484375,337.9 h66.046875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#x0YZaimHOrTiNwFi" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">state: tracked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-46" d="M 173.86 187.14 L 51.12 187.14" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-46" d="M 39.12 187.14 L 51.12 181.14 L 51.12 193.14 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-49" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-49">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-49" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 185px; margin-left: 109px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  on_untrack</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="10YZaimHOrTiNwFj" d="M82.28125,183.7125 h54.4375" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#10YZaimHOrTiNwFj" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">on_untrack</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-51" d="M 173.86 363 L 51.12 363" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-51" d="M 39.12 363 L 51.12 357 L 51.12 369 Z" fill="#000000" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-54" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-54">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-54" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 361px; margin-left: 108px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  on_track</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="z0YZaimHOrTiNwFk" d="M87.40625,359.7125 h42.203125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#z0YZaimHOrTiNwFk" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">on_track</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-55" d="M 311.79 143 L 183.68 143" fill="none" stroke="#000000"
+        stroke-miterlimit="10" stroke-dasharray="5" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-55" d="M 194.57 137 L 182.57 143 L 194.57 149" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-60" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-60">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-60" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 139px; margin-left: 247px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  notify</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="30YZaimHOrTiNwFl" d="M234.359375,137.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#30YZaimHOrTiNwFl" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">notify</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-69" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-69">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-69" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 150px; margin-left: 249px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ff914d; white-space: nowrap; ">
+                  <span style="background-color: rgb(255 , 145 , 77)"><span>state: </span><i>untracked</i></span>
+                </div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="wMYZaimHOrTiNwFm" d="M210.359375,161.9 h29.96875" />
+              <path id="4MYZaimHOrTiNwFn" d="M240.328125,161.9 h48.3125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#wMYZaimHOrTiNwFm" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">state: </tspan>
+              </textPath>
+            </text><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#4MYZaimHOrTiNwFn" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">untracked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-61" d="M 181.45 98.86 L 298.68 98.86" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-61" d="M 310.68 98.86 L 298.68 104.86 L 298.68 92.86 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-64" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-64">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-64" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 97px; margin-left: 245px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  set_state</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="8MYZaimHOrTiNwFo" d="M223.1875,95.7125 h44.640625" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#8MYZaimHOrTiNwFo" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">set_state</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-65" d="M 38 56.1 L 160.74 56.1" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-65" d="M 172.74 56.1 L 160.74 62.1 L 160.74 50.1 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-68" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-68">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-68" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 54px; margin-left: 102px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <span>clicked</span>
+                </div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="6MYZaimHOrTiNwFp" d="M85.6875,52.7125 h33.625" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#6MYZaimHOrTiNwFp" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">clicked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-25" d="M 38 231.28 L 160.74 231.28" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-25" d="M 172.74 231.28 L 160.74 237.28 L 160.74 225.28 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-28" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-28">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-28" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 229px; margin-left: 101px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  apply</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id=".MYZaimHOrTiNwFq" d="M88.359375,227.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#.MYZaimHOrTiNwFq" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">apply</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-31" d="M 181.45 274.72 L 298.68 274.72" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-31" d="M 310.68 274.72 L 298.68 280.72 L 298.68 268.72 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-34" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-34">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-34" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; margin-left: 241px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  commit</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="5MYZaimHOrTiNwFr" d="M223.78125,271.7125 h35.453125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#5MYZaimHOrTiNwFr" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">commit</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-35" d="M 311.79 318.86 L 183.68 318.86" fill="none" stroke="#000000"
+        stroke-miterlimit="10" stroke-dasharray="5" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-35" d="M 194.57 312.86 L 182.57 318.86 L 194.57 324.86" fill="none"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-38" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-38">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-38" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 317px; margin-left: 247px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  notify</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="9MYZaimHOrTiNwFs" d="M234.359375,315.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#9MYZaimHOrTiNwFs" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">notify</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-39" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-39">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-39" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 326px; margin-left: 248px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ff914d; white-space: nowrap; ">
+                  state: tracked</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="7MYZaimHOrTiNwFt" d="M215.484375,337.9 h66.046875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#7MYZaimHOrTiNwFt" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">state: tracked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-46" d="M 173.86 187.14 L 51.12 187.14" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-46" d="M 39.12 187.14 L 51.12 181.14 L 51.12 193.14 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-49" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-49">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-49" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 185px; margin-left: 109px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  on_untrack</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="_MYZaimHOrTiNwFu" d="M82.28125,183.7125 h54.4375" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#_MYZaimHOrTiNwFu" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">on_untrack</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-51" d="M 173.86 363 L 51.12 363" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-51" d="M 39.12 363 L 51.12 357 L 51.12 369 Z" fill="#000000" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-54" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-54">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-54" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 361px; margin-left: 108px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  on_track</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="EsYZaimHOrTiNwFv" d="M87.40625,359.7125 h42.203125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#EsYZaimHOrTiNwFv" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">on_track</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-55" d="M 311.79 143 L 183.68 143" fill="none" stroke="#000000"
+        stroke-miterlimit="10" stroke-dasharray="5" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-55" d="M 194.57 137 L 182.57 143 L 194.57 149" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-60" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-60">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-60" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 139px; margin-left: 247px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  notify</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="CsYZaimHOrTiNwFw" d="M234.359375,137.7125 h26.296875" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#CsYZaimHOrTiNwFw" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">notify</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-69" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-69">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-69" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 150px; margin-left: 249px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ff914d; white-space: nowrap; ">
+                  <span style="background-color: rgb(255 , 145 , 77)"><span>state: </span><i>untracked</i></span>
+                </div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="GsYZaimHOrTiNwFx" d="M210.359375,161.9 h29.96875" />
+              <path id="OsYZaimHOrTiNwFy" d="M240.328125,161.9 h48.3125" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#GsYZaimHOrTiNwFx" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">state: </tspan>
+              </textPath>
+            </text><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#OsYZaimHOrTiNwFy" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">untracked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-61" d="M 181.45 98.86 L 298.68 98.86" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-61" d="M 310.68 98.86 L 298.68 104.86 L 298.68 92.86 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-64" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-64">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-64" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 97px; margin-left: 245px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  set_state</div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="JsYZaimHOrTiNwFz" d="M223.1875,95.7125 h44.640625" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#JsYZaimHOrTiNwFz" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">set_state</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g shape-node="">
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-65" d="M 38 56.1 L 160.74 56.1" fill="none" stroke="#000000"
+        stroke-miterlimit="10" pointer-events="stroke" />
+      <path cell-id="AhwBzBCZCsjTo38YJcPK-65" d="M 172.74 56.1 L 160.74 62.1 L 160.74 50.1 Z" fill="#000000"
+        stroke="#000000" stroke-miterlimit="10" pointer-events="all" />
+    </g>
+    <g shape-node="" text-node="">
+      <g cell-id="AhwBzBCZCsjTo38YJcPK-68" transform="translate(-0.5 -0.5)">
+        <switch cell-id="AhwBzBCZCsjTo38YJcPK-68">
+          <foreignObject cell-id="AhwBzBCZCsjTo38YJcPK-68" style="overflow: visible; text-align: left;"
+            pointer-events="none" width="100%" height="100%"
+            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <div xmlns="http://www.w3.org/1999/xhtml"
+              style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 54px; margin-left: 102px;">
+              <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <div ani=""
+                  style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <span>clicked</span>
+                </div>
+              </div>
+            </div>
+          </foreignObject><svg width="100%" height="100%">
+            <defs>
+              <path id="NsYZaimHOrTiNwF0" d="M85.6875,52.7125 h33.625" />
+            </defs><text fill="rgb(0, 0, 0)" font-size="11px" font-family="Helvetica, &quot;VP Default&quot;"
+              font-weight="400">
+              <textPath xlink:href="#NsYZaimHOrTiNwF0" startOffset="50%" text-anchor="middle">
+                <tspan xml:space="preserve">clicked</tspan>
+              </textPath>
+            </text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+  </g>
+  <switch>
+    <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" /><a transform="translate(0,-5)"><text
+        text-anchor="middle" font-size="10px" x="50%" y="100%"></text></a>
+  </switch>
+</svg>
