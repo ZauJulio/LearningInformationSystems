@@ -1,0 +1,62 @@
+Estrutura de diretórios:
+
+├── images
+├── Makefile
+├── plot.p
+├── res
+│   ├── ascendant
+│   ├── random
+│   └── reverse
+├── run.sh
+├── sort.c
+├── sort.so
+└── src
+    ├── insertion-sort.c
+    ├── merge-sort.c
+    └── quick-sort.c
+
+Os algoritmos utilizados no relatório estão implementados em C no diretório fontes/src.
+
+    Referência: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
+
+Para compilar, utilize o comando "make" no diretório fontes/, ou, gcc sort.c -o sort.so.
+
+Para obter o modo de uso e os parâmetros necessários execute a saída da compilação 
+anterior sem nenhum parâmetro.
+
+Para gerar os gráficos utilize os arquivos presentes em fontes/res, o diretório contém os
+sub-diretórios: ascendant, random, reverse; saída do experimento, respectivamente, com
+entradas ordenadas, aleatoriamente ordenadas e inversamente ordenadas. Cada sub-diretório
+citado contém um arquivo para cada algoritmo contendo a seguinte estrutura para cada linha:
+
+    TEMPO_DE_EXECUÇÃO_EM_MICROSEGUNDOS TAMANHO_DO_VETOR
+    Ex.: 0.000610 900
+
+    Para obter o tempo com esta precição foi utilizado a biblioteca sys/time:
+        Referência: https://pubs.opengroup.org/onlinepubs/007908775/xsh/systime.h.html
+    
+    Devido a falta de suporte a sistemas POSIX, não foi utilizado o CLOCK_MONOTONIC da
+    biblioteca time.h, que entrega uma precisão maior, em nanossegundos. 
+
+Para gerar os gráficos foi utilizado o gnuplot, basta utilizar o arquivo em fontes/res/ do
+experimento desejado como parametro.
+
+    Ex.:
+        $ gnuplot
+        $ plot 'fontes/res/random/quickSort' with lines
+
+    Referência: http://www.gnuplot.info/documentation.html
+
+As imagens resultantes dos experimentos estão armazenadas em fontes/images/.
+
+Como alternativa, pode-se utilizar o pequeno script run.sh, ele deve ser executado dentro
+do diretório fontes e deve compilar, executar todos os experimentos e depois gerar os
+gráficos, salvando as imagens em fontes/images.
+
+Como alternativa para geração dos gráficos, utilize o script plot.p, passando como
+argumento para gnuplot:
+
+    Ex.:
+        $ gnuplot plot.p
+    
+    Referência: http://gnuplot.info/scripts/index.html

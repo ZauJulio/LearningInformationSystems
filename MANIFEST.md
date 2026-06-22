@@ -1,73 +1,78 @@
-# MANIFEST — Proveniência e rastreabilidade
+# MANIFEST — Provenance & Traceability
 
-Este repositório foi montado consolidando repositórios `Lea*` e projetos de aprendizado,
-preservando todo o histórico de commits. Repositórios de origem **não foram apagados** —
-permanecem intactos no GitHub para conferência.
+This repository consolidates undergraduate learning material (Information Systems, UFRN),
+organized **by discipline** using the official course codes. Commit history of every source
+repository was preserved. Source repositories were **not deleted** — they remain on GitHub.
 
-## Como o histórico foi preservado
+## How content was integrated
 
-1. Cada repositório de origem foi clonado e reescrito com
-   `git filter-repo --to-subdirectory-filter <Pasta>` (move todos os commits para dentro da
-   subpasta, mantendo autor, data e mensagem originais).
-2. Cada história foi integrada ao repositório unificado com
-   `git merge --allow-unrelated-histories`.
-3. Onde havia **cópia local divergente** (em `~/Desktop/UFRN_S/Lea/`), as edições/arquivos
-   locais não versionados foram aplicados por cima como um commit `reconcile(...)`, de modo que
-   tanto o histórico do GitHub quanto as edições locais ficam preservados.
+- **Vendored with history** — each source repo was rewritten into its discipline folder with
+  `git filter-repo --to-subdirectory-filter` and merged with `git merge --allow-unrelated-histories`.
+  `git log -- <folder>/` and `git blame` work natively.
+- **Submodules** — still-evolving projects are referenced as git submodules (not vendored).
+- **Course materials** — slides/notes/assignments extracted from local course archives
+  (`UFRN_S/01_Disciplinas`) into each discipline's `course-materials/`. **Exams are excluded.**
+- **Local-only** — folders that never had a prior repository were imported as-is.
 
-Resultado: `git log -- <Pasta>/` e `git blame` funcionam por pasta. **110 commits originais**
-preservados.
+## Disciplines (folder → source)
 
-## Pastas com origem em repositório do GitHub
+| Folder (discipline) | Code | Source repo | History | Course materials |
+|---|---|---|---|---|
+| `DCT0008-data-structures` | DCT0008 | ZauJulio/LeaDataStructures | vendored | ✅ (+ YouTube lecture links) |
+| `DCT1010-programming-languages-and-compilers` | DCT1010 | ZauJulio/LeaCompilers (local) + `graphya` | vendored | — |
+| `DCT1106-programming` | DCT1106 | ZauJulio/Sig-Library (fork, group) | vendored | — |
+| `DCT1108-object-oriented-programming-ii` | DCT1108 | local-only | imported | — |
+| `DCT1109-web-programming` | DCT1109 | ZauJulio/LeaPWEB (+ `CutTheChase` submodule) | vendored | — |
+| `DCT1304-linear-algebra` | DCT1304 | ZauJulio/LeaLA 🔒 | vendored | ✅ |
+| `DCT1401-artificial-intelligence` | DCT1401 | ZauJulio/LeaIA (+ AI extensions) | vendored | ✅ |
+| `DCT2101-operating-systems` | DCT2101 | ZauJulio/LeaOperationalSystems | vendored | ✅ |
+| `DCT2202-database-design-and-administration` | DCT2202 | local-only | imported | ✅ |
+| `DCT2403-decision-support-systems` | DCT2403 | ZauJulio/LeaSAD | vendored | — |
+| `DCT2602-machine-learning` | DCT2602 | ZauJulio/Learning | vendored | ✅ |
+| `DCT4302-special-topics-in-information-security-i` | DCT4302 | ZauJulio/LeaSec 🔒 + local material | vendored + imported | — |
+| `DCT4403-advanced-topics-in-programming-iii` | DCT4403 | ZauJulio/LeaATP_III_IA | vendored | ✅ |
+| `DCT0435-ethics` | DCT0435 | — | — | ✅ |
+| `DCT1105-computer-architecture` | DCT1105 | — | — | ✅ |
+| `DCT1305-probability-and-statistics` | DCT1305 | — | — | ✅ |
+| `DCT2102-computer-networks` | DCT2102 | — | — | ✅ |
+| `DCT2201-databases` | DCT2201 | — | — | ✅ |
+| `DCT2301-software-engineering-i` | DCT2301 | — | — | ✅ |
+| `DCT2304-software-testing` | DCT2304 | — | — | ✅ |
+| `DCT3202-accounting-and-costs` | DCT3202 | — | — | ✅ |
+| `DCT4101-network-server-administration` | DCT4101 | — | — | ✅ |
+| `BSI3103-it-entrepreneurship` | BSI3103 | — | — | ✅ |
 
-| Pasta | Repo de origem | Visibilidade origem | Commits orig. | Camada local |
-|---|---|---|---:|---|
-| `LeaSec` | ZauJulio/LeaSec | privado | 1 | — (local `experiments/` vazio) |
-| `LeaRust` | ZauJulio/LeaRust | privado | 1 | — |
-| `LeaLA` | ZauJulio/LeaLA | privado | 10 | — |
-| `LeaPyQt` | ZauJulio/LeaPyQt | público | 2 | — |
-| `LeaSAD` | ZauJulio/LeaSAD | público | 2 | — |
-| `LeaOperationalSystems` | ZauJulio/LeaOperationalSystems | público | 2 | — (local `LeaSO` idêntico) |
-| `LeaIA` | ZauJulio/LeaIA | público | 3 | ✅ `reconcile` (prolog, search, reinforcement, learning, Pipfile) |
-| `LeaPWEB` | ZauJulio/LeaPWEB | público | 34 | ✅ `reconcile` (next.config.js + edições) |
-| `LeaDataStructures` | ZauJulio/LeaDataStructures | público | 11 | — |
-| `Learning` | ZauJulio/Learning | público | 12 | — |
-| `TicTacToe` | ZauJulio/TicTacToe | público | 6 | — |
-| `MLP_Sinc` | ZauJulio/MLP_Sinc | público | 4 | — |
-| `VowelRecognition` | ZauJulio/VowelRecognition | público | 8 | — |
-| `LogicGatesPerceptron` | ZauJulio/LogicGatesPerceptron | público | 8 | — |
-| `LeaATP_III_IA` | ZauJulio/LeaATP_III_IA | público | 6 | ✅ `reconcile` (RegressorTestBase.ipynb + read.py) |
-| `Sig-Library` | ZauJulio/Sig-Library (fork) | público | 49 | — (projeto em grupo; sem cópia local) |
-| `graphya` | ZauJulio/graphya | público | 4 | — (sem cópia local) |
+## AI sub-projects (under `DCT1401-artificial-intelligence/`)
 
-> Nota: `LeaIA` referenciava `LogicGatesPerceptron`, `MLP_Sinc`, `TicTacToe` e
-> `VowelRecognition` como submódulos (gitlinks vazios preservados em `.gitmodules`). O conteúdo
-> real desses projetos está nas pastas de topo homônimas deste repositório.
+Originally "extensions of the AI repository", vendored with history:
+`TicTacToe`, `MLP_Sinc`, `VowelRecognition`, `LogicGatesPerceptron`
+(each from the homonymous `ZauJulio/*` repo).
 
-## Submódulos (git submodule)
+## Submodules
 
-Projetos ainda em evolução são referenciados como submódulo (não vendorizados), mantendo o
-histórico no repositório de origem.
-
-| Pasta | Submódulo → | Branch |
+| Path | Submodule → | Branch |
 |---|---|---|
-| `Taskiano` | `git@github.com:ZauJulio/Taskiano.git` | `main` |
-| `CutTheChase` | `git@github.com:ZauJulio/CutTheChase.git` | `master` |
+| `DCT1109-web-programming/CutTheChase` | `ZauJulio/CutTheChase` | `master` |
+| `extra-studies/taskiano` | `ZauJulio/Taskiano` | `main` |
+| `thesis/features-analyzer` | `ZauJulio/FeaturesAnalyzer` | `main` |
 
-## Pastas locais sem repositório prévio no GitHub
+## Thesis (`thesis/`)
 
-Conteúdo que existia apenas em `~/Desktop/UFRN_S/Lea/` (sem histórico de versionamento anterior).
-Adicionado como commit único de importação.
+Undergraduate final project (TCC, 2024.2). `document/` holds the thesis text and defense
+slides; `features-analyzer/` is the thesis software as a submodule.
 
-| Pasta (normalizada) | Origem local | Observação |
-|---|---|---|
-| `LeaDB2` | `Lea/LeaDB2` | Banco de Dados II (TypeScript) |
-| `LeaPOOII` | `Lea/LeaPOOII` | Programação Orientada a Objetos II |
-| `LeaCompilers` | `Lea/compilers` | Compiladores (DCT1010) |
-| `LeaSecClass` | `Lea/class-security` | Material de aula de segurança |
-| `LeaCaesarCipher` | `Lea/sec-caeser` | Cifra de César (Rust); `target/` de build excluído |
+## Extra studies (`extra-studies/`)
 
-## Fora de escopo (não incluídos — permanecem como repos independentes)
+Non-discipline personal studies: `pyqt`, `rust`, and the `taskiano` submodule.
 
-`ZSOM`, `minisom-scikit-learn-contribution`, `dksom` (pesquisa em Self-Organizing Maps) —
-mantidos separados a pedido.
+## Notes
+
+- 🔒 = sourced from a private repository.
+- Video lectures (e.g. Data Structures) are **linked** to the professor's YouTube channel
+  instead of stored — see `DCT0008-data-structures/VIDEO_LECTURES.md`.
+- Exams, virtual-environments and build artifacts are excluded (`.gitignore`).
+
+## Out of scope
+
+`ZSOM`, `minisom-scikit-learn-contribution`, `dksom` (Self-Organizing Maps research) — kept
+as separate repositories by request.

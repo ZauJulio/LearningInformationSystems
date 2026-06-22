@@ -1,8 +1,12 @@
 [submodule "Taskiano"]
-	path = Taskiano
+	path = extra-studies/taskiano
 	url = git@github.com:ZauJulio/Taskiano.git
 	branch = main
 [submodule "CutTheChase"]
-	path = LeaPWEB/CutTheChase
+	path = DCT1109-web-programming/CutTheChase
 	url = git@github.com:ZauJulio/CutTheChase.git
 	branch = master
+[submodule "thesis/features-analyzer"]
+	path = thesis/features-analyzer
+	url = git@github.com:ZauJulio/FeaturesAnalyzer.git
+	branch = main
