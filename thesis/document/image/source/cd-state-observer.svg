@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="976" height="507"
+  viewBox="-0.5 -0.5 976 507">
+  <defs>
+    <filter id="dropShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.2" result="blur" />
+      <feOffset in="blur" dx=".6" dy=".6" result="offsetBlur" />
+      <feFlood flood-color="#3D4574" flood-opacity=".4" result="offsetColor" />
+      <feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur" />
+      <feBlend in="SourceGraphic" in2="offsetBlur" />
+    </filter>
+    <style>
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2
+      }
+
+      .h1 {
+        font-size: 2.5rem
+      }
+
+      .h4 {
+        font-size: 1.5rem
+      }
+
+      .h5 {
+        font-size: 1.25rem
+      }
+
+      .h6 {
+        font-size: 1rem
+      }
+
+      a {
+        color: #007bff
+      }
+    </style>
+  </defs>
+  <g filter="url(#dropShadow)">
+    <path fill="#fff1aa" stroke="#000" pointer-events="all" d="M0 186.5h408v313H0z" />
+    <path d="M0 203.5h408M0 288.5h408" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <switch transform="translate(-.5 -.5)">
+      <foreignObject cell-id="09YXlNwmPEg1zUm8jAnJ-1" style="overflow:visible;text-align:left" pointer-events="none"
+        width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <div xmlns="http://www.w3.org/1999/xhtml"
+          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe center;width:406px;height:1px;padding-top:188px;margin-left:1px">
+          <div style="box-sizing:border-box;font-size:0;text-align:center">
+            <div
+              style="display:inline-block;font-size:12px;font-family:&quot;Helvetica&quot;,&quot;VP Default&quot;;color:#000;line-height:1.2;pointer-events:all;font-weight:700;font-style:italic;white-space:normal;word-wrap:normal">
+              FAObserver</div>
+          </div>
+        </div>
+      </foreignObject><svg>
+        <defs>
+          <path id="GFCQyimBagBSEwFc" d="M169.9688 200.6h68.0468" />
+        </defs><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#GFCQyimBagBSEwFc" startOffset="50%" text-anchor="middle">
+            <tspan xml:space="preserve">FAObserver</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </switch>
+    <path fill="none" pointer-events="all" d="M0 206.5h408v16H0z" /><text x="6.5" y="219" font-family="Helvetica"
+      font-size="12">#
+      _status: StateStatus = &quot;idle&quot;</text>
+    <path fill="none" pointer-events="all" d="M0 288.5h408v16H0z" /><text x="6.5" y="301" font-family="Helvetica"
+      font-size="12">+
+      __init__(annotations: set[str])</text>
+    <path fill="none" pointer-events="all" d="M0 222.5h408v16H0z" /><text x="6.5" y="235" font-family="Helvetica"
+      font-size="12">#
+      _tracked: bool = True</text>
+    <path fill="none" pointer-events="all" d="M0 238.5h408v16H0z" /><text x="6.5" y="251" font-family="Helvetica"
+      font-size="12">#
+      _keys: set[str] = set()</text>
+    <path fill="none" pointer-events="all" d="M0 254.5h408v16H0z" /><text x="6.5" y="267" font-family="Helvetica"
+      font-size="12">#
+      _subscribers: dict[str, list[ObserverCallback]] = { }</text>
+    <path fill="none" pointer-events="all" d="M0 270.5h408v16H0z" /><text x="6.5" y="283" font-family="Helvetica"
+      font-size="12"># _root_subscribers: dict[RootSubscriber, list[ObserverCallback]] = { }</text>
+    <path fill="none" pointer-events="all" d="M0 304.5h408v16H0z" /><text x="6.5" y="317" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ status: StateStatus</text>
+    <path fill="none" pointer-events="all" d="M0 320.5h408v16H0z" /><text x="6.5" y="333" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ tracked: bool</text>
+    <path fill="none" pointer-events="all" d="M0 336.5h408v16H0z" /><text x="6.5" y="349" font-family="Helvetica"
+      font-size="12">+
+      untrack()</text>
+    <path fill="none" pointer-events="all" d="M0 352.5h408v16H0z" /><text x="6.5" y="365" font-family="Helvetica"
+      font-size="12">+
+      track()</text>
+    <path fill="none" pointer-events="all" d="M0 368.5h408v16H0z" /><text x="6.5" y="381" font-family="Helvetica"
+      font-size="12">+
+      on_change(key: RootSubscriber | str, callback: ObserverCallback)</text>
+    <path fill="none" pointer-events="all" d="M0 384.5h408v16H0z" /><text x="6.5" y="397" font-family="Helvetica"
+      font-size="12">+ commit()</text>
+    <path fill="none" pointer-events="all" d="M0 400.5h408v16H0z" /><text x="6.5" y="413" font-family="Helvetica"
+      font-size="12">-
+      __on_commit()</text>
+    <path fill="none" pointer-events="all" d="M0 416.5h408v16H0z" /><text x="6.5" y="429" font-family="Helvetica"
+      font-size="12"># _notify(key: str, value: object | None = None)</text>
+    <path fill="none" pointer-events="all" d="M0 432.5h408v16H0z" /><text x="6.5" y="445" font-family="Helvetica"
+      font-size="12">#
+      _validate_keys(key: str | list[str])</text>
+    <path fill="none" pointer-events="all" d="M0 448.5h408v16H0z" /><text x="6.5" y="461" font-family="Helvetica"
+      font-style="italic" font-size="12"># _get_tracked(): Self</text>
+    <path fill="none" pointer-events="all" d="M0 464.5h408v16H0z" /><text x="6.5" y="477" font-family="Helvetica"
+      font-style="italic" font-size="12"># _get_untracked(): Self</text>
+    <path fill="none" pointer-events="all" d="M0 480.5h408v16H0z" /><text x="6.5" y="493" font-family="Helvetica"
+      font-style="italic" font-size="12"># _track_changes()</text>
+    <path fill="#64d2fa" stroke="#000" pointer-events="all" d="M0 103.5h321v61H0z" />
+    <switch transform="translate(-.5 -.5)">
+      <foreignObject cell-id="09YXlNwmPEg1zUm8jAnJ-4" style="overflow:visible;text-align:left" pointer-events="none"
+        width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <div xmlns="http://www.w3.org/1999/xhtml"
+          style="display:flex;align-items:unsafe center;justify-content:unsafe flex-start;width:315px;height:1px;padding-top:134px;margin-left:6px">
+          <div style="box-sizing:border-box;font-size:0;text-align:left">
+            <div
+              style="display:inline-block;font-size:12px;font-family:&quot;Helvetica&quot;,&quot;VP Default&quot;;color:#000;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal">
+              <div><span style="letter-spacing:0">type</span><b style="letter-spacing:0">ObserverCallback</b><span
+                  style="letter-spacing:0">= (prev: Self,
+                  next: Self) =&gt; None</span></div>
+            </div>
+          </div>
+        </div>
+      </foreignObject><svg>
+        <defs>
+          <path id="hFCQyimBagBSEwFd" d="M6 139.4125h26.0156" />
+          <path id="JFCQyimBagBSEwFe" d="M32.0156 139.4125h102.0625" />
+          <path id="5FCQyimBagBSEwFf" d="M134.0781 139.4125h178.4375" />
+        </defs><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="400">
+          <textPath xlink:href="#hFCQyimBagBSEwFd">
+            <tspan xml:space="preserve">type </tspan>
+          </textPath>
+        </text><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#JFCQyimBagBSEwFe">
+            <tspan xml:space="preserve">ObserverCallback</tspan>
+          </textPath>
+        </text><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="400">
+          <textPath xlink:href="#5FCQyimBagBSEwFf">
+            <tspan xml:space="preserve"> = (prev: Self, next: Self) =&gt; None</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </switch>
+    <path fill="#7acff5" stroke="#000" pointer-events="all" d="M0 0h166v89.14H0z" />
+    <path d="M0 32h166" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <switch transform="translate(-.5 -.5)">
+      <foreignObject cell-id="09YXlNwmPEg1zUm8jAnJ-5" style="overflow:visible;text-align:left" pointer-events="none"
+        width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <div xmlns="http://www.w3.org/1999/xhtml"
+          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe center;width:164px;height:1px;padding-top:1px;margin-left:1px">
+          <div style="box-sizing:border-box;font-size:0;text-align:center">
+            <div
+              style="display:inline-block;font-size:12px;font-family:&quot;Helvetica&quot;,&quot;VP Default&quot;;color:#000;line-height:1.2;pointer-events:all;font-weight:700;white-space:normal;word-wrap:normal">
+              &lt;&lt;enumeration&gt;&gt;<br />StateStatus</div>
+          </div>
+        </div>
+      </foreignObject><svg>
+        <defs>
+          <path id="dFCQyimBagBSEwFg" d="M32.9688 13.6h100.0468M32.9687 28h100.047" />
+          <path id="TFCQyimBagBSEwFh" d="M32.9688 13.6h100.0468M32.9687 28h100.047" />
+        </defs><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#dFCQyimBagBSEwFg">
+            <tspan xml:space="preserve">&lt;&lt;enumeration&gt;&gt;</tspan>
+
+            <tspan xml:space="preserve">StateStatus</tspan>
+          </textPath>
+        </text><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#TFCQyimBagBSEwFh">
+            <tspan xml:space="preserve">&lt;&lt;enumeration&gt;&gt;</tspan>
+
+            <tspan xml:space="preserve">StateStatus</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </switch>
+    <path fill="none" pointer-events="all" d="M0 35h166v16H0z" /><text x="6.5" y="47.5" font-family="Helvetica"
+      font-size="12">idle</text>
+    <path fill="none" pointer-events="all" d="M0 51h166v16H0z" /><text x="6.5" y="63.5" font-family="Helvetica"
+      font-size="12">committing</text>
+    <path fill="none" pointer-events="all" d="M0 67h166v16H0z" /><text x="6.5" y="79.5" font-family="Helvetica"
+      font-size="12">error</text>
+    <path fill="#7acff5" stroke="#000" pointer-events="all" d="M179 0h146v89.5H179z" />
+    <path d="M179 32h146" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <switch transform="translate(-.5 -.5)">
+      <foreignObject cell-id="09YXlNwmPEg1zUm8jAnJ-6" style="overflow:visible;text-align:left" pointer-events="none"
+        width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <div xmlns="http://www.w3.org/1999/xhtml"
+          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe center;width:144px;height:1px;padding-top:1px;margin-left:180px">
+          <div style="box-sizing:border-box;font-size:0;text-align:center">
+            <div
+              style="display:inline-block;font-size:12px;font-family:&quot;Helvetica&quot;,&quot;VP Default&quot;;color:#000;line-height:1.2;pointer-events:all;font-weight:700;white-space:normal;word-wrap:normal">
+              &lt;&lt;enumeration&gt;&gt;<br />RootSubscriber</div>
+          </div>
+        </div>
+      </foreignObject><svg>
+        <defs>
+          <path id="XFCQyimBagBSEwFi" d="M201.9688 13.6h100.0468M201.9687 28h100.047" />
+          <path id="fFCQyimBagBSEwFj" d="M201.9688 13.6h100.0468M201.9687 28h100.047" />
+        </defs><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#XFCQyimBagBSEwFi">
+            <tspan xml:space="preserve">&lt;&lt;enumeration&gt;&gt;</tspan>
+
+            <tspan xml:space="preserve">RootSubscriber</tspan>
+          </textPath>
+        </text><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#fFCQyimBagBSEwFj">
+            <tspan xml:space="preserve">&lt;&lt;enumeration&gt;&gt;</tspan>
+
+            <tspan xml:space="preserve">RootSubscriber</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </switch>
+    <path fill="none" pointer-events="all" d="M179 35h146v16H179z" /><text x="185.5" y="47.5" font-family="Helvetica"
+      font-size="12">on_commit</text>
+    <path fill="none" pointer-events="all" d="M179 51h146v16H179z" /><text x="185.5" y="63.5" font-family="Helvetica"
+      font-size="12">on_untrack</text>
+    <path fill="#fff1aa" stroke="#000" pointer-events="all" d="M565 186.5h404v313H565z" />
+    <path d="M565 203.5h404M565 240.5h404" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <switch transform="translate(-.5 -.5)">
+      <foreignObject cell-id="09YXlNwmPEg1zUm8jAnJ-9" style="overflow:visible;text-align:left" pointer-events="none"
+        width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <div xmlns="http://www.w3.org/1999/xhtml"
+          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe center;width:402px;height:1px;padding-top:188px;margin-left:566px">
+          <div style="box-sizing:border-box;font-size:0;text-align:center">
+            <div
+              style="display:inline-block;font-size:12px;font-family:&quot;Helvetica&quot;,&quot;VP Default&quot;;color:#000;line-height:1.2;pointer-events:all;font-weight:700;white-space:normal;word-wrap:normal">
+              FAState</div>
+          </div>
+        </div>
+      </foreignObject><svg>
+        <defs>
+          <path id="olCQyimBagBSEwFk" d="M744.6563 200.6h44.6875" />
+        </defs><text font-size="12" font-family="Helvetica, &quot;VP Default&quot;" font-weight="700">
+          <textPath xlink:href="#olCQyimBagBSEwFk" startOffset="50%" text-anchor="middle">
+            <tspan xml:space="preserve">FAState</tspan>
+          </textPath>
+        </text>
+      </svg>
+    </switch>
+    <path fill="none" pointer-events="all" d="M565 206.5h404v16H565z" /><text x="571.5" y="219" font-family="Helvetica"
+      font-size="12">#
+      _state: dict[str, Any] = {}</text>
+    <path fill="none" pointer-events="all" d="M565 222.5h404v16H565z" /><text x="571.5" y="235" font-family="Helvetica"
+      font-size="12">#
+      _backup: Self</text>
+    <path fill="none" pointer-events="all" d="M565 240.5h404v16H565z" /><text x="571.5" y="253" font-family="Helvetica"
+      font-size="12">+
+      __init__(state: dict[str, Any] = {})</text>
+    <path fill="none" pointer-events="all" d="M565 256.5h404v16H565z" /><text x="571.5" y="269" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ __getitem__(key: str): Any</text>
+    <path fill="none" pointer-events="all" d="M565 272.5h404v16H565z" /><text x="571.5" y="285" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ __setattr__(key, value)</text>
+    <path fill="none" pointer-events="all" d="M565 288.5h404v16H565z" /><text x="571.5" y="301" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ __enter__(): Self</text>
+    <path fill="none" pointer-events="all" d="M565 304.5h404v16H565z" /><text x="571.5" y="317" font-family="Helvetica"
+      font-weight="bold" font-size="12">+ __exit__(exc_type: Any, exc_value: Any, traceback: Any)</text>
+    <path fill="none" pointer-events="all" d="M565 320.5h404v16H565z" /><text x="571.5" y="333" font-family="Helvetica"
+      font-size="12">+
+      serialize(): dict</text>
+    <path fill="none" pointer-events="all" d="M565 336.5h404v16H565z" /><text x="571.5" y="349" font-family="Helvetica"
+      font-size="12">+
+      reset()</text>
+    <path fill="none" pointer-events="all" d="M565 352.5h404v16H565z" /><text x="571.5" y="365" font-family="Helvetica"
+      font-size="12">+
+      load(value: dict[str, Any])</text>
+    <path fill="none" pointer-events="all" d="M565 368.5h404v16H565z" /><text x="571.5" y="381" font-family="Helvetica"
+      font-size="12">#
+      _get_untracked(): Self</text>
+    <path fill="none" pointer-events="all" d="M565 384.5h404v16H565z" /><text x="571.5" y="397" font-family="Helvetica"
+      font-size="12">#
+      _get_tracked(): Self</text>
+    <path fill="none" pointer-events="all" d="M565 400.5h404v16H565z" /><text x="571.5" y="413" font-family="Helvetica"
+      font-size="12">#
+      _track_changes(key: str, value: object)</text>
+    <path fill="none" pointer-events="all" d="M565 416.5h404v16H565z" /><text x="571.5" y="429" font-family="Helvetica"
+      font-size="12">#
+      _copy(cls: Self | None = None, obj: dict[str, Any] | None = None): Self</text>
+    <path d="M421.12 343H565" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="stroke" />
+    <path d="m409.12 343 12-6v12Z" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <path d="M421.12 343H565" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="stroke" />
+    <path d="m409.12 343 12-6v12Z" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+  </g>
+</svg>

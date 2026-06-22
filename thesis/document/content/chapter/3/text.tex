@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INÍCIO CAPÍTULO                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Desenvolvimento}
+\label{cap:3:desenvolvimento}
+
+Neste capítulo é apresentada uma breve descrição do \textit{boilerplate} do sistema, destacando os principais aspectos da arquitetura e implementação.
+
+A Seção~\ref{sec:3:estrutura-projeto} apresenta a estrutura do projeto, a partir da instalação e configuração, destacando a organização dos arquivos, utilitários, módulos e suas respectivas responsabilidades. A proposição de uma estrutura bem definida é fundamental para a manutenção e evolução do sistema, além de facilitar o desenvolvimento de novas funcionalidades.
+
+Na Seção~\ref{sec:3:estado-observador}, são detalhados os fundamentos da estrutura de interação com a interface gráfica, que utiliza principalmente dois padrões de projeto: \textit{Observer} e \textit{State}. Esses padrões definem como as interações entre a interface gráfica e os estados de contexto da aplicação são realizadas, garantindo modularidade e eficiência.
+
+A Seção~\ref{sec:3:controller-module} são descritas as camadas de \textit{controller} e \textit{module}, que desempenham, respectivamente, o papel de conectar as ações dos \textit{widgets} e assegurar a propagação dos estados para o restante da aplicação.
+
+A descrição do contexto global de estados pode ser observada na Seção~\ref{sec:3:store}, que apresenta o módulo de gerenciamento de estados, que centraliza as operações relacionadas e fornece uma interface para salvar e restaurar o estado da aplicação. Esse módulo simplifica a integração dos estados com a interface gráfica, fornecendo uma forma eficiente de reutilização da aplicação, ao permitir que o estado seja salvo e restaurado em cada execução.
+
+Na Seção~\ref{sec:3:banco-de-dados} é apresentado o módulo de banco de dados, que fornece uma interface simples para salvar e carregar dados eficientemente. Esse módulo fornece uma camada de abstração para a manipulação de dados, permitindo salvar informações como estados, configurações, resultados, parâmetros de modelos e outros dados relevantes para a aplicação.
+
+Os modelos de pré-processamento, processamento e avaliação são apresentados na Seção~\ref{sec:3:modelos}, destacando as principais características e funcionalidades do gerenciador de modelos. Esses modelos são essenciais para a execução das rotinas de análise de dados, fornecendo interfaces para salvar, carregar e executar modelos treinados.
+
+A interface gráfica criada como exemplo para o \textit{boilerplate} é descrita na Seção~\ref{sec:3:interface-grafica}, destacando as principais funcionalidades e elementos visuais. Essa interface é um exemplo de como os conceitos e padrões de projeto apresentados podem ser aplicados na prática, fornecendo uma base sólida para o desenvolvimento de aplicações mais complexas.
+
+O conjunto de utilitários é descrito na Seção~\ref{sec:3:utils}, que fornece uma série de funções e ferramentas para facilitar o desenvolvimento de aplicações. Esses utilitários incluem funções para auditoria, verificação de código, documentação e internacionalização.
+
+Para rever todos os aspectos do desenvolvimento e uso da aplicação desenvolvida, na Seção~\ref{sec:3:consideracoes-finais} é apresentado um resumo das principais funcionalidades e características do sistema, destacando os principais pontos abordados e sua relevância no contexto geral do trabalho.
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/001-estrutura-projeto}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/002-estado-observador}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/003-controller-module}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/004-store}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/005-banco-de-dados}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/006-modelos}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/007-interface-grafica}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/008-utils}
+
+% ========================================================================= %
+
+\input{content/chapter/3/sections/009-consideracoes-finais}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FIM CAPÍTULO                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

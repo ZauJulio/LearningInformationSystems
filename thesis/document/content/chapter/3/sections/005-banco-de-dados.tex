@@ -1,0 +1,85 @@
+\section{Banco de Dados}
+\label{sec:3:banco-de-dados}
+
+Nesta seção, é apresentada a solução implementada para o armazenamento de dados de forma tipada utilizando a biblioteca \texttt{TinyDB}, em conjunto com \texttt{Pydantic}, para a definição de \textit{schemas} de dados. O \texttt{TinyDB} foi escolhido como base para o armazenamento de dados devido à sua simplicidade, flexibilidade e suporte nativo ao formato JSON.
+
+A implementação mantém a interface padrão do \texttt{TinyDB}, adicionando apenas uma camada de tipagem para parâmetros e retornos baseada em \textit{schemas}, assegurando maior segurança e clareza no manuseio dos dados.
+
+Cada banco é armazenado em um arquivo JSON distinto, cujo caminho pode ser configurado por meio de variáveis de ambiente. No entanto, um mesmo banco pode conter um conjunto de tabelas. Por exemplo, a tabela de configurações, ou estados da interface gráfica, \texttt{settings} é configurada conforme apresentado no Código~\ref{lst:3:banco-de-dados}.
+
+\hfill \break
+
+\begin{center}
+    \begin{lstlisting}[language=Python, basicstyle=\tiny, caption={Exemplo de configuração de um banco de dados e uma tabela de configurações.}, label={lst:3:banco-de-dados}]
+    settings_db = TypedTinyDB(path=os.getenv("SETTINGS_DB_PATH", "../settings.json"))
+    SettingsTable = settings_db.table("Settings", SettingsSchema)
+
+    # table = db.table(name="table_name", schema=Schema)
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\hfill \break
+
+Para mais informações sobre o funcionamento geral do \texttt{TinyDB}, recomenda-se consultar a documentação oficial da biblioteca \cite{tinydb-docs}.
+
+\subsection{Definição de \textit{Schemas} com \texttt{Pydantic}}
+
+A tipagem dos dados é realizada com a biblioteca \texttt{Pydantic} \cite{pydantic}, que permite a validação e a conversão dos dados com base em \textit{schemas} definidos como classes Python. \textit{Schemas} são utilizados para definir a estrutura dos dados, incluindo os tipos dos campos, valores padrão e restrições de validação. Na Subseção~\ref{subsec:3.1-typed-tables} é apresentado a forma de integração entre \texttt{Pydantic} e \texttt{TinyDB}. No Código~\ref{lst:4:schemas} é apresentado um exemplo de como criar um \textit{schema} base e um \textit{schema} específico para uma tabela de pré-processadores de dados.
+
+\hfill \break
+
+\begin{center}
+    \begin{lstlisting}[language=Python, basicstyle=\tiny, caption={Exemplo de definição de \textit{schemas} com \texttt{Pydantic}.}, label={lst:4:schemas}]
+    from pydantic import BaseModel as PydanticBaseModel
+
+
+    class BaseSchema(PydanticBaseModel):
+        """Base class for FAORM models."""
+        uid: str | None = None
+
+
+    class FAPreProcessorSchema(BaseSchema):
+        """A preprocessor to prepare data for a model."""
+        name: str
+        params: Any
+        data_hash: str | None = None
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\subsection{Tabelas Tipadas}
+\label{subsec:3.1-typed-tables}
+
+A funcionalidade de tabelas tipadas é implementada por meio de uma classe personalizada, \texttt{TypedTinyDB}, que estende o comportamento do \texttt{TinyDB} para validar e gerenciar \textit{schemas}. A implementação dessa classe é realizada através da extensão e \texttt{overriding} (sobrescrita) de métodos da classe \texttt{TinyDB}, garantindo a compatibilidade com a interface padrão da biblioteca. As principais alterações para que a tabela atenda à tipagem dos \textit{schemas} é descrita na Lista~\ref{list:table_methods}.
+
+\begin{itemize}
+    \item \texttt{generate\_hash}: Método para gerar um \textit{hash} único para cada registro, baseado nos dados fornecidos. Esse \textit{hash} é utilizado para identificar de forma única cada registro na tabela.
+
+    A técnica de \textit{hashing} utilizada é utilizada para garantir a unicidade dos registros e facilitar a busca e a atualização dos dados. A abordagem consiste em concatenar os valores dos campos do registro e aplicar uma função que cria um valor único e determinístico, como o \textit{hash} SHA-256.
+
+    \item \texttt{find\_by\_uid}: Método para buscar um registro na tabela com base no \texttt{uid} fornecido. Caso o registro não seja encontrado, \texttt{None} é retornado.
+
+    \item \texttt{insert}: Método para inserir um novo registro na tabela.
+
+    \item \texttt{update}: Método para atualizar um registro existente na tabela.
+
+    \item \texttt{all}: Método para retornar todos os registros da tabela.
+
+    \item \texttt{search}: Método para buscar registros na tabela com base em um critério de pesquisa fornecido.
+\end{itemize}
+\label{list:table_methods}
+
+\newcommand\urlTable{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/src/lib/orm/table.py}
+\newcommand\urlDB{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/src/lib/orm/db.py}
+
+Para mais detalhes sobre a implementação da classe \texttt{TypedTinyDB}, recomenda-se consultar o código-fonte do projeto, no \href{\urlTable}{\underline{arquivo}}\footnote{\url{\urlTable}}.
+
+Uma vez definidos os \texttt{schemas}, os bancos e tabelas são instanciados no \href{\urlDB}{\underline{arquivo}}\footnote{\url{\urlDB}}.
+
+\subsection{Configurações e Arquitetura}
+\label{subsec:3:configuracoes-arquitetura}
+
+A configuração de cada banco de dados é realizada por meio de caminhos para os arquivos; estes podem ser configurados por variáveis de ambiente, permitindo flexibilidade no gerenciamento dos dados em diferentes ambientes.
+
+A decisão de utilizar o \texttt{TinyDB} como base para o armazenamento de dados foi motivada, além da simplicidade, devido ao uso de arquivos \texttt{JSON}, que facilitam a integração com outras ferramentas, a portabilidade dos dados, a edição e a visualização dos registros. Um dos principais usos do banco de dados é apresentado na Seção~\ref{sec:3:modelos}.

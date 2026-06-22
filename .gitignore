@@ -1,6 +1,7 @@
 # Heavy or sensitive course material — kept locally, not committed
 videos/
 exams/
+course-materials/
 *.mp4
 *.avi
 *.mkv

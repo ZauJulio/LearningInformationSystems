@@ -1,0 +1,28 @@
+\section{Considerações Finais}
+\label{sec:3:consideracoes-finais}
+
+\newcommand\urlKmeansSolver{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/src/context/states/kmeans\_solver.py}
+
+Neste capítulo, é apresentada as principais abstrações e componentes do framework desenvolvido, incluindo os conceitos de \textit{State/Observer}, \textit{Widget}, \textit{Controller}, \textit{Module}, \textit{Store}, banco de dados e gerenciamento de modelos.
+
+A implementação seguiu princípios de design orientado a objetos, como encapsulamento, polimorfismo e herança, para garantir modularidade, reutilização e manutenibilidade do código. Abaixo, é descrito como cada componente contribui para a arquitetura do sistema e os métodos de implementação e integração adotados.
+
+\begin{enumerate}
+    \item \textbf{\texttt{State/Observer}}: Facilita a comunicação entre componentes. O \texttt{State} representa o estado de um componente, enquanto o \texttt{Observer} notifica mudanças de estado aos demais. Esse componente é essencial para a implementação de todas as funcionalidades.
+
+    \item \textbf{\texttt{Store}}: Gerencia e persiste os estados globais da aplicação. Centraliza os estados em um único contexto, simplificando sua manipulação e persistência, além de oferecer suporte ao salvamento em arquivos. Segue o padrão de projeto \textit{Singleton}.
+
+    \item \textbf{\texttt{Widget}}: Interage com o usuário e exibe informações. Cada \texttt{Widget} está associado a um \texttt{State} e é notificado sobre alterações. Parâmetros ajustáveis são representados por \textit{widgets} filhos, como o \texttt{Gtk.Entry}, usado para entradas de texto ou valores numéricos.
+
+    \item \textbf{\texttt{Controller}}: Conecta a interface gráfica ao \texttt{State}, gerenciando exibição, ocultação e conexões entre sinais dos \textit{widgets} e \textit{handlers} para validação e formatação dos valores.
+
+    \item \textbf{\texttt{Module}}: Garante a consistência do estado dentro de cada domínio, propagando alterações conforme necessário. Encapsula a lógica global do estado, interage com outros módulos e componentes e gerencia notificações de mudanças, como \texttt{on\_untrack} e \texttt{on\_commit}.
+
+    \item \textbf{\texttt{Model}}: Gerencia e persiste os modelos de análise de dados. Implementado com base em \textit{schemas} de validação, assegura a integridade dos modelos. Utiliza a classe \texttt{FAModel}, que fornece métodos genéricos como salvar, carregar e identificar modelos. Um exemplo é o uso do \textit{KMeans}.
+
+    \item \textbf{\textit{Handlers} de Estado}: Atualizam a interface gráfica, persistem estados e gerenciam modelos de análise por meio de um ou mais \textit{Models}.
+    
+    Esses métodos, estáticos na classe derivada de \texttt{State}, centralizam a lógica de domínio. Por exemplo, no estado do modelo \texttt{KMeans}, o \textit{handler} gerencia as mudanças associadas a esse algoritmo. O \href{\urlKmeansSolver}{\underline{arquivo}}\footnote{\url{\urlKmeansSolver}} fornece um exemplo da utilização dos \textit{handlers} com os modelos.
+\end{enumerate}
+
+O capítulo destacou as contribuições de cada componente para a arquitetura do sistema, demonstrando como a integração entre eles proporciona uma experiência de usuário consistente e eficiente. Após toda a apresentação, a arquitetura ilustrada na Figura~\ref{fig:3:cd-arch} complementa a visão geral sobre o sistema.

@@ -1,0 +1,136 @@
+\section{Controller e Module}
+\label{sec:3:controller-module}
+
+A camada de \texttt{Controller} e \texttt{Module} desempenha o papel de separar as responsabilidades na propagação e manipulação dos estados, garantindo a consistência, manutenibilidade e escalabilidade do sistema. Na seção atual é apresentado o conteúdo previamente ilustrado na Figura~\ref{fig:3:cd-arch}, caixa do meio em vermelho, com título \textbf{\textit{Base Component}}.
+
+O \texttt{Controller} é responsável por gerenciar as ações dos \textit{Widgets}, enquanto o \textit{Module} lida com as mudanças de estado desencadeadas por essas ações no escopo do domínio de cada componente. A seguir, na Figura ~\ref{fig:3:cd-controller-module} é apresentado o diagrama de classes do \texttt{Controller} e \texttt{Module}.
+
+\begin{figure}[h!]
+    \centerline{\includesvg[width=1\columnwidth]{image/source/cd-controller-module.svg}}
+    \caption{Diagrama de classe \textit{Controller}-\textit{Module}.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:cd-controller-module}
+\end{figure}
+
+\newpage
+
+\subsection{Controller}
+\label{subsec:3:controller}
+
+Nas subseções a seguir é apresentada a implementação da classe \texttt{Controller}.
+
+\subsubsection{Atributos}
+\label{subsec:3.3.1:attributes}
+
+\begin{itemize}
+    \item \texttt{state}: Uma instância de \texttt{FAState} que armazena o estado do objeto observado. É utilizado para registrar os valores dos widgets e notificar os \textit{handlers} de mudanças.
+
+    \item \texttt{widget}: Uma instância de \texttt{Gtk.Widget} que representa o elemento visual associado ao \texttt{Controller}. É utilizado para conectar os sinais do widget aos \textit{handlers} do \texttt{Controller}. Tipicamente pode ser um único botão ou um contêiner com vários elementos.
+\end{itemize}
+
+\subsubsection{Operações}
+\label{subsec:3.3.2:operations}
+
+As operações da classe \texttt{Controller} incluem:
+
+\begin{itemize}
+    \item \texttt{\_\_init\_\_}: Inicializa o \texttt{Controller} com uma instância de \texttt{State}, um \texttt{widget} associado é instanciado como parâmetro.
+
+    \item \texttt{show}: Exibe o(s) \texttt{widget(s)} associado(s) ao \texttt{Controller}.
+
+    \item \texttt{hide}: Oculta o(s) \texttt{widget(s)} associado(s) ao \texttt{Controller}.
+
+    \item \texttt{\_connect\_signals}, \texttt{reset} e \texttt{load}: Métodos abstratos protegidos que devem ser implementados na classe derivada de \texttt{Controller}.
+
+    \begin{itemize}
+        \item \texttt{\_connect\_signals}: Conecta os sinais do \texttt{widget} aos \textit{handlers} do \texttt{Controller}.
+
+        \item \texttt{reset}: Restaura o estado do \texttt{widget} para os valores padrão.
+
+        \item \texttt{load}: Atualiza o estado do \texttt{widget} com os valores fornecidos no parâmetro \texttt{value} do tipo \texttt{State}.
+    \end{itemize}
+\end{itemize}
+
+No código~\ref{lst:3:controller} é apresentado um exemplo prático de implementação do \texttt{Controller} para um componente que controla os parâmetros de um modelo utilizando KMeans.
+
+\hfill \break
+
+\begin{center}
+    \lstinputlisting[basicstyle=\tiny, firstnumber=8, language=Python, firstline=8, lastline=24, caption={Exemplo de implementação do Controller.}, label={lst:3:controller}, label={lst:3:controller}]{code/controller.py}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\hfill \break
+
+Na linha \texttt{8}, é possível observar um decorador sobre a classe \texttt{@FAMetaCheckController}, responsável por verificar se os atributos necessários e seus respectivos tipos estão presentes na classe derivada. Esse decorador é uma abstração que simplifica a criação de novos \textit{Controller's}, assegurando a consistência e integridade da implementação.
+
+\newcommand\urlSidebarItem{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/src/ui/components/shared/sidebar_item/widget.py}
+
+A linha \texttt{10} define a classe \texttt{KMeansSolverController}, que herda de \texttt{Controller} com o tipo \texttt{KMeansSolverState}. Essa sintaxe especifica que o atributo \texttt{State} é uma instância de \texttt{KMeansSolverState}. Além disso, na linha \texttt{13}, é definida a instância do \texttt{widget} associado ao \texttt{Controller}, que pode ser encontrado no \href{\urlSidebarItem}{\underline{arquivo}}\footnote{\url{\urlSidebarItem}}.
+
+No método \texttt{\_\_init\_\_} de \texttt{KMeansSolverController}, iniciado na linha \texttt{15}, observa-se a chamada do método \texttt{\_connect\_signals}, responsável por conectar os sinais do \texttt{widget} aos \textit{handlers} do \texttt{Controller}. Já na linha \texttt{21}, o método \texttt{load} é invocado para atualizar o estado do \texttt{widget} com os valores fornecidos no parâmetro \texttt{State}, o qual é do tipo \texttt{KMeansSolverState}. Por fim, caso algum valor tenha sido enviado através do parâmetro \texttt{State}, o widget adiciona, na linha \texttt{24}, um botão para aplicar as alterações.
+
+O exemplo apresentado demonstra a implementação de um \texttt{Controller}, evidenciando a simplicidade e a organização do código, que contribuem para a manutenção e evolução do sistema. Abstrações como o decorador \texttt{@FAMetaCheckController} e a classe \texttt{Controller} promovem consistência e robustez na implementação, assegurando a qualidade do sistema na totalidade.
+
+\subsection{Module}
+
+A seguir é apresentado o diagrama de classes do \texttt{Module} na Figura~\ref{fig:3:cd-controller-module}. O \texttt{Module} é responsável por gerenciar as mudanças de estado no escopo do domínio de cada componente, assegurando a consistência e a propagação das alterações para o restante do sistema. Essa abstração encapsula a lógica global do estado por meio de uma instância de \texttt{app}, permitindo interação com outros módulos e componentes.
+
+\subsubsection{Atributos}
+
+A classe \texttt{Module} possui os seguintes atributos:
+
+\begin{itemize}
+    \item \texttt{name}: Uma string que representa o nome do módulo. É utilizada para identificar o módulo de forma única.
+
+    \item \texttt{app}: Uma instância de \texttt{App} que representa a aplicação principal. Esse atributo permite a interação com outros módulos e componentes, mas deve ser utilizado com cuidado para evitar acoplamento excessivo.
+
+    \item \texttt{State}: Uma instância de \texttt{State} que armazena o estado do objeto observado. Esse estado é utilizado para observar mudanças notificadas pelas chaves \texttt{on\_untrack} e \texttt{on\_commit}.
+\end{itemize}
+
+\subsubsection{Operações}
+
+As operações da classe \texttt{Module} incluem:
+
+\begin{itemize}
+    \item \texttt{\_\_init\_\_}: Inicializa o \texttt{Module} com uma instância de \texttt{app} e um \texttt{controller} associado ao tipo de estado especificado. A instância de \texttt{app} representa a aplicação principal, possibilitando a interação com outros módulos e componentes.
+
+    \item \texttt{show}: Exibe o(s) \texttt{widget(s)} associado(s) ao \texttt{Controller}.
+
+    \item \texttt{hide}: Oculta o(s) \texttt{widget(s)} associado(s) ao \texttt{Controller}.
+
+    \item \texttt{reset}: Restaura os valores do \texttt{widget} e do estado para os valores padrão. Após a execução, o estado é automaticamente rastreado.
+
+    \item \texttt{load}: Atualiza os valores do \texttt{widget} e do estado com os dados fornecidos no parâmetro \texttt{value} do tipo \texttt{State}. Assim como no método \texttt{reset}, o estado é rastreado após a execução.
+
+    \item \texttt{subscribe}: Adiciona um \textit{handler} para notificações de mudanças no estado das chaves \texttt{on\_untrack} e \texttt{on\_commit}. O \textit{handler} é uma função de \textit{callback} que recebe os valores antigo e novo do estado. Para centralizar a lógica do domínio, os \texttt{handlers} são declarados como métodos estáticos da classe derivada de \texttt{State}.
+\end{itemize}
+
+Com base no \texttt{Controller} apresentado na Seção~\ref{subsec:3:controller}, é apresentado a seguir a implementação do \texttt{Module} correspondente, Código~\ref{lst:3:module}.
+
+\begin{center}
+    \lstinputlisting[basicstyle=\tiny, numbers=right, firstnumber=11, language=Python, firstline=11, lastline=37, caption={Exemplo de implementação do Module.}, label={lst:3:module}]{code/module.py}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+
+\hfill \break
+
+Na linha \texttt{11}, observa-se novamente o decorador \texttt{@FAMetaCheckModule}, que verifica se os atributos necessários e seus respectivos tipos estão presentes na classe derivada. A declaração da classe na linha \texttt{12} define a \texttt{KMeansSolverModule}, que herda de \texttt{Module} com os tipos \texttt{KMeansSolverController} e \texttt{KMeansSolverState}. Essa abordagem permite manter referências para ambos os tipos de estado e \texttt{controller} associados ao módulo.
+
+Além disso, na linha \texttt{16}, a tipagem de \texttt{app} é feita entre aspas devido à necessidade de definição explícita para verificação do código. A classe \texttt{FeaturesAnalyzer}, por ser uma das primeiras a ser instanciadas, é importada apenas para verificação de tipo, evitando dependências cíclicas.
+
+Na linha \texttt{19}, o \texttt{Module} é inicializado com uma instância de \texttt{app} e um \texttt{controller} correspondente ao tipo de estado associado. A inicialização da classe base é garantida pela chamada \texttt{super().\_\_init\_\_()}. Como a classe base já invoca o método \texttt{subscribe} na linha \texttt{22}, não é necessário chamá-lo explicitamente.
+
+Por fim, destaca-se o exemplo de conexão entre as atualizações de estado global pelas chaves \texttt{on\_untrack} e \texttt{on\_commit}, utilizando gerenciadores de contexto no método \texttt{subscribe}, localizado na linha \texttt{22}. Por meio da cláusula \texttt{with}, o uso de gerenciadores de contexto assegura que as atualizações de estado sejam realizadas de forma segura e consistente, mitigando problemas de inconsistência causados por falhas nos \texttt{handlers}. Caso ocorra algum erro, o estado é restaurado utilizando o atributo \texttt{\_backup}. A implementação desse gerenciador de contexto encontra-se nos métodos \texttt{\_\_enter\_\_} e \texttt{\_\_exit\_\_} da classe \texttt{State}.
+
+No contexto mencionado, a chave \texttt{on\_untrack} conecta-se ao \texttt{handler} \texttt{on\_module\_change} do widget, que atualiza a interface do usuário adicionando um botão para aplicar alterações por meio do método \texttt{state.commit()}. Esse botão, por sua vez, aciona o método \texttt{commit()} através de \texttt{handle\_status()} do widget. A implementação detalhada desse método pode ser encontrada no arquivo \href{https://github.com/ZauJulio/FeaturesAnalyzer/blob/test/src/ui/components/shared/sidebar_item/widget.py}{\underline{src/ui/components/shared/sidebar\_item/widget.py}}~\ref{note:sidebar} mencionado anteriormente.
+
+Já a chave \texttt{on\_commit}, associada ao \texttt{handler} \texttt{handle\_001\_on\_params\_update}, aplica as alterações de parâmetros ao modelo após o acionamento do botão. Adicionalmente, essa mesma chave conecta-se ao método \texttt{dump} da classe \texttt{Store}, que consolida todos os estados da aplicação em um único contexto. Na Seção~\ref{sec:3:store}, serão apresentados mais detalhes sobre a classe \texttt{Store}. Por fim, na Figura~\ref{fig:3:cd-arch-base} é apresentado o diagrama de arquitetura de componente, ilustrando a organização entre o \texttt{Module}, \texttt{Controller}, \texttt{State} e a \texttt{Widget}.
+
+\begin{figure}[h!]
+    \centerline{\includesvg[width=0.5\columnwidth]{image/source/cd-onion.svg}}
+    \caption{Diagrama de Arquitetura de Componente.}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+    \label{fig:3:cd-arch-base}
+\end{figure}

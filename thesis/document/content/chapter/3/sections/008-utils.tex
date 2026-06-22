@@ -1,0 +1,97 @@
+\section{Utilitários}
+\label{sec:3:utils}
+
+\newcommand\urlGhPages{https://docs.github.com/en/pages}
+\newcommand\URLGhActions{https://docs.github.com/en/actions}
+\newcommand\urlMkdocs{https://www.mkdocs.org/}
+\newcommand\urlRuff{https://docs.astral.sh/ruff/}
+\newcommand\urlIEign{https://pypi.org/project/python-i18n/}
+
+Nessa seção é apresentado os utilitários desenvolvidos para facilitar a implementação e o uso do sistema. Eles são responsáveis por simplificar a execução de tarefas comuns, como a auditoria do sistema, documentação, análise e formatação, tradução e internacionalização, etc.
+
+\subsection{Logger}
+
+Devido ao grande número de operações e a complexidade da aplicação, surgiu a necessidade de um \textit{logger}, uma ferramenta de uso genérico para auditoria. Ela é responsável por registrar informações sobre o funcionamento do sistema, tanto no terminal de execução atual quanto em um arquivo de log dedicado. Essa funcionalidade facilita a auditoria, depuração e monitoramento da aplicação.
+
+Os logs gerados pelo \texttt{logger} são categorizados em diferentes níveis, cada um com uma cor associada para facilitar a identificação no terminal:
+
+\begin{itemize}
+    \item \textbf{\textcolor{blue}{DEBUG}}: Informações detalhadas para diagnóstico. Representado na cor azul.
+    \item \textbf{\textcolor{gray}{INFO}}: Informações gerais sobre o funcionamento da aplicação. Representado na cor cinza.
+    \item \textbf{\textcolor{ForestGreen}{SUCCESS}}: Mensagens que indicam operações bem-sucedidas. Representado na cor verde.
+    \item \textbf{\textcolor{Goldenrod}{WARNING}}: Alerta sobre situações que podem exigir atenção, mas que não são erros. Representado na cor amarela.
+    \item \textbf{\textcolor{red}{ERROR}}: Mensagens que indicam falhas que impedem a execução de uma funcionalidade. Representado na cor vermelha.
+    \item \textbf{\textcolor{magenta}{CRITICAL}}: Erros graves que requerem atenção imediata. Representado na cor magenta.
+\end{itemize}
+
+Os logs são utilizados em vários pontos da aplicação, como na inicialização do sistema, na restauração dos estados, treinamento de modelos e persistência de dados. No trecho a seguir~\ref{lst:logger} é apresentado alguns exemplos simples do uso do \texttt{logger}.
+
+\begin{center}
+    \begin{lstlisting}[language=Python, basicstyle=\tiny, caption={Exemplos de uso do \texttt{logger}}, label={lst:logger}]
+        logger.info(f"{PREFIX} State dumped.")
+        logger.info(f"{PREFIX} State loaded.")
+        logger.success(f"{self.__PREFIX} - Model loaded from {self.file_name}.")
+        logger.info(f"{self.__PREFIX} - Model binary not found.")
+        logger.info(f"{self.__PREFIX} - Model entry not found.")
+        logger.error(f"{self.__PREFIX} - {e}")
+        logger.warning(f"{self.LOG_PREFIX} Document with UID {uid} not found")
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\subsection{Documentação}
+
+A documentação desempenha um papel essencial na manutenção e na extensibilidade de sistemas complexos, como o desenvolvido neste trabalho. Para garantir que os desenvolvedores possam facilmente personalizar e compreender o funcionamento do sistema, foi adotada uma estratégia baseada em \textbf{Markdown} com o uso das ferramentas \href{\urlMkdocs}{\texttt{MKDocs}}\footnote{\url{\urlMkdocs}} e \texttt{mkdocs-material}. Essa abordagem simplifica a criação de uma documentação rica e interativa, que pode ser disponibilizada em formato de site.
+
+A implementação do sistema inclui um gerador automatizado que converte arquivos \texttt{.md} em páginas HTML, CSS e JavaScript estilizadas com o tema \texttt{mkdocs-material}. O resultado é um site responsivo e bem estruturado, armazenado em uma \textit{branch} \texttt{gh-pages} do repositório no GitHub.
+
+Essa \textit{branch} serve como base para a publicação automática do site, tornando a documentação acessível para toda a equipe. As configurações do \texttt{MKDocs} são definidas no arquivo \texttt{mkdocs.yml}, onde é possível personalizar o tema, a navegação, \textit{plugins} e outros aspectos.
+
+\subsubsection{Workflow e CI/CD}
+
+Para automatizar o processo de geração e \textit{deploy} da documentação, foi configurado um \textbf{workflow} utilizando os recursos de integração contínua (CI) e entrega contínua (CD) disponíveis no GitHub. Um \textbf{workflow} consiste em um conjunto de etapas definidas em um arquivo \texttt{YAML}, armazenado no diretório \texttt{.github/workflows} do repositório. Ele descreve os gatilhos (como \textit{commit's}, \textit{pull requests} ou \textit{tags}) e as ações que devem ser executadas, como a instalação de dependências, a execução de testes e a implantação.
+
+O conceito de \textbf{CI/CD} (Integração Contínua e Entrega Contínua) refere-se a práticas que permitem o desenvolvimento, o teste e a implantação de software de forma automática e iterativa. Na integração contínua, alterações no código são frequentemente integradas ao repositório principal, garantindo que ele esteja sempre atualizado e testado. Na entrega contínua, essas alterações são automaticamente implantadas em ambientes de produção ou \textit{staging}, facilitando a liberação de novas funcionalidades.
+
+No caso do gerador de documentação, o workflow configurado no GitHub executa as seguintes etapas:
+
+\begin {enumerate}
+    \item \textbf{Gatilho}: O processo é iniciado após um \textit{push} na branch principal do repositório.
+    \item \textbf{Configuração do Ambiente}: As dependências necessárias para o \texttt{MKDocs} e o tema \texttt{mkdocs-material} são instaladas.
+    \item \textbf{Geração do Site}: O conteúdo em Markdown é processado e convertido em páginas HTML estilizadas.
+    \item \textbf{\textit{Deploy} Automatizado}: O site gerado é enviado para a branch \texttt{gh-pages}, que serve como base para a publicação no \textbf{GitHub Pages}.
+\end {enumerate}
+
+O \textbf{GitHub Pages} permite hospedar sites estáticos diretamente de um repositório no GitHub, sendo uma solução ideal para publicar documentações. Para ativá-lo, acesse as configurações do repositório, selecione a aba \textit{Pages}, configure a \textit{branch} e o diretório onde os arquivos estão armazenados, e salve as alterações.
+
+Após a configuração, o site será publicado em um endereço gerado automaticamente, como \texttt{https://<username>.github.io/<repository>}, tornando a documentação acessível online de forma prática. Mais detalhes podem ser encontrados na \href{\urlGhPages}{\textbf{documentação oficial}}\footnote{\url{\urlGhPages}}.
+
+Essa abordagem automatizada reduz o esforço manual, garante consistência no processo de \textit{deploy} e promove uma documentação atualizada e acessível, essencial para o sucesso de projetos colaborativos. Embora o \textit{workflow} simplifique o processo, ele pode ser feito manualmente sem grandes dificuldades, seguindo a \href{\URLGhActions}{documentação}\footnote{\url{\URLGhActions}}.
+
+Com este utilitário, os desenvolvedores podem escrever a documentação dos próprios experimentos no projeto e hospedá-los na \textit{web} de forma simples.
+
+\subsection{Análise e Formatação de Código}
+
+A \texttt{Ruff} é uma ferramenta moderna de \textit{linting} (análise de código) e formatação de código desenvolvida para Python. Ele é projetado para ser extremamente rápido e oferecer suporte a uma ampla gama de regras e convenções de codificação, garantindo que o código permaneça legível, consistente e aderente às melhores práticas~\cite{ruff-docs}.
+
+Um \textit{linter} é uma ferramenta que analisa o código-fonte em busca de erros, padrões não recomendados e violações de estilo. Já um \textbf{formatter} formata automaticamente o código para que ele siga padrões predefinidos, como indentação, espaçamento e quebras de linha, facilitando a padronização do projeto.
+
+O \textit{Ruff} destaca-se por oferecer suporte a várias regras e convenções de ferramentas amplamente utilizadas, como \texttt{flake8}, \texttt{isort}, \texttt{pylint}, entre outras. Isso permite integrar múltiplas funcionalidades em uma única ferramenta, simplificando o pipeline de desenvolvimento.
+
+As configurações do \textit{Ruff} são definidas no arquivo \texttt{ruff.toml}, onde podem ser especificadas regras habilitadas, exclusões e personalizações. Esse arquivo centralizado torna o gerenciamento de padrões de estilo mais acessível e compartilhável entre diferentes desenvolvedores de um projeto. Para mais informações, a documentação oficial do \href{\urlRuff}{\textit{Ruff}}\footnote{\url{\urlRuff}}.
+
+\subsection{Tradução e Internacionalização (i18n)}
+
+A internacionalização, comumente abreviada como \href{\urlIEign}{\textit{i18n}}\footnote{\url{\urlIEign}}, refere-se ao processo de adaptação de um sistema de \textit{software} para suportar múltiplos idiomas e culturas sem a necessidade de reengenharia. Esse recurso é essencial para aumentar a acessibilidade do sistema, possibilitando que usuários de diferentes regiões utilizem a aplicação em seus idiomas nativos.
+
+Na implementação, a funcionalidade de \textit{i18n} é gerenciada por arquivos de tradução, que mapeiam as chaves do texto para suas correspondentes localizações. Esses arquivos, frequentemente escritos no formato \texttt{JSON} ou \texttt{PO}, permitem que o conteúdo da interface do usuário seja facilmente traduzido e adaptado para diferentes contextos culturais.
+
+Para o gerenciamento e aplicação de traduções, foi utilizada a biblioteca \texttt{python-i18n}. Essa biblioteca fornece uma interface simples e eficiente para carregar arquivos de tradução, selecionar idiomas e interpolar valores dinâmicos em strings traduzidas.
+
+Além disso, ela suporta recursos avançados, como \textit{fallback} de idiomas (uma linguagem padrão, quando não definida), facilitando a construção de sistemas robustos e internacionalizados.
+
+A configuração da \textit{i18n} utiliza ferramentas específicas que detectam o idioma do sistema ou permitem que o usuário selecione sua preferência. Além disso, o sistema foi projetado para facilitar a inclusão de novos idiomas por meio da simples adição de arquivos de tradução e ajustes mínimos no código.
+
+Essa abordagem promove uma maior inclusão e acessibilidade do sistema, permitindo que usuários de diferentes origens e idiomas possam interagir com a aplicação de forma eficaz e intuitiva.
+
+Sendo assim, instâncias desse \textit{boilerplate} podem ser customizadas para incluir suporte a diferentes idiomas, conforme a necessidade do projeto, útil para aplicações desenvolvidas por equipes multilinguísticas. Na Seção ~\ref{sec:3:consideracoes-finais} é apresentado as considerações finais deste capítulo.

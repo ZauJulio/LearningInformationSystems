@@ -1,0 +1,56 @@
+\section{Gerenciamento de Modelos}
+\label{sec:3:modelos}
+
+O gerenciamento de modelos é uma prática essencial em projetos de análise de dados, aprendizado de máquina e sistemas que demandam iterações contínuas com dados. Essa abordagem organiza, armazena, carrega e reutiliza modelos eficientemente, garantindo consistência nos resultados e alta manutenibilidade. Em cenários que envolvem um volume de dados considerável, o gerenciamento de modelos é fundamental para lidar com a complexidade dos algoritmos e o tempo de execução das análises.
+
+A capacidade de salvar e carregar modelos evita treinamentos repetitivos, assegura a consistência dos experimentos e facilita a comparação entre diferentes configurações. Além disso, a implementação desenvolvida oferece meios de compartilhar modelos entre colaboradores, promovendo o desenvolvimento colaborativo, auditoria e replicação de experimentos.
+
+Na arquitetura desenvolvida, o gerenciamento de modelos está diretamente relacionado à camada de estados, instanciado pelos \texttt{handlers} responsáveis por integrar os modelos com o restante da aplicação. Nesta seção, está detalhado a estrutura e os benefícios da classe \texttt{FAModel}, utilizando como exemplo o modelo \texttt{KMeans}.
+
+\subsection{Estrutura do Gerenciador de Modelos}
+
+A classe base \texttt{FAModel} foi projetada como uma solução genérica e extensível, possibilitando a integração com diversos algoritmos de processamento de dados e aprendizado de máquina. Sua implementação utiliza \texttt{TypeVar} para parametrização genérica e \texttt{Pydantic} para validação e consistência dos dados. O exemplo do modelo \texttt{KMeans}~\ref{src:3:kmeans}, será usado para ilustrar sua aplicação.
+
+\subsubsection*{Inicialização e Configuração}
+
+Antes de utilizar o gerenciador, é necessário configurar o ambiente para armazenamento:
+
+\begin{itemize}
+    \item \textbf{Diretório de Modelos}: Configurado pela variável \texttt{BIN\_PATH}, com valor padrão \texttt{./bin}. Se inexistente, o diretório será criado automaticamente.
+    \item \textbf{Banco de Dados}: Configurado pela variável \texttt{MODELS\_DB\_PATH}, com valor padrão \texttt{../db.json}. Esse arquivo armazena metadados como parâmetros e identificadores dos modelos.
+\end{itemize}
+
+Após a configuração, um gerenciador pode ser definido para qualquer algoritmo. A implementação da classe \texttt{KMeans}, derivada de \texttt{FAModel}, exemplifica o gerenciamento do modelo \texttt{KMeans} do \texttt{scikit-learn}. A seguir, é apresentado um trecho do código relevante:
+
+\begin{center}
+    \lstinputlisting[basicstyle=\tiny, numbers=right, firstnumber=1, language=Python, firstline=1, lastline=49, caption={Implementação do Modelo KMeans}, label=src:3:kmeans]{code/kmeans.py}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\hfill \break.
+
+Os principais elementos dessa implementação são detalhados abaixo:
+
+\begin{itemize}
+    \item \textbf{Definição de Parâmetros}: Nas linhas \texttt{12-20}, o esquema de parâmetros é definido utilizando \texttt{PydanticBaseModel}. Essa abordagem garante que os parâmetros sejam validados e consistentes com o algoritmo de análise definido.
+    \item \textbf{Classe do Modelo}: Nas linhas \texttt{22}, a classe \texttt{KMeans} é definida como uma especialização de \texttt{FAModel}, parametrizada pelos tipos \texttt{SklearnKMeans} e \texttt{KMeansParams}, que representam, respectivamente, o modelo do \texttt{scikit-learn} e os parâmetros.
+    \item \textbf{Inicialização do Modelo}: O método \texttt{\_\_init\_\_} (linhas \texttt{27-37}) é responsável por verificar a existência do modelo no armazenamento. Caso não exista, ele registra os parâmetros no banco de dados, inicializa o modelo e persiste os dados.
+    \item \textbf{Treinamento}: O método \texttt{fit} (linhas \texttt{39-45}) realiza o ajuste do modelo aos dados fornecidos. Após o treinamento, o modelo é salvo no diretório especificado por \texttt{BIN\_PATH}, utilizando um nome padronizado: \texttt{<model\_name>\_<datetime>\_<uid>.pkl}. Essa nomenclatura inclui o nome do modelo, a data/hora e um identificador único.
+    \item \textbf{Predição}: O método \texttt{predict} (linhas \texttt{47-49}) utiliza o modelo treinado para realizar previsões. Antes da predição, o método verifica se o modelo foi ajustado corretamente.
+\end{itemize}
+
+\subsection{Benefícios do Gerenciamento de Modelos}
+
+A abordagem para o gerenciamento de modelos, utilizando a classe \texttt{FAModel}, oferece diversos benefícios para projetos de análise de dados:
+
+\begin{itemize}
+    \item \textbf{Reutilização}: Modelos podem ser salvos e carregados para evitar treinamentos desnecessários. Além disso, os modelos podem ser comparados, para, por exemplo, atender a necessidades de ajuste de parâmetros.
+    \item \textbf{Consistência}: A validação de parâmetros e identificadores únicos assegura integridade no armazenamento.
+    \item \textbf{Flexibilidade}: A parametrização genérica permite a integração com diferentes algoritmos. Logo, é possível integrar facilmente qualquer método de análise, uma vez conhecido e defindo os parâmetros.
+    \item \textbf{Escalabilidade}: A estrutura modular facilita a adaptação a novas funcionalidades e cenários. Na implementação descrita, por exemplo, é possível também utilizar pré-processadores antes da etapa de treinamento, e da mesma forma, registrar o uso com um identificador único dos parâmetros e resultado do pré-processamento. Outra possibilidade, seria integrar um módulo de controle de métricas de avaliação.
+    \item \textbf{Colaboração}: A possibilidade de compartilhar modelos promove a replicação de experimentos e auditorias. Um exemplo prático seria um membro de pesquisa conseguir compartilhar um modelo complexo, após o treinamento, com toda a equipe.
+\end{itemize}
+
+A implementação do \texttt{KMeans} demonstra como a arquitetura genérica da \texttt{FAModel} pode ser aplicada a algoritmos específicos, garantindo uma integração eficiente e confiável.
+
+\newpage

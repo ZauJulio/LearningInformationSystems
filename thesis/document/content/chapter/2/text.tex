@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INÍCIO CAPÍTULO                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Fundamentação Teórica}
+\label{cha:fundamentacao-teorica}
+
+Neste capítulo são apresentados os conceitos e as definições necessárias para o entendimento do trabalho proposto. São abordados conceitos de \textit{boilerplate}, análise e visualização de dados, aprendizado de máquina, linguagens de programação e bibliotecas. Além disso, é apresentada a metodologia utilizada para o desenvolvimento do trabalho.
+
+% ========================================================================= %
+\section{\textit{Boilerplate}}
+\label{sec:boilerplate}
+
+O termo \textit{boilerplate} refere-se a blocos de código reutilizáveis que fornecem uma estrutura inicial ou funcionalidade básica para o desenvolvimento de sistemas ou aplicações \citep{syb_boilerplate}. Esse conceito é amplamente utilizado na engenharia de software para acelerar o processo de desenvolvimento, padronizar práticas de codificação e minimizar erros comuns.
+
+Na prática, um \textit{boilerplate} atua como um ponto de partida que contém configurações, dependências e módulos essenciais já pré-configurados, permitindo que os desenvolvedores se concentrem mais na lógica específica da aplicação ao invés de investir tempo na configuração inicial do ambiente.
+
+Um \textit{boilerplate} geralmente inclui:
+\begin{itemize}
+    \item Estrutura de diretórios organizada e padronizada.
+    \item Arquivos de configuração para ferramentas como gerenciadores de pacotes, servidores ou \textit{frameworks}.
+    \item Código base com funcionalidades genéricas, como autenticação, conexão a bancos de dados, ou interface de usuário básica.
+    \item Dependências e bibliotecas pré-definidas, integradas ao projeto.
+\end{itemize}
+
+Uma distinção importante no desenvolvimento de software é a diferença entre bibliotecas e \textit{frameworks}. Enquanto bibliotecas são coleções de funções ou classes reutilizáveis que os desenvolvedores podem chamar diretamente, \textit{frameworks} definem uma estrutura mais rígida para o desenvolvimento, fornecendo não apenas ferramentas, mas também controlando o fluxo da aplicação. Essa característica torna os \textit{frameworks} menos flexíveis em comparação às bibliotecas, ao determinarem como o desenvolvedor deve construir a aplicação.
+
+A escolha de utilizar um \textit{boilerplate} neste projeto está diretamente relacionada à flexibilidade que ele oferece. Diferentemente de um \textit{framework}, o \textit{boilerplate} não impõe restrições rígidas ao fluxo ou à arquitetura da aplicação, permitindo que o desenvolvedor mantenha maior controle sobre o design e a lógica do sistema. Além disso, ele possibilita a edição do código base, e a integração de diferentes bibliotecas e componentes de maneira modular e adaptável, atendendo às necessidades específicas de cada projeto.
+
+Neste trabalho, o conceito de \textit{boilerplate} será aplicado ao desenvolvimento de uma ferramenta ou aplicação para análise e visualização de dados, oferecendo uma base sólida que pode ser facilmente ajustada a diferentes cenários e demandas. Essa abordagem combina a padronização inicial com a liberdade de personalização, tornando-a ideal para projetos acadêmicos e industriais.
+
+% ========================================================================= %
+\section{Análise e visualização de dados}
+
+A análise de dados é uma tarefa complexa, mas de fundamental importância para a tomada de decisões \citep{guimaraes2004sistema}. Esse processo pode ser descrito como a transformação de dados brutos em informações valiosas e significativas.
+
+Com o aumento exponencial da produção e coleta de dados, impulsionado pelo advento da Internet das Coisas (IoT) e pela atividade dos próprios usuários, a análise de dados tornou-se essencial para agregar valor a evolução contínua da Web e das tecnologias associadas.
+
+Neste contexto, a visualização de dados desempenha um papel crucial nesse processo, por ser através dela que o usuário pode interpretar os dados, identificar necessidades de pré-processamento, selecionar as técnicas de processamento adequadas e avaliar a qualidade dos resultados obtidos.
+
+\begin{itemize}
+    \item \textbf{Pré-processamento}: inclui tarefas como formatação, remoção de dados faltantes, remoção de valores atípicos (\textit{Outliers}), normalização, entre outros. Por exemplo, interpolação do valor anterior e posterior a um dado ausente com o objetivo de preencher essa lacuna em uma série temporal com baixa variabilidade.
+    \item \textbf{Processamento}: pode ser realizada de diversas formas, tal como, a aplicação de métodos estatísticos ou algoritmos de aprendizado de máquina. Por exemplo: regressão, classificação, agrupamento, predição, otimização, entre outros.
+    \item \textbf{Pós-processamento}: consiste na apresentação dos resultados obtidos, que pode ser por simples tabelas, gráficos, modelos matemáticos ou até valores numéricos. Por exemplo: visualização de dados em gráficos de séries históricas.
+\end{itemize}
+
+% ========================================================================= %
+\section{Aprendizado de Máquina}
+
+Dentre as várias técnicas utilizadas na análise de dados, o aprendizado de máquina consiste em um conjunto de algoritmos projetados para resolver problemas nos quais os métodos clássicos não são eficazes ou eficientes \citep{monard2003conceitos}. Esses algoritmos são capazes de gerar modelos matemáticos com base em dados, os quais podem ser utilizados para prever comportamentos, agrupar informações ou classificá-las.
+
+Os problemas abordados por esses algoritmos podem ser divididos em diversas categorias, como, por exemplo: regressão, classificação, agrupamento, predição, detecção de anomalias, ranqueamento, otimização, entre outros.
+
+\begin{itemize}
+    \item \textbf{Regressão}: Trata-se de uma técnica que visa modelar a relação entre uma variável dependente (ou resposta) e uma ou mais variáveis independentes (ou preditoras). O objetivo é encontrar uma função matemática que descreva essa relação com certa precisão. Uma vez obtida, essa função pode ser utilizada para prever valores futuros da variável dependente com base em novos dados das variáveis independentes. Por exemplo, prever o preço de uma casa com base em características como tamanho, localização e número de quartos.
+
+    \item \textbf{Classificação}: Refere-se ao processo de atribuir categorias ou rótulos pré-definidos aos dados com base em suas características. Isso é feito ao identificar uma função que relacione os dados às categorias, permitindo determinar a classe de novas entradas. Por exemplo, classificar mensagens de e-mail como \textit{spam} ou \textit{não spam}, ou categorizar imagens como contendo ou não um determinado objeto.
+
+    \item \textbf{Agrupamento}: Trata-se de identificar grupos de dados que compartilhem características semelhantes, sem informações prévias sobre os grupos. Um exemplo seria agrupar clientes de uma loja com base em seus hábitos de compra.
+
+    \item \textbf{Predição}: Refere-se à tarefa de estimar valores futuros com base em dados históricos. Por exemplo, prever o preço de ações no mercado financeiro.
+
+    \item \textbf{Detecção de anomalias}: Envolve identificar dados que se desviam significativamente do padrão observado. Esses dados podem ser removidos ou analisados separadamente, como em sistemas de detecção de fraudes.
+
+    \item \textbf{Ranqueamento}: Esta técnica ordena os dados de acordo com uma métrica de relevância. Um exemplo comum é o ranqueamento de resultados em mecanismos de busca.
+
+    \item \textbf{Otimização}: Consiste em encontrar soluções que maximizem ou minimizem uma função objetivo. Por exemplo, determinar a rota mais eficiente em um problema de logística.
+\end{itemize}
+
+
+\setlength{\leftskip}{3cm}
+
+    Cada técnica citada, e muitos outros, já estão implementados em bibliotecas de código, algumas de código aberto, como, por exemplo, o \textit{scikit-learn}, e outras de código fechado, como, por exemplo, o MATLAB. Estas bibliotecas são utilizadas para estudo, aplicações práticas, criação de plataformas para a realização de análises de dados, dentre outras aplicações.
+
+\setlength{\leftskip}{0pt}
+
+% ========================================================================= %
+\section{Linguagens de Programação}
+
+A linguagem escolhida para este projeto foi o Python. Presente entre as linguagens mais utilizadas no mundo, o Python possui uma vasta comunidade de desenvolvedores e um número crescente de bibliotecas, consolidando-se como uma ferramenta rica para tarefas de análise de dados. Trata-se de uma linguagem de alto nível, multiparadigma, com tipagem dinâmica e forte \citep{python2022}. Além disso, sua sintaxe simples e intuitiva facilita o aprendizado tanto para iniciantes quanto para programadores experientes \citep{van1995python}.
+
+Especificamente para este projeto, o Python foi utilizado com anotações de tipo, uma funcionalidade introduzida na versão 3.5 da linguagem. As anotações de tipo permitem definir os tipos de variáveis, argumentos e retornos de funções. Embora opcionais, elas são valiosas para a documentação do código e para a detecção precoce de erros. Ferramentas de análise estática, como o \texttt{mypy}, podem verificar se o código segue as definições de tipo, contribuindo para maior qualidade, facilidade de manutenção e extensão do projeto \citep{mypy}.
+
+Sobre o funcionamento, o Python executa sobre uma máquina virtual, chamada de Python Virtual Machine (\textit{PVM}), que interpreta o código-fonte e executa as instruções \citep{pvm-2017}. Ele utiliza uma abordagem de compilação \textit{just-in-time} (JIT), na qual o código é transformado em \textit{bytecode} e, posteriormente, em código de máquina durante a execução \citep{pvm-2017}.
+
+Embora o Python apresente desempenho inferior em relação a linguagens como C e C++, seu principal diferencial reside na ampla gama de bibliotecas e \textit{frameworks} disponíveis, além de sua curva de aprendizado mais acessível. Este é concessão \textit{trade-off} que justifica sua escolha para este projeto.
+
+Outra razão relevante para a escolha do Python foi sua praticidade na construção de interfaces gráficas, especialmente em comparação com linguagens como C e C++. O Python disponibiliza bibliotecas como \texttt{PyGObject}, \texttt{PyQt}, \texttt{Tkinter} e \texttt{Kivy}, que tornam o desenvolvimento de interfaces interativas mais ágil e acessível, além de facilitar a criação de designs visualmente atraentes.
+
+Em contrapartida, a criação de interfaces gráficas mais robustas frequentemente exige um volume significativo de código para gerenciar eventos e widgets. Já com Python, grande parte dessa complexidade é abstraída, permitindo ao desenvolvedor concentrar-se nas funcionalidades centrais da aplicação. Por fim, devido à sua popularidade, comunidade ativa, riqueza de bibliotecas, suporte para interfaces gráficas e anotações de tipo, o Python foi escolhido como a base de desenvolvimento deste projeto.
+
+% ========================================================================= %
+\section{Bibliotecas}
+
+Bibliotecas são conjuntos de códigos que podem ser importados para outros projetos, proporcionando a reutilização de rotinas já implementadas para realizar tarefas específicas. A seguir, são apresentadas as principais bibliotecas utilizadas neste projeto:
+
+\subsection{Numpy}
+
+A \texttt{numpy} é uma biblioteca fundamental para a computação científica. Ela implementa vetores n-dimensionais em C, sendo compilados e executados nativamente, garantindo alto desempenho \citep{numpy}. Além disso, o \texttt{numpy} oferece uma vasta gama de funções matemáticas e operações de álgebra linear. Por exemplo, é possível normalizar um conjunto de dados com apenas uma linha de código, demonstrando sua eficiência e praticidade.
+
+\subsection{Pandas}
+
+A \texttt{pandas} é uma biblioteca de código aberto que utiliza o \texttt{numpy} como base para estruturar os dados em tabelas chamadas \textit{DataFrames}, estruturas multidimensionais amplamente empregadas na análise de dados \citep{pandas}. Por herdar o desempenho do \texttt{numpy} e incluir uma ampla gama de funções específicas, a \texttt{pandas} permite realizar operações como ordenação, filtragem e transformação de dados de maneira eficiente e simplificada.
+
+\subsection{Scikit-learn}
+
+A \texttt{scikit-learn} (ou \texttt{sklearn}) é uma biblioteca de \textit{machine learning} que fornece implementações de algoritmos de aprendizado de máquina, estatísticos e de mineração de dados \citep{scikit-learn2022}. Com um conjunto abrangente de algoritmos para classificação, regressão, agrupamento e redução de dimensionalidade, a \texttt{sklearn} também inclui métricas de avaliação para medir o desempenho dos modelos criados. Por exemplo, a criação de um modelo de árvore de decisão, utilizado para tarefas de classificação ou regressão, é facilmente implementada com esta biblioteca.
+
+\subsection{Seaborn/Matplotlib}
+
+A \texttt{seaborn} é a biblioteca escolhida para a visualização de dados neste projeto. Baseada no \texttt{matplotlib}, ela fornece interfaces de alto nível que simplificam a criação e personalização de gráficos \citep{seaborn}. Gráficos como dispersão, linhas e barras podem ser criados e estilizados rapidamente. Além disso, os gráficos gerados podem ser integrados à interface gráfica desenvolvida com GTK, garantindo uma apresentação visual interativa.
+
+\subsection{GTK}
+
+O \texttt{GTK} (\textit{GIMP Toolkit}) é um conjunto de ferramentas (\textit{toolkit}) multiplataforma para a criação de interfaces gráficas de usuário (GUI, do inglês, Graphical User Interface) \citep{gtk}. Ele é amplamente utilizado em aplicações Linux e possui suporte para outras plataformas, como Windows e macOS. A versão 3 do \texttt{GTK} foi escolhida para este projeto devido à sua maturidade, estabilidade e ampla documentação.
+
+Embora a versão 4 ofereça avanços em desempenho e novos recursos, como suporte aprimorado para renderização com GPU, ela ainda apresenta um ecossistema menos maduro, com bibliotecas auxiliares em processo de adaptação e menor disponibilidade de exemplos e tutoriais. Por isso, a versão 3 foi considerada mais adequada para o desenvolvimento deste projeto, priorizando robustez e compatibilidade.
+
+\subsubsection{Widget}
+
+No \texttt{GTK}, um \textbf{Widget} é a unidade fundamental da interface gráfica. Ele representa um componente visual ou interativo da aplicação, como botões, campos de texto, caixas de seleção, entre outros. Widgets são os blocos básicos que compõem a interface gráfica, permitindo interações entre o usuário e a aplicação.
+
+Cada \textit{Widget} possui propriedades e comportamentos específicos, podendo ser configurado para atender a diferentes necessidades da interface. Por exemplo, um botão pode ser utilizado para executar ações ao ser clicado, enquanto uma entrada de texto permite ao usuário digitar informações.
+
+A comunicação entre o componente visual e o código é realizada através dos \textbf{Signals}, um mecanismo essencial no GTK para lidar com eventos. Eles permitem que os widgets comuniquem mudanças ou ações para a aplicação. Por exemplo, quando um botão é clicado, ele emite um \textit{signal} chamado \texttt{"clicked"}. No código, é possível conectar funções específicas a esses sinais, de forma que a aplicação saiba o que fazer quando um evento ocorre.
+
+No \textbf{PyGObject}, os sinais podem ser conectados diretamente aos widgets usando o método \texttt{connect}, como no exemplo abaixo~\ref{lst:connect-signal}.
+
+\begin{center}
+    \begin{lstlisting}[language=Python, caption=Exemplo de conexão de um sinal a um botão no GTK., label=lst:connect-signal]
+        button.connect("clicked", on_button_clicked)
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+Neste exemplo, a função \texttt{on\_button\_clicked} será chamada sempre que o botão for clicado. Isso demonstra como os widgets e os sinais trabalham juntos para criar interatividade e dinamismo na interface gráfica.
+
+\subsubsection{PyGObject, GObject Introspection e Stubs}
+
+O \texttt{PyGObject} é o vinculador (\textit{binding}) oficial para o GTK em Python, permitindo o uso das bibliotecas GTK e de outras partes do GNOME diretamente na linguagem Python \citep{pygobject}. O termo \textit{binding} refere-se à técnica de criar uma ponte entre bibliotecas escritas em uma linguagem de baixo nível, como \textbf{C}, e linguagens de mais alto nível, como Python. Com isso, é possível utilizar funções e objetos dessas bibliotecas nativas sem a necessidade de reescrever o código em Python.
+
+O \texttt{PyGObject} utiliza o sistema \textit{GObject Introspection}, uma infraestrutura que permite o acesso dinâmico às APIs de bibliotecas escritas em C \citep{gobjectintrospection}. O \texttt{GObject Introspection} gera metadados das bibliotecas em tempo de execução, possibilitando a interação com essas APIs a partir de linguagens de alto nível, como Python. Isso reduz a necessidade de criar \textit{bindings} manuais, simplificando a integração de bibliotecas nativas, além de promover maior flexibilidade e eficiência no processo de desenvolvimento.
+
+Os \textit{stubs}, por sua vez, são arquivos auxiliares que descrevem as funções, classes, e tipos disponíveis em uma biblioteca. Esses arquivos fornecem informações detalhadas para ferramentas de desenvolvimento, permitindo suporte a autocompletar, verificação de tipos e documentação direta no ambiente de codificação. No contexto do \texttt{PyGObject}, os \textit{stubs} ajudam os desenvolvedores a explorar as interface de Programação de Aplicações (APIs, do inglês, Application Programming Interface) do \texttt{GTK} de maneira mais eficiente, minimizando erros e agilizando o processo de desenvolvimento.
+
+Por exemplo, ao utilizar o \texttt{PyGObject} e os \textit{stubs}, é possível criar interfaces gráficas interativas com um código significativamente mais conciso e legível em comparação ao C. Além disso, essa abordagem elimina a necessidade de gerenciar detalhes complexos, como a alocação de memória, que seria necessária ao desenvolver GUIs diretamente com GTK em C.
+
+% ========================================================================= %
+\section{Metodologia}
+\label{sec:2:metodologia}
+
+A metodologia adotada para o desenvolvimento deste trabalho busca atender aos objetivos propostos, garantindo a qualidade e a eficiência do processo. Para isso, foi adotado um modelo de desenvolvimento iterativo e incremental, baseado no levantamento de requisitos descrito na seção \ref{sec:2:requisitos}.
+
+\subsection{Levantamento de Requisitos}
+\label{sec:2:requisitos}
+
+Foi realizada uma análise para identificar os requisitos funcionais e não funcionais do sistema. Os requisitos principais incluem:
+
+\begin{itemize}
+    \item Interface simples, intuitiva e responsiva que permita fácil navegação entre as funcionalidades.
+    \item Arquitetura de fluxo de interações baseada nos padrões de projeto de Estado e Observador.
+    \item Importação de dados em formatos amplamente utilizados, como CSV e XLSX.
+    \item Visualização interativa de dados por meio de gráficos.
+    \item Suporte a integração de algoritmos de análise de dados.
+    \item Banco de dados dos parâmetros dos modelos treinados em JSON para simplificar a visualização e reutilização.
+    \item Exportação e carregamentos de modelos já treinados por meio de arquivos.
+    \item Suporte a múltiplos sistemas operacionais, com foco inicial em Linux.
+    \item Ferramenta para documentação externa e interna da ferramenta, permitindo que cada extensão ou experimento realizado na plataforma seja documentado.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FIM CAPÍTULO                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

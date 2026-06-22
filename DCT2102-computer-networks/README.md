@@ -1,21 +1,21 @@
 # Computer Networks
 
-> Course materials — Information Systems (BSI), UFRN.
+> Discipline — Information Systems (BSI), UFRN.
 
 ## 📋 Overview
 
 | | |
 |---|---|
-| **Type** | Course materials |
+| **Type** | Course |
 | **Discipline** | Computer Networks (DCT2102) — Prof. João Batista Borges Neto |
 | **Academic period** | 2021.2 (grade 8.6) |
-| **Contents** | lecture slides / notes / assignments (in `course-materials/`) |
 
 ## 📖 Context
 
-Slides and materials on the TCP/IP stack, link/network/transport layers and applications (Kurose & Ross).
+TCP/IP stack: link, network, transport and application layers (Kurose & Ross).
 
-> 📌 Exams (provas) are intentionally **not** included here — see the local course archive.
+> 📌 Course slides/materials and exams for this discipline are kept **locally** and are
+> **not committed** to this repository.
 
 ---
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

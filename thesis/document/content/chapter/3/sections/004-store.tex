@@ -1,0 +1,64 @@
+\section{Store}
+\label{sec:3:store}
+
+A classe \texttt{Store} desempenha um papel fundamental no gerenciamento de estados globais da aplicação. Com o intuito de centralizar os contextos em uma única instância, a \texttt{Store} facilita a manipulação e a persistência de estados, fornecendo uma interface para salvá-los em arquivos e, posteriormente, carregá-los. A implementação dessa classe segue o padrão de projeto \textit{Singleton}, garantindo que apenas uma instância esteja disponível em todo o ciclo de vida da aplicação.
+
+A \texttt{Store} utiliza uma instância de \texttt{State} e encapsula o estado global da aplicação a partir dos estados individuais de cada componente. Uma vez armazenados na \texttt{Store}, os estados podem ser facilmente acessados e manipulados por outros módulos e componentes, simplificando a interação entre eles.
+
+Para permitir o acesso nas demais camadas à \texttt{Store}, a instância é armazenada em um atributo da classe \texttt{App}, passada como parâmetro para os módulos e \texttt{handlers} de estado. Outra funcionalidade importante da \texttt{Store} é a capacidade de serializar todos os estados em um objeto e persistir em um arquivo quando necessário.
+
+\begin{center}
+    \begin{lstlisting}[language=Python, numbers=right, basicstyle=\tiny, label={lst:store}, caption={Pseudo-Implementação da classe \texttt{Store}.}]
+    class StateType(FAState):
+    """Global application state."""
+
+        data: ClassVar[dict[str, pd.DataFrame]]
+
+        ImportSettings: ImportSettingsState
+        KMeansSolver: KMeansSolverState
+        MLPSolver: MLPSolverState
+
+
+    class Store(metaclass=SingletonMeta):
+        """State class for storing global state."""
+
+        __state = StateType(
+            state={
+                "data": {},
+                "ImportSettings": ImportSettingsState(),
+                "KMeansSolver": KMeansSolverState(),
+                "MLPSolver": MLPSolverState(),
+            },
+        )
+
+        def __init__(self) -> None:
+            self.load()
+
+        @property
+        def state(self) -> StateType: ...
+
+        # Dump state to json.
+        def dump(self) -> None: ...
+
+        # Load state from json
+        def load(self) -> None: ...
+    \end{lstlisting}
+    \centerline{\textbf{Fonte:} O Próprio Autor (2025)}
+\end{center}
+
+\hfill \break
+
+A seguir, destacam-se algumas das principais responsabilidades da \texttt{Store}, Código~\ref{lst:store}:
+
+\begin{itemize}
+    \item Centralizar todos os estados globais em um único contexto.
+    \item Persistir o estado em um banco de dados utilizando o método \texttt{dump}. O estado é serializado e armazenado em um formato estruturado, JSON, garantindo a integridade dos dados.
+    \item Restaurar o estado global por meio do método \texttt{load}, que busca os dados previamente salvos no banco e os aplica ao contexto atual.
+    \item Garantir a consistência e a integridade do estado global, com suporte para operações como rastrear e descartar mudanças nos estados associados.
+\end{itemize}
+
+Com a demanda por persistir os estados globais, e futuramente informações sobre os modelos de processamento de dados, surgiu a necessidade de integrar um banco de dados e um ORM (\textit{Object-Relational Mapping}). 
+
+Essa integração não apenas simplifica o armazenamento e a recuperação de estados, mas também garante que os dados sejam organizados e acessíveis de maneira eficiente. Mais detalhes sobre o banco de dados utilizado serão apresentados na Seção~\ref{sec:3:banco-de-dados}.
+
+A classe \texttt{Store} é um componente central no framework desenvolvido, desempenhando um papel crucial na gestão e persistência do estado global da aplicação. Sua integração com o banco de dados, o uso de \textit{logs} (registro de eventos) e a adoção de boas práticas de desenvolvimento reforçam a robustez e a manutenibilidade do sistema.
