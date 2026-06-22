@@ -1,0 +1,31 @@
+Nome: Integração;
+
+Tipo: Padrão de Fases;
+
+Contexto inicial: 1) Prototipação do artefato; 2) Necessidade de integração com outra serviço pré-existente não relatado previamente; 3) Compreensão do serviço e da interoperabilidade do prototipo.
+
+Problema: Um serviço já implementado precisa ser integrado ao novo(ou prototipo) para realização de testes e manutenção, ou deve ser substituido.
+
+Solução: Deve se apresentar uma solução para a implementação do estágio atual, afim de preservar a interoperabilidade do serviço, ou, um novo serviço pode ser criado para o cliente.
+
+Contexto resultante: Um novo prototipo, ou versão, do sistema agora com a devida integração, avaliada e aprovada pelo cliente.
+
+Padrões relacionados: DesenvolvimentoIterativo,
+ProjetoIterativo, InserçãoDeNovaFuncionalidade, TestesDeInteroperabilidade.
+
+Usos conhecidos e exemplos: Solicitação da inserção de outros requisitos; preservação da interoperabilidade do sistema antigo; integração de serviços.
+
+
+Atividade de entrega:
+
+    Ação: Integração do banco de dados existente.
+
+1 - Contactar o responsável pela sistema;
+
+2 - Solicitar acesso ao banco de dados;
+
+3 - Copiar as tabelas;
+
+4 - Organizar e formatar os dados (Se necessário);
+
+5 - Agendar interrupção do sistema antigo para implementação do novo;

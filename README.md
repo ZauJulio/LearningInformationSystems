@@ -2,10 +2,10 @@
 
 # 🎓 Learning · Information Systems
 
-**A unified archive of my undergraduate learning — Information Systems, UFRN.**
+**A unified archive of my undergraduate learning — Information Systems (BSI), UFRN.**
 
-Every `Lea*` study repository and related learning project, consolidated into a single
-place with **complete commit history preserved** — original authors, dates and messages intact.
+Coursework, study repositories and projects, organized **by discipline** (official course
+codes) with **complete commit history preserved** — original authors, dates and messages intact.
 
 </div>
 
@@ -13,74 +13,74 @@ place with **complete commit history preserved** — original authors, dates and
 
 ## 📌 About
 
-For years my coursework and study repositories lived scattered across dozens of small
-repos. This repository brings them together so the history stays **traceable**: each
-top-level folder maps to one source repository and keeps native `git log` and `git blame`.
-
-History was preserved with `git filter-repo --to-subdirectory-filter` followed by merges of
-independent histories — **no commit was lost**. Active, still-evolving projects are included
-as **git submodules** instead of being vendored. See [`MANIFEST.md`](./MANIFEST.md) for the
-full provenance of every folder.
+This repository consolidates years of undergraduate work into one place, organized by
+discipline (e.g. `DCT0008-data-structures`). Each folder keeps native `git log` / `git blame`;
+still-evolving projects are included as **git submodules**; lecture slides live in each
+discipline's `course-materials/`. See [`MANIFEST.md`](./MANIFEST.md) for full provenance.
 
 ```bash
 # clone including submodules
 git clone --recurse-submodules git@github.com:ZauJulio/LearningInformationSystems.git
 ```
 
-## 🗂️ Contents
+## 🗂️ Disciplines
 
-### Courses (UFRN — BSI)
-| Folder | Course |
+### Programming & Software Engineering
+| Folder | Discipline |
 |---|---|
-| [`LeaDataStructures`](./LeaDataStructures) | Data Structures |
-| [`LeaPWEB`](./LeaPWEB) | Web Programming |
-| [`LeaIA`](./LeaIA) | Artificial Intelligence |
-| [`LeaOperationalSystems`](./LeaOperationalSystems) | Operating Systems |
-| [`LeaATP_III_IA`](./LeaATP_III_IA) | Advanced Topics in Programming III (AI) |
-| [`LeaSAD`](./LeaSAD) | Decision Support Systems (linear regression) |
-| [`LeaDB2`](./LeaDB2) | Databases II *(local-only)* |
-| [`LeaPOOII`](./LeaPOOII) | Object-Oriented Programming II *(local-only)* |
-| [`LeaCompilers`](./LeaCompilers) | Compilers *(local-only)* |
+| [`DCT1106-programming`](./DCT1106-programming) | Programming (Sig-Library) |
+| [`DCT1108-object-oriented-programming-ii`](./DCT1108-object-oriented-programming-ii) | Object-Oriented Programming II |
+| [`DCT1109-web-programming`](./DCT1109-web-programming) | Web Programming (+ CutTheChase ↗️) |
+| [`DCT2301-software-engineering-i`](./DCT2301-software-engineering-i) | Software Engineering I |
+| [`DCT2304-software-testing`](./DCT2304-software-testing) | Software Testing |
+| [`DCT4403-advanced-topics-in-programming-iii`](./DCT4403-advanced-topics-in-programming-iii) | Advanced Topics in Programming III (AI) |
+| [`DCT1010-programming-languages-and-compilers`](./DCT1010-programming-languages-and-compilers) | Programming Languages & Compilers (+ graphya) |
 
-### Studies & topics
-| Folder | Topic |
+### Systems & Networks
+| Folder | Discipline |
 |---|---|
-| [`LeaRust`](./LeaRust) 🔒 | Rust |
-| [`LeaPyQt`](./LeaPyQt) | PyQt |
-| [`LeaLA`](./LeaLA) 🔒 | Linear Algebra |
-| [`LeaSec`](./LeaSec) 🔒 | Security |
-| [`LeaSecClass`](./LeaSecClass) | Security coursework — cryptology, networking, secure code, steganography *(local-only)* |
-| [`LeaCaesarCipher`](./LeaCaesarCipher) | Caesar cipher (C) *(local-only)* |
-| [`Learning`](./Learning) | Learning-projects aggregator |
+| [`DCT0008-data-structures`](./DCT0008-data-structures) | Data Structures (+ 📺 [video lectures](./DCT0008-data-structures/VIDEO_LECTURES.md)) |
+| [`DCT1105-computer-architecture`](./DCT1105-computer-architecture) | Computer Architecture |
+| [`DCT2101-operating-systems`](./DCT2101-operating-systems) | Operating Systems |
+| [`DCT2102-computer-networks`](./DCT2102-computer-networks) | Computer Networks |
+| [`DCT4101-network-server-administration`](./DCT4101-network-server-administration) | Network Server Administration |
 
-### AI / Machine Learning
+### Data, AI & Machine Learning
+| Folder | Discipline |
+|---|---|
+| [`DCT1401-artificial-intelligence`](./DCT1401-artificial-intelligence) | Artificial Intelligence (+ AI extensions) |
+| [`DCT2602-machine-learning`](./DCT2602-machine-learning) | Machine Learning |
+| [`DCT2403-decision-support-systems`](./DCT2403-decision-support-systems) | Decision Support Systems |
+| [`DCT2201-databases`](./DCT2201-databases) | Databases |
+| [`DCT2202-database-design-and-administration`](./DCT2202-database-design-and-administration) | Database Design & Administration |
+| [`DCT1305-probability-and-statistics`](./DCT1305-probability-and-statistics) | Probability & Statistics |
 
-These "extensions of the AI repository" live nested under their discipline folder [`LeaIA`](./LeaIA):
+### Security · Mathematics · Business
+| Folder | Discipline |
+|---|---|
+| [`DCT4302-special-topics-in-information-security-i`](./DCT4302-special-topics-in-information-security-i) 🔒 | Special Topics in Information Security I |
+| [`DCT1304-linear-algebra`](./DCT1304-linear-algebra) 🔒 | Linear Algebra |
+| [`DCT3202-accounting-and-costs`](./DCT3202-accounting-and-costs) | Accounting & Costs |
+| [`BSI3103-it-entrepreneurship`](./BSI3103-it-entrepreneurship) | IT Entrepreneurship |
+| [`DCT0435-ethics`](./DCT0435-ethics) | Ethics |
 
+## 🎓 Thesis & Studies
 | Folder | Content |
 |---|---|
-| [`LeaIA/TicTacToe`](./LeaIA/TicTacToe) | Tic-tac-toe (AI) |
-| [`LeaIA/MLP_Sinc`](./LeaIA/MLP_Sinc) | Sinc-function approximation (MLPRegressor) |
-| [`LeaIA/VowelRecognition`](./LeaIA/VowelRecognition) | Vowel recognition (scikit-learn) |
-| [`LeaIA/LogicGatesPerceptron`](./LeaIA/LogicGatesPerceptron) | Perceptron for logic gates |
-
-### Projects
-| Folder | Content |
-|---|---|
-| [`Sig-Library`](./Sig-Library) | Library-management system prototype (Programming course, DCT1106) |
-| [`graphya`](./graphya) | Programming language for knowledge extraction |
-| [`Taskiano`](./Taskiano) ↗️ | To-do application — **git submodule** → [`ZauJulio/Taskiano`](https://github.com/ZauJulio/Taskiano) |
-
-> Discipline sub-projects are nested under their course folder — e.g. [`LeaPWEB/CutTheChase`](./LeaPWEB/CutTheChase) (Web Programming) and the AI extensions under [`LeaIA`](./LeaIA).
+| [`thesis`](./thesis) | Undergraduate final project (TCC) + `features-analyzer` ↗️ |
+| [`extra-studies`](./extra-studies) | Non-discipline studies: PyQt, Rust, Taskiano ↗️ |
 
 🔒 = sourced from a private repository · ↗️ = git submodule
 
 ## 🔎 Traceability
 
 ```bash
-git log -- LeaPWEB/            # full original history of a folder
-git blame LeaPWEB/src/...      # line-by-line authorship
-git submodule update --init    # populate submodules (Taskiano)
+git log -- DCT1109-web-programming/      # full history of a discipline folder
+git blame DCT1109-web-programming/src/...
+git submodule update --init --recursive  # populate submodules
 ```
 
-Folder origins and local-edit layers are documented in [`MANIFEST.md`](./MANIFEST.md).
+Folder origins, submodules and integration details: [`MANIFEST.md`](./MANIFEST.md).
+
+> 📌 Exams and heavy media (videos, virtualenvs) are excluded via `.gitignore`; video
+> lectures are linked to their source instead of stored.
