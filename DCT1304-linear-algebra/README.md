@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project (private source) |
-| **Discipline** | Linear Algebra (DCT1304) — Prof. Francisco Márcio Barboza |
-| **Academic period** | 2022.1 (APRN) |
-| **Created** | 2022-06-24 |
-| **Status** | ✅ Completed |
-| **Language(s)** | MATLAB / Octave (.m) |
-| **Tools / frameworks** | MATLAB / GNU Octave |
+|                        |                                                           |
+| ---------------------- | --------------------------------------------------------- |
+| **Type**               | Course project (private source)                           |
+| **Discipline**         | Linear Algebra (DCT1304) — Prof. Francisco Márcio Barboza |
+| **Academic period**    | 2022.1 (APRN)                                             |
+| **Created**            | 2022-06-24                                                |
+| **Status**             | ✅ Completed                                              |
+| **Language(s)**        | MATLAB / Octave (.m)                                      |
+| **Tools / frameworks** | MATLAB / GNU Octave                                       |
 
 ## 📖 Context
 

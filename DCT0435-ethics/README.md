@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Ethics (DCT0435) — Prof. Humberto Rabelo |
-| **Academic period** | 2021.2 (grade 8.5) |
+|                     |                                          |
+| ------------------- | ---------------------------------------- |
+| **Type**            | Course                                   |
+| **Discipline**      | Ethics (DCT0435) — Prof. Humberto Rabelo |
+| **Academic period** | 2021.2 (grade 8.5)                       |
 
 ## 📖 Context
 

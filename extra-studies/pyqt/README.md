@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Personal study |
-| **Discipline** | — (independent study) |
-| **Academic period** | 2022.2 |
-| **Created** | 2022-12-15 |
-| **Status** | 📚 Study / exploration |
-| **Language(s)** | Python |
-| **Tools / frameworks** | PyQt, Pipfile (pipenv) |
+|                        |                         |
+| ---------------------- | ----------------------- |
+| **Type**               | Personal study          |
+| **Discipline**         | — (independent study)   |
+| **Academic period**    | 2022.2                  |
+| **Created**            | 2022-12-15              |
+| **Status**             | 📚 Study / exploration |
+| **Language(s)**        | Python                  |
+| **Tools / frameworks** | PyQt, Pipfile (pipenv)  |
 
 ## 📖 Context
 

@@ -35,7 +35,7 @@
 | Field name   | Key              | Data type    | Field Description                                  | Field Size (bytes) |
 | ------------ | ---------------- | ------------ | -------------------------------------------------- | ------------------ |
 | id           | NOT NULL PRIMARY | NUMERIC      | Incremental identifier of the session schema.      | 4                  |
-| name         | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |
+| name         | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |                    |
 | cod_category | NOT NULL FOREIGN | INT          | Reference to a categorie.                          |                    |
 | cod_library  | NOT NULL FOREIGN | INT          | Reference to a library.                            |                    |
 
@@ -44,7 +44,7 @@
 | Field name | Key              | Data type    | Field Description                                  | Field Size (bytes) |
 | ---------- | ---------------- | ------------ | -------------------------------------------------- | ------------------ |
 | id         | NOT NULL PRIMARY | NUMERIC      | Incremental identifier of the session schema.      | 4                  |
-| name       | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |
+| name       | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |                    |
 
 # Table: Publisher
 
@@ -62,7 +62,7 @@
 | Field name | Key              | Data type    | Field Description                                  | Field Size (bytes) |
 | ---------- | ---------------- | ------------ | -------------------------------------------------- | ------------------ |
 | id         | NOT NULL PRIMARY | NUMERIC      | Incremental identifier of the session schema.      | 4                  |
-| name       | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |
+| name       | NOT NULL         | VARCHAR(100) | Name, can be abbreviated. 100 character limit. 100 |                    |
 
 # Table: User
 

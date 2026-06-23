@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project |
-| **Discipline** | Web Programming (DCT1109) — Prof. Fabrício Vale de Azevedo Guerra |
-| **Academic period** | 2020.2 (grade 10.0, APR) |
-| **Created** | 2021-02-27 |
-| **Status** | ✅ Completed |
-| **Language(s)** | TypeScript, React (TSX), SCSS |
-| **Tools / frameworks** | Next.js |
+|                        |                                                                   |
+| ---------------------- | ----------------------------------------------------------------- |
+| **Type**               | Course project                                                    |
+| **Discipline**         | Web Programming (DCT1109) — Prof. Fabrício Vale de Azevedo Guerra |
+| **Academic period**    | 2020.2 (grade 10.0, APR)                                          |
+| **Created**            | 2021-02-27                                                        |
+| **Status**             | ✅ Completed                                                      |
+| **Language(s)**        | TypeScript, React (TSX), SCSS                                     |
+| **Tools / frameworks** | Next.js                                                           |
 
 ## 📖 Context
 

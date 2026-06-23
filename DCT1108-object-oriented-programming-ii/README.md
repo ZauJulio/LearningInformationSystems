@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project |
-| **Discipline** | Object-Oriented Programming II (DCT1108) — Prof. Fabrício Vale de Azevedo Guerra |
-| **Academic period** | 2021.1 (grade 9.3, APR) |
-| **Created** | c. 2021 (local material) |
-| **Status** | 📚 Study / partial |
-| **Language(s)** | TypeScript |
-| **Tools / frameworks** | Node.js, Yarn |
+|                        |                                                                                  |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| **Type**               | Course project                                                                   |
+| **Discipline**         | Object-Oriented Programming II (DCT1108) — Prof. Fabrício Vale de Azevedo Guerra |
+| **Academic period**    | 2021.1 (grade 9.3, APR)                                                          |
+| **Created**            | c. 2021 (local material)                                                         |
+| **Status**             | 📚 Study / partial                                                              |
+| **Language(s)**        | TypeScript                                                                       |
+| **Tools / frameworks** | Node.js, Yarn                                                                    |
 
 ## 📖 Context
 

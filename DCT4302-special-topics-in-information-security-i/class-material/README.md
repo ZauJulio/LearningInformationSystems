@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course study |
-| **Discipline** | Special Topics in Information Security I (DCT4302) — Prof. João Paulo de Souza Medeiros |
-| **Academic period** | 2023.1 (grade 8.0, APR) |
-| **Created** | c. 2023 (local material) |
-| **Status** | 📚 Study material |
-| **Language(s)** | Python, C |
-| **Tools / frameworks** | — |
+|                        |                                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------- |
+| **Type**               | Course study                                                                            |
+| **Discipline**         | Special Topics in Information Security I (DCT4302) — Prof. João Paulo de Souza Medeiros |
+| **Academic period**    | 2023.1 (grade 8.0, APR)                                                                 |
+| **Created**            | c. 2023 (local material)                                                                |
+| **Status**             | 📚 Study material                                                                      |
+| **Language(s)**        | Python, C                                                                               |
+| **Tools / frameworks** | —                                                                                       |
 
 ## 📖 Context
 

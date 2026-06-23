@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Computer Architecture (DCT1105) — Prof. Luiz Paulo de Assis Barbosa |
-| **Academic period** | 2020.6 (grade 6.5) |
+|                     |                                                                     |
+| ------------------- | ------------------------------------------------------------------- |
+| **Type**            | Course                                                              |
+| **Discipline**      | Computer Architecture (DCT1105) — Prof. Luiz Paulo de Assis Barbosa |
+| **Academic period** | 2020.6 (grade 6.5)                                                  |
 
 ## 📖 Context
 

@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Network Server Administration (DCT4101) — Prof. João Batista Borges Neto |
-| **Academic period** | 2022.2 (grade 7.4) |
+|                     |                                                                          |
+| ------------------- | ------------------------------------------------------------------------ |
+| **Type**            | Course                                                                   |
+| **Discipline**      | Network Server Administration (DCT4101) — Prof. João Batista Borges Neto |
+| **Academic period** | 2022.2 (grade 7.4)                                                       |
 
 ## 📖 Context
 

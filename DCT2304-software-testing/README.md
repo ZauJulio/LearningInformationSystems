@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Software Testing (DCT2304) — Prof. Taciano de Morais Silva |
-| **Academic period** | 2021.2 (grade 7.6) |
+|                     |                                                            |
+| ------------------- | ---------------------------------------------------------- |
+| **Type**            | Course                                                     |
+| **Discipline**      | Software Testing (DCT2304) — Prof. Taciano de Morais Silva |
+| **Academic period** | 2021.2 (grade 7.6)                                         |
 
 ## 📖 Context
 
