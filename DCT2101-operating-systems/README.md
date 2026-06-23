@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project |
-| **Discipline** | Operating Systems (DCT2101) — Prof. João Batista Borges Neto |
-| **Academic period** | 2021.1 (grade 8.8, APR) |
-| **Created** | 2021-08-14 |
-| **Status** | ✅ Completed |
-| **Language(s)** | C, Shell |
-| **Tools / frameworks** | gcc |
+|                        |                                                              |
+| ---------------------- | ------------------------------------------------------------ |
+| **Type**               | Course project                                               |
+| **Discipline**         | Operating Systems (DCT2101) — Prof. João Batista Borges Neto |
+| **Academic period**    | 2021.1 (grade 8.8, APR)                                      |
+| **Created**            | 2021-08-14                                                   |
+| **Status**             | ✅ Completed                                                 |
+| **Language(s)**        | C, Shell                                                     |
+| **Tools / frameworks** | gcc                                                          |
 
 ## 📖 Context
 

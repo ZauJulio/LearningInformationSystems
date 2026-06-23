@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Probability and Statistics (DCT1305) — Prof. Almir Miranda Ferreira |
-| **Academic period** | 2021.1 (grade 7.0) |
+|                     |                                                                     |
+| ------------------- | ------------------------------------------------------------------- |
+| **Type**            | Course                                                              |
+| **Discipline**      | Probability and Statistics (DCT1305) — Prof. Almir Miranda Ferreira |
+| **Academic period** | 2021.1 (grade 7.0)                                                  |
 
 ## 📖 Context
 

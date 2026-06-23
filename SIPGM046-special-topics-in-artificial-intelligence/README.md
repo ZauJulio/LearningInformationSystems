@@ -4,13 +4,13 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Elective (academic mobility) |
-| **Discipline** | Special Topics in Artificial Intelligence (SIPGM046) |
-| **Institution** | UFRA — credited toward the BSI program at UFRN |
-| **Academic period** | 2020.2 (grade 8.5) |
-| **Topics** | Deep Learning — foundations and applications |
+|                     |                                                      |
+| ------------------- | ---------------------------------------------------- |
+| **Type**            | Elective (academic mobility)                         |
+| **Discipline**      | Special Topics in Artificial Intelligence (SIPGM046) |
+| **Institution**     | UFRA — credited toward the BSI program at UFRN       |
+| **Academic period** | 2020.2 (grade 8.5)                                   |
+| **Topics**          | Deep Learning — foundations and applications         |
 
 ## 📖 Context
 

@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Software Engineering I (DCT2301) — Prof. Karliane M. O. Vale |
-| **Academic period** | 2020.2 (grade 8.8) |
+|                     |                                                              |
+| ------------------- | ------------------------------------------------------------ |
+| **Type**            | Course                                                       |
+| **Discipline**      | Software Engineering I (DCT2301) — Prof. Karliane M. O. Vale |
+| **Academic period** | 2020.2 (grade 8.8)                                           |
 
 ## 📖 Context
 

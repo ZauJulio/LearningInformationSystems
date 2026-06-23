@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project |
-| **Discipline** | Database Design & Administration (DCT2202) — Prof. Taciano de Morais Silva |
-| **Academic period** | 2021.1 (grade 8.3, APR) |
-| **Created** | c. 2021 (local material) |
-| **Status** | 🚧 Partial |
-| **Language(s)** | TypeScript, SQL |
-| **Tools / frameworks** | Node.js, Yarn (package.json, tsconfig) |
+|                        |                                                                            |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **Type**               | Course project                                                             |
+| **Discipline**         | Database Design & Administration (DCT2202) — Prof. Taciano de Morais Silva |
+| **Academic period**    | 2021.1 (grade 8.3, APR)                                                    |
+| **Created**            | c. 2021 (local material)                                                   |
+| **Status**             | 🚧 Partial                                                                 |
+| **Language(s)**        | TypeScript, SQL                                                            |
+| **Tools / frameworks** | Node.js, Yarn (package.json, tsconfig)                                     |
 
 ## 📖 Context
 

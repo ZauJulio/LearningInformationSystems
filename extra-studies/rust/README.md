@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Personal study |
-| **Discipline** | — (independent study) |
-| **Academic period** | 2023.1 |
-| **Created** | 2023-03-13 |
-| **Status** | 🌱 Started (placeholder) |
-| **Language(s)** | Rust (intended) |
-| **Tools / frameworks** | Cargo (planned) |
+|                        |                           |
+| ---------------------- | ------------------------- |
+| **Type**               | Personal study            |
+| **Discipline**         | — (independent study)     |
+| **Academic period**    | 2023.1                    |
+| **Created**            | 2023-03-13                |
+| **Status**             | 🌱 Started (placeholder) |
+| **Language(s)**        | Rust (intended)           |
+| **Tools / frameworks** | Cargo (planned)           |
 
 ## 📖 Context
 

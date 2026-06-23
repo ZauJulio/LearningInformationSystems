@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | IT Entrepreneurship (BSI3103) — Prof. Adrianne Paula Vieira de Andrade |
-| **Academic period** | 2021.2 (grade 9.2) |
+|                     |                                                                        |
+| ------------------- | ---------------------------------------------------------------------- |
+| **Type**            | Course                                                                 |
+| **Discipline**      | IT Entrepreneurship (BSI3103) — Prof. Adrianne Paula Vieira de Andrade |
+| **Academic period** | 2021.2 (grade 9.2)                                                     |
 
 ## 📖 Context
 

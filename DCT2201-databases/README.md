@@ -4,11 +4,11 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course |
-| **Discipline** | Databases (DCT2201) — Prof. Taciano de Morais Silva |
-| **Academic period** | 2020.2 (grade 7.9) |
+|                     |                                                     |
+| ------------------- | --------------------------------------------------- |
+| **Type**            | Course                                              |
+| **Discipline**      | Databases (DCT2201) — Prof. Taciano de Morais Silva |
+| **Academic period** | 2020.2 (grade 7.9)                                  |
 
 ## 📖 Context
 

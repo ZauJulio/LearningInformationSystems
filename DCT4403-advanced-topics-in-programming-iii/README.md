@@ -4,15 +4,15 @@
 
 ## 📋 Overview
 
-| | |
-|---|---|
-| **Type** | Course project |
-| **Discipline** | Advanced Topics in Programming III — AI track (DCT4403) — Profs. Huliane Medeiros da Silva & Karliane M. O. Vale |
-| **Academic period** | 2021.1 (APRN) |
-| **Created** | 2021-07-22 |
-| **Status** | ✅ Completed |
-| **Language(s)** | Python, Jupyter Notebook |
-| **Tools / frameworks** | scikit-learn, pandas, Pipfile / requirements.txt |
+|                        |                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Type**               | Course project                                                                                                   |
+| **Discipline**         | Advanced Topics in Programming III — AI track (DCT4403) — Profs. Huliane Medeiros da Silva & Karliane M. O. Vale |
+| **Academic period**    | 2021.1 (APRN)                                                                                                    |
+| **Created**            | 2021-07-22                                                                                                       |
+| **Status**             | ✅ Completed                                                                                                     |
+| **Language(s)**        | Python, Jupyter Notebook                                                                                         |
+| **Tools / frameworks** | scikit-learn, pandas, Pipfile / requirements.txt                                                                 |
 
 ## 📖 Context
 
