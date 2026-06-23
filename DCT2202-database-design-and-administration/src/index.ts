@@ -1,8 +1,8 @@
 import pg, { ClientConfig, Notification } from "pg";
 
 const config: ClientConfig = {
-  user: "zauhdf",
-  password: "<DB_PASSWORD>",
+  user: process.env.PGUSER ?? "zauhdf",
+  password: process.env.PGPASSWORD ?? "<DB_PASSWORD>",
   database: "postgres",
   host: "172.17.0.3",
   port: 5432,
