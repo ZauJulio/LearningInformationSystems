@@ -16,6 +16,10 @@ Configuring and administering network services and servers.
 
 > 📌 Course slides/materials and exams for this discipline are kept **locally** and are
 > **not committed** to this repository.
+## 📚 Bibliography
+
+- [Windows Internals (4th ed.)](../books/computer-science/windows-internals-4th-edition.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

@@ -21,6 +21,10 @@ Web programming exercises built with **React/Next.js** and SCSS — pagination, 
 ### Related project
 
 - [`CutTheChase`](./CutTheChase) ↗️ — events-map web app (TypeScript / Next.js) built for this same Web Programming course (DCT1109). Included as a **git submodule** → [`ZauJulio/CutTheChase`](https://github.com/ZauJulio/CutTheChase).
+## 📚 Bibliography
+
+- [HCI / UX — Human-Computer Interaction and User Experience](../books/computer-science/hci-ux.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

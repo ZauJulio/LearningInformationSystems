@@ -16,6 +16,11 @@ Neural networks and learning algorithms (MLP, RBF, Hopfield, LMS), plus hyperpar
 
 > 📌 Course slides/materials and exams for this discipline are kept **locally** and are
 > **not committed** to this repository.
+## 📚 Bibliography
+
+- [Neural Networks: Principles and Practice — Simon Haykin](../books/computer-science/neural-networks-principles-and-practice-simon-haykin.pdf)
+- [Artificial Intelligence — Peter Norvig, Stuart Russell](../books/computer-science/artificial-intelligence-peter-norvig-stuart-russell.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

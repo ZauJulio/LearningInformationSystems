@@ -19,6 +19,10 @@
 Classic **synchronization problems** and OS concepts implemented in C, with helper shell scripts and compiled binaries.
 
 > 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+## 📚 Bibliography
+
+- [Windows Internals (4th ed.)](../books/computer-science/windows-internals-4th-edition.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

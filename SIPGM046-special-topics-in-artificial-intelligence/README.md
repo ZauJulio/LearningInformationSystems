@@ -19,6 +19,12 @@ applied reviews such as COVID classifiers), taken remotely at UFRA and credited 
 Information Systems degree at UFRN.
 
 > 📌 Course materials and exams are kept locally and are **not committed** to this repository.
+## 📚 Bibliography
+
+- [Artificial Intelligence — Peter Norvig, Stuart Russell](../books/computer-science/artificial-intelligence-peter-norvig-stuart-russell.pdf)
+- [Artificial Intelligence: A Modern Approach (4th ed.) — Peter Norvig, Stuart Russell](../books/others/artificial-intelligence-a-modern-approach-4th-edition.pdf)
+- [Neural Networks: Principles and Practice — Simon Haykin](../books/computer-science/neural-networks-principles-and-practice-simon-haykin.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

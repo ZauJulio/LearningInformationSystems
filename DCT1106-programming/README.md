@@ -17,6 +17,11 @@
 ## 📖 Context
 
 Prototype of a **library control system** built in C — one of the first programming-discipline projects, developed as a team (three contributors).
+## 📚 Bibliography
+
+- [Introduction to Algorithms — Thomas Cormen et al.](../books/computer-science/introduction-to-algorithms-thomas-cormen.pdf)
+- [Introduction to Programming with Python — Nilo Ney Coutinho Menezes](../books/computer-science/introduction-to-programming-with-python-nilo-menezes.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*
