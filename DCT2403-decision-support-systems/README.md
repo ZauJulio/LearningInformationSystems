@@ -19,6 +19,11 @@
 Resolution of **prediction problems using linear regression**, over spreadsheet datasets, as part of the Decision Support Systems course.
 
 > 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+## 📚 Bibliography
+
+- [Management Information Systems (15th Edition) — James A. O'Brien](../books/administration/management-information-systems-15th-edition-james-o-brien-2013.pdf)
+- [Introduction to Linear Regression Analysis — Peck, Vining, Montgomery](../books/statistics/introduction-to-linear-regression-analysis-peck-vining-montgomery.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

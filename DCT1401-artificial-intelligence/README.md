@@ -27,6 +27,12 @@ Originally separate "extensions of the AI repository", now nested here under the
 - [`VowelRecognition`](./VowelRecognition) — vowel recognition (scikit-learn)
 - [`LogicGatesPerceptron`](./LogicGatesPerceptron) — perceptron for logic gates
 
+## 📚 Bibliography
+
+- [Artificial Intelligence — Peter Norvig, Stuart Russell](../books/computer-science/artificial-intelligence-peter-norvig-stuart-russell.pdf)
+- [Artificial Intelligence: A Modern Approach (4th ed.) — Peter Norvig, Stuart Russell](../books/others/artificial-intelligence-a-modern-approach-4th-edition.pdf)
+- [Neural Networks: Principles and Practice — Simon Haykin](../books/computer-science/neural-networks-principles-and-practice-simon-haykin.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

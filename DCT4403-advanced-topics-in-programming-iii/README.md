@@ -19,6 +19,10 @@
 Applied ML notebooks (classification and regression) over real datasets — including solar **plant generation** time series. Includes data sources, slides and task PDFs.
 
 > 📎 The project's original notes were preserved in [`ORIGINAL_README.md`](./ORIGINAL_README.md).
+## 📚 Bibliography
+
+- [Neural Networks: Principles and Practice — Simon Haykin](../books/computer-science/neural-networks-principles-and-practice-simon-haykin.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*

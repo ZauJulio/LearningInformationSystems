@@ -17,6 +17,11 @@
 ## 📖 Context
 
 Implementations of classic data structures and algorithms (e.g. sorting) in both **C** and **Go**, exploring the same problems across two languages.
+## 📚 Bibliography
+
+- [Introduction to Algorithms — Thomas Cormen et al.](../books/computer-science/introduction-to-algorithms-thomas-cormen.pdf)
+- [Grokking Algorithms: An Illustrated Guide — Aditya Y. Bhargava](../books/computer-science/grokking-algorithms-aditya-bhargava.pdf)
 
 ---
+
 *Part of [LearningInformationSystems](../) — unified learning archive · Information Systems, UFRN.*
