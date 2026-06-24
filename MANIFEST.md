@@ -30,7 +30,7 @@ repository was preserved. Source repositories were **not deleted** — they rema
 | `DCT1401-artificial-intelligence`                    | DCT1401  | ZauJulio/LeaIA (+ AI extensions)             | vendored            | ✅                           |
 | `SIPGM046-special-topics-in-artificial-intelligence` | SIPGM046 | — (elective @ UFRA, mobility)                | —                   | ✅                           |
 | `DCT2101-operating-systems`                          | DCT2101  | ZauJulio/LeaOperationalSystems               | vendored            | ✅                           |
-| `DCT2202-database-design-and-administration`         | DCT2202  | local-only                                   | imported            | ✅                           |
+| `DCT2202-database-design-and-administration`         | DCT2202  | ZauJulio/WebChatRoomPostgres (group)         | vendored            | ✅                           |
 | `DCT2403-decision-support-systems`                   | DCT2403  | ZauJulio/LeaSAD                              | vendored            | —                            |
 | `DCT2602-machine-learning`                           | DCT2602  | ZauJulio/Learning                            | vendored            | ✅                           |
 | `DCT4302-special-topics-in-information-security-i`   | DCT4302  | ZauJulio/LeaSec    + local material          | vendored + imported | —                            |
